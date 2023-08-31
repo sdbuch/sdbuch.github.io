@@ -35,12 +35,12 @@ social-links:
   scholar: 5WT38A0AAAAJ
 
 # Build settings
-remote_theme: yous/whiteglass
-# theme: jekyll-whiteglass
+# remote_theme: yous/whiteglass
+theme: jekyll-whiteglass
 plugins:
   - jekyll-seo-tag
   - jekyll-liquify
-  - jekyll-remote-theme
+    #  - jekyll-remote-theme
 
 permalink: /:year/:month/:day/:title/
 paginate_path: /posts/:num/

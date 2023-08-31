@@ -1,0 +1,168 @@
+---
+---
+References
+--
+--
+For LaTeX, right delimiters to use are \( and \)
+===========
+
+@INPROCEEDINGS{Wang2021-rc,
+  title     = "Deep Networks Provably Classify Data on Curves",
+  booktitle = "Advances in Neural Information Processing Systems",
+  author    = "Wang, Tingran and Buchanan, Sam and Gilboa, Dar and Wright, John",
+  publisher = "Curran Associates, Inc.",
+  volume    =  34,
+  pages     = "28940--28953",
+  year      =  2021,
+  abstract = {Data with low-dimensional nonlinear structure are ubiquitous in engineering and scientific problems. We study a model problem with such structure: a binary classification task that uses a deep fully-connected neural network to classify data drawn from two disjoint smooth curves on the unit sphere. Aside from mild regularity conditions, we place no restrictions on the configuration of the curves. We prove that when (i) the network depth is large relative to certain geometric properties that set the difficulty of the problem and (ii) the network width and number of samples are polynomial in the depth, randomly-initialized gradient descent quickly learns to correctly classify all points on the two curves with high probability. To our knowledge, this is the first generalization guarantee for deep networks with nonlinear data that depends only on intrinsic data properties. Our analysis proceeds by a reduction to dynamics in the neural tangent kernel (NTK) regime, where the network depth plays the role of a fitting resource in solving the classification problem. In particular, via fine-grained control of the decay properties of the NTK, we demonstrate that when the network is sufficiently deep, the NTK can be locally approximated by a translationally invariant operator on the manifolds and stably inverted over smooth functions, which guarantees convergence and generalization.},
+  html      = "https://papers.nips.cc/paper/2021/hash/f26df67e8110ee2b44923db775e3e47f-Abstract.html",
+  talk = "https://www.youtube.com/watch?v=PEaYY2TLvYY",
+  %arxivid       = "2107.14324"
+}
+
+@INPROCEEDINGS{Buchanan2021-sj,
+  title     = "Deep Networks and the Multiple Manifold Problem",
+  booktitle = "International Conference on Learning Representations",
+  author    = "Buchanan, Sam and Gilboa, Dar and Wright, John",
+  year      =  2021,
+  html      = {https://openreview.net/forum?id=O-6Pm_d_Q-},
+  %talk      = "https://iclr.cc/virtual/2021/poster/2530",
+  talk      = "https://www.youtube.com/watch?v=qloPDlYqnIk",
+  abstract  = {We study the multiple manifold problem, a binary classification task modeled on applications in machine vision, in which a deep fully-connected neural network is trained to separate two low-dimensional submanifolds of the unit sphere. We provide an analysis of the one-dimensional case, proving for a simple manifold configuration that when the network depth \( L \) is large relative to certain geometric and statistical properties of the data, the network width \(n\) grows as a sufficiently large polynomial in \(L\), and the number of i.i.d. samples from the manifolds is polynomial in \(L\), randomly-initialized gradient descent rapidly learns to classify the two manifolds perfectly with high probability. Our analysis demonstrates concrete benefits of depth and width in the context of a practically-motivated model problem: the depth acts as a fitting resource, with larger depths corresponding to smoother networks that can more readily separate the class manifolds, and the width acts as a statistical resource, enabling concentration of the randomly-initialized network and its gradients. The argument centers around the "neural tangent kernel" of Jacot et al. and its role in the nonasymptotic analysis of training overparameterized neural networks; to this literature, we contribute essentially optimal rates of concentration for the neural tangent kernel of deep fully-connected ReLU networks, requiring width \(n \geq L\,\mathrm{poly}(d_0)\) to achieve uniform concentration of the initial kernel over a \(d_0\)-dimensional submanifold of the unit sphere \(\mathbb{S}^{n_0-1}\), and a nonasymptotic framework for establishing generalization of networks trained in the "NTK regime" with structured data. The proof makes heavy use of martingale concentration to optimally treat statistical dependencies across layers of the initial random network. This approach should be of use in establishing similar results for other network architectures.}, 
+}
+
+@INPROCEEDINGS{Gilboa2019-px,
+  title     = "Efficient Dictionary Learning with Gradient Descent",
+  booktitle = "Proceedings of the 36th International Conference on Machine
+               Learning",
+  author    = "Gilboa, Dar and Buchanan, Sam and Wright, John",
+  publisher = "PMLR",
+  volume    =  97,
+  pages     = "2252--2259",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2019,
+  html      = {http://proceedings.mlr.press/v97/gilboa19a.html},
+  abstract = {Randomly initialized first-order optimization algorithms are the method of choice for solving many high-dimensional nonconvex problems in machine learning, yet general theoretical guarantees cannot rule out convergence to critical points of poor objective value. For some highly structured nonconvex problems however, the success of gradient descent can be understood by studying the geometry of the objective. We study one such problem – complete orthogonal dictionary learning, and provide converge guarantees for randomly initialized gradient descent to the neighborhood of a global optimum. The resulting rates scale as low order polynomials in the dimension even though the objective possesses an exponential number of saddle points. This efficient convergence can be viewed as a consequence of negative curvature normal to the stable manifolds associated with saddle points, and we provide evidence that this feature is shared by other nonconvex problems of importance as well.},
+}
+
+@INPROCEEDINGS{Buchanan2018-ip,
+  title     = "Efficient Model-Free Learning to Overcome Hardware
+               Nonidealities in Analog-to-Information Converters",
+  booktitle = "2018 IEEE International Conference on Acoustics, Speech and
+               Signal Processing (ICASSP)",
+  author    = "Buchanan, S and Haque, T and Kinget, P and Wright, J",
+  pages     = "3574--3578",
+  month     =  apr,
+  year      =  2018,
+  html      = {http://dx.doi.org/10.1109/ICASSP.2018.8461811},
+  abstract  = {This paper considers compressed sensing (CS) in the context of RF spectrum sensing and presents an efficient approach for learning hardware nonidealities in an analog-to-information converter (A2IC). The proposed methodology is based on the learned iterative shrinkage-thresholding algorithm (LISTA), which enables co-optimization of the hardware and the reconstruction algorithm and leads to a model-free recovery approach that is optimally tuned for the unique computational constraints and hardware nonidealities present in the RF frontend. To achieve this, we devise a training protocol that employs a dataset and neural network of minimal sizes. We demonstrate the effectiveness of our methodology on simulated data from a model of a well-established CS A2IC in the presence of linear impairments and noise. The recovery process extrapolates from training on 1-sparse signals to recovering the support of signals whose sparsity runs up to the theoretical optimum for \(\ell^1\) -based algorithms across a range of typical operating SNRs.},
+  slides   = {sslista_deck.pdf}
+}
+
+@ARTICLE{Buchanan2022-qp,
+  title         = "Resource-Efficient Invariant Networks: Exponential Gains
+                   by Unrolled Optimization",
+  author        = "Buchanan, Sam and Yan, Jingkai and Haber, Ellie and Wright,
+                   John",
+  month         =  mar,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2203.05006",
+  archivePrefix = "arXiv",
+  abstract = { Achieving invariance to nuisance transformations is a fundamental challenge in the
+              construction of robust and reliable vision systems.  Existing approaches to
+              invariance scale exponentially with the dimension of the family of transformations,
+              making them unable to cope with natural variabilities in visual data such as changes
+              in pose and perspective.  We identify a common limitation of these approaches---they
+              rely on sampling to traverse the high-dimensional space of transformations---and
+              propose a new computational primitive for building invariant networks based instead
+              on optimization, which in many scenarios provides a provably more efficient method
+              for high-dimensional exploration than sampling.  We provide empirical and
+              theoretical corroboration of the efficiency gains and soundness of our proposed
+              method, and demonstrate its utility in constructing an efficient invariant network
+              for a simple hierarchical object detection task when combined with unrolled
+              optimization.  Code for our networks and experiments is available at
+              https://github.com/sdbuch/refine.},
+  eprint        = "2203.05006",
+  primaryClass  = "cs.CV",
+  code          = "https://github.com/sdbuch/refine",
+  arxivid       = "2203.05006"
+}
+
+@PHDTHESIS{Buchanan2022-ye,
+  title  = "Deep Networks Through the Lens of Low-Dimensional Structure:
+            Towards Mathematical and Computational Principles for Nonlinear
+            Data",
+  author = "Buchanan, Sam",
+  year   =  2022,
+  html    = "https://academiccommons.columbia.edu/doi/10.7916/p2n1-kp52",
+  school = "Columbia University",
+  doi    = "10.7916/p2n1-kp52"
+}
+
+@ARTICLE{Yu2023-ig,
+  title         = "White-Box Transformers via Sparse Rate Reduction",
+  author        = "Yu, Yaodong and Buchanan, Sam and Pai, Druv and Chu, Tianzhe
+                   and Wu, Ziyang and Tong, Shengbang and Haeffele, Benjamin D
+                   and Ma, Yi",
+  month         =  jun,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2306.01129",
+  archivePrefix = "arXiv",
+  eprint        = "2306.01129",
+  primaryClass  = "cs.LG",
+  arxivid       = "2306.01129",
+  code          = "https://github.com/Ma-Lab-Berkeley/CRATE",
+  abstract      = {In this paper, we contend that the objective of
+                   representation learning is to compress and transform the
+                   distribution of the data, say sets of tokens, towards a
+                   mixture of low-dimensional Gaussian distributions supported
+                   on incoherent subspaces. The quality of the final
+                   representation can be measured by a unified objective
+                   function called sparse rate reduction. From this
+                   perspective, popular deep networks such as transformers can
+                   be naturally viewed as realizing iterative schemes to
+                   optimize this objective incrementally. Particularly, we show
+                   that the standard transformer block can be derived from
+                   alternating optimization on complementary parts of this
+                   objective: the multi-head self-attention operator can be
+                   viewed as a gradient descent step to compress the token sets
+                   by minimizing their lossy coding rate, and the subsequent
+                   multi-layer perceptron can be viewed as attempting to
+                   sparsify the representation of the tokens. This leads to a
+                   family of white-box transformer-like deep network
+                   architectures which are mathematically fully interpretable.
+                   Despite their simplicity, experiments show that these
+                   networks indeed learn to optimize the designed objective:
+                   they compress and sparsify representations of large-scale
+                   real-world vision datasets such as ImageNet, and achieve
+                   performance very close to thoroughly engineered transformers
+                   such as ViT.  }
+}
+
+@inproceedings{tilted2023,
+    author = {Yi, Brent and Zeng, Weijia and Buchanan, Sam and Ma, Yi},
+    title = {Canonical Factors for Hybrid Neural Fields},
+    booktitle = {International Conference on Computer Vision (ICCV)},
+    year = {2023},
+    abstract = { Factored feature volumes offer a simple way to build more
+                compact, efficient, and intepretable neural fields, but also
+                introduce biases that are not necessarily beneficial for
+                real-world data. In this work, we (1) characterize the
+                undesirable biases that these architectures have for
+                axis-aligned signals -- they can lead to radiance field
+                reconstruction differences of as high as 2 PSNR -- and (2)
+                explore how learning a set of canonicalizing transformations
+                can improve representations by removing these biases. We prove
+                in a two-dimensional model problem that simultaneously learning
+                these transformations together with scene appearance succeeds
+                with drastically improved efficiency. We validate the resulting
+                architectures, which we call TILTED, using image, signed
+                distance, and radiance field reconstruction tasks, where we
+                observe improvements across quality, robustness, compactness,
+                and runtime. Results demonstrate that TILTED can enable
+                capabilities comparable to baselines that are 2x larger, while
+                highlighting weaknesses of neural field evaluation procedures.
+                },
+  arxivid       = "2308.15461",
+  website       = "https://brentyi.github.io/tilted/",
+}

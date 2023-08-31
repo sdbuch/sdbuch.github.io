@@ -1,0 +1,111 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Sam D. Buchanan
+author: 
+  name: Sam Buchanan
+  email: sam@ttic.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  Homepage of Sam D. Buchanan, researcher in the mathematics of data science and deep learning.
+baseurl: "" # the subpath of your site, e.g. /blog
+  # url: "http://sdbuchanan.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sdbuch.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+facebook_image: '/assets/sam-2023.jpeg'
+
+social-links:
+  twitter: _sdbuchanan
+  github: sdbuch
+  scholar: 5WT38A0AAAAJ
+
+# Build settings
+# remote_theme: yous/whiteglass
+theme: jekyll-whiteglass
+plugins:
+  - jekyll-seo-tag
+  - jekyll-liquify
+
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+
+scholar:
+  last_name: Buchanan
+  first_name: Sam
+
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: refs.bib
+  bibliography_template: bib
+  bibtex_filters: 
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+# Default layouts for each collection type
+defaults:
+  - scope:
+      path: ''
+    values:
+      image: /assets/sam-2023.jpeg
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+jquery:
+  version: "3.5.1"
+  integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+mathjax:
+  version: "3.1.2"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,22 @@
+{% assign feed_path = "/feed.xml" %}
+{% if site.feed and site.feed.path %}
+  {% assign feed_path = site.feed.path %}
+{% endif %}
+
+<a href={{    site.author.email | prepend: 'mailto:'   }} target="_blank" style="text-decoration: none">
+<img src="/assets/icons/gmail.svg" style="width: 24px; height: 24px;" alt="Mail icon" />
+</a>
+
+<a href={{    site.social-links.scholar | prepend: 'https://scholar.google.com/citations?user='   }} target="_blank" style="text-decoration: none">
+<img src="/assets/icons/scholar.svg" style="width: 24px; height: 24px;" alt="Google Scholar icon" />
+</a>
+
+<a href={{    site.social-links.twitter | prepend: 'https://twitter.com/'   }}
+  target="_blank" style="text-decoration: none">
+<img src="/assets/icons/twitter.svg" style="width: 24px; height: 24px;" alt="Twitter icon" />
+</a>
+
+<a href={{    site.social-links.github | prepend: 'https://github.com/'   }}
+  target="_blank" style="text-decoration: none">
+<img src="/assets/icons/github.svg" style="width: 24px; height: 24px;" alt="GitHub icon" />
+</a>

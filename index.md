@@ -35,6 +35,10 @@ applications.
   on understanding the transformer architecture from first-principles signal
   models, and a consequent white-box redesign of the architecture that
   maintains strong performance at the ImageNet-21K scale.
+  This white-box architecture shows promising representation learning ability:
+  for example, [whole-parts input segmentation emerges in its self-attention
+  maps](http://arxiv.org/abs/2308.16271) without any specialized
+  self-supervised training.
 
 - (July 2023) I am a co-organizer of the inaugural [Conference on Parsimony and Learning
   (CPAL)](https://cpal.cc){:target="_blank"}{::comment}__{:/comment}, a new

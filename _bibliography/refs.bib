@@ -14,6 +14,7 @@ For LaTeX, right delimiters to use are \( and \)
   volume    =  34,
   pages     = "28940--28953",
   year      =  2021,
+  month     =  dec,
   abstract = {Data with low-dimensional nonlinear structure are ubiquitous in engineering and scientific problems. We study a model problem with such structure: a binary classification task that uses a deep fully-connected neural network to classify data drawn from two disjoint smooth curves on the unit sphere. Aside from mild regularity conditions, we place no restrictions on the configuration of the curves. We prove that when (i) the network depth is large relative to certain geometric properties that set the difficulty of the problem and (ii) the network width and number of samples are polynomial in the depth, randomly-initialized gradient descent quickly learns to correctly classify all points on the two curves with high probability. To our knowledge, this is the first generalization guarantee for deep networks with nonlinear data that depends only on intrinsic data properties. Our analysis proceeds by a reduction to dynamics in the neural tangent kernel (NTK) regime, where the network depth plays the role of a fitting resource in solving the classification problem. In particular, via fine-grained control of the decay properties of the NTK, we demonstrate that when the network is sufficiently deep, the NTK can be locally approximated by a translationally invariant operator on the manifolds and stably inverted over smooth functions, which guarantees convergence and generalization.},
   html      = "https://papers.nips.cc/paper/2021/hash/f26df67e8110ee2b44923db775e3e47f-Abstract.html",
   talk = "https://www.youtube.com/watch?v=PEaYY2TLvYY",
@@ -25,6 +26,7 @@ For LaTeX, right delimiters to use are \( and \)
   booktitle = "International Conference on Learning Representations",
   author    = "Buchanan, Sam and Gilboa, Dar and Wright, John",
   year      =  2021,
+  month     =  jan,
   html      = {https://openreview.net/forum?id=O-6Pm_d_Q-},
   %talk      = "https://iclr.cc/virtual/2021/poster/2530",
   talk      = "https://www.youtube.com/watch?v=qloPDlYqnIk",
@@ -94,6 +96,7 @@ For LaTeX, right delimiters to use are \( and \)
             Data",
   author = "Buchanan, Sam",
   year   =  2022,
+  month  = oct,
   html    = "https://academiccommons.columbia.edu/doi/10.7916/p2n1-kp52",
   school = "Columbia University",
   doi    = "10.7916/p2n1-kp52"
@@ -111,7 +114,7 @@ For LaTeX, right delimiters to use are \( and \)
   eprint        = "2306.01129",
   primaryClass  = "cs.LG",
   arxivid       = "2306.01129",
-  code          = "https://github.com/Ma-Lab-Berkeley/CRATE",
+  website       = "https://ma-lab-berkeley.github.io/CRATE/",
   abstract      = {In this paper, we contend that the objective of
                    representation learning is to compress and transform the
                    distribution of the data, say sets of tokens, towards a
@@ -143,6 +146,7 @@ For LaTeX, right delimiters to use are \( and \)
     author = {Yi, Brent and Zeng, Weijia and Buchanan, Sam and Ma, Yi},
     title = {Canonical Factors for Hybrid Neural Fields},
     booktitle = {International Conference on Computer Vision (ICCV)},
+    month = oct,
     year = {2023},
     abstract = { Factored feature volumes offer a simple way to build more
                 compact, efficient, and intepretable neural fields, but also
@@ -165,4 +169,40 @@ For LaTeX, right delimiters to use are \( and \)
                 },
   arxivid       = "2308.15461",
   website       = "https://brentyi.github.io/tilted/",
+}
+
+@ARTICLE{Yu2023-fc,
+  title         = "Emergence of Segmentation with Minimalistic White-Box
+                   Transformers",
+  author        = "Yu*, Yaodong and Chu*, Tianzhe and Tong, Shengbang and Wu,
+                   Ziyang and Pai, Druv and Buchanan, Sam and Ma, Yi",
+  month         =  aug,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2308.16271",
+  archivePrefix = "arXiv",
+  eprint        = "2308.16271",
+  primaryClass  = "cs.CV",
+  arxivid       = "2308.16271",
+  abstract      = {Transformer-like models for vision tasks have recently proven
+                   effective for a wide range of downstream applications such as
+                   segmentation and detection. Previous works have shown that
+                   segmentation properties emerge in vision transformers (ViTs)
+                   trained using self-supervised methods such as DINO, but not in
+                   those trained on supervised classification tasks. In this study,
+                   we probe whether segmentation emerges in transformer-based models
+                   solely as a result of intricate self-supervised learning
+                   mechanisms, or if the same emergence can be achieved under much
+                   broader conditions through proper design of the model
+                   architecture. Through extensive experimental results, we
+                   demonstrate that when employing a white-box transformer-like
+                   architecture known as CRATE, whose design explicitly models and
+                   pursues low-dimensional structures in the data distribution,
+                   segmentation properties, at both the whole and parts levels,
+                   already emerge with a minimalistic supervised training recipe.
+                   Layer-wise finer-grained analysis reveals that the emergent
+                   properties strongly corroborate the designed mathematical
+                   functions of the white-box network. Our results suggest a path to
+                   design white-box foundation models that are simultaneously highly
+                   performant and mathematically fully interpretable.},
+  website        = "https://ma-lab-berkeley.github.io/CRATE/"
 }

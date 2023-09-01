@@ -25,8 +25,8 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage of Sam D. Buchanan, researcher in the mathematics of data science and deep learning.
 baseurl: "" # the subpath of your site, e.g. /blog
-  # url: "http://sdbuchanan.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://sdbuch.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://sdbuchanan.com" # the base hostname & protocol for your site, e.g. http://example.com
+   # url: "https://sdbuch.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_image: '/assets/sam-2023.jpeg'
 
 social-links:

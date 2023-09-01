@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/archives/</loc>
+<loc>http://sdbuchanan.com/archives/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://sdbuchanan.com/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/misc/</loc>
+<loc>http://sdbuchanan.com/misc/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/past_updates/</loc>
+<loc>http://sdbuchanan.com/past_updates/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/publications/</loc>
+<loc>http://sdbuchanan.com/publications/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/nn_seminar/</loc>
+<loc>http://sdbuchanan.com/nn_seminar/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/cv.pdf</loc>
+<loc>http://sdbuchanan.com/assets/cv.pdf</loc>
 <lastmod>2023-08-29T21:37:50-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/assets/pdf/sslista_deck.pdf</loc>
+<loc>http://sdbuchanan.com/assets/pdf/sslista_deck.pdf</loc>
 <lastmod>2023-08-31T19:29:53-05:00</lastmod>
 </url>
 </urlset>

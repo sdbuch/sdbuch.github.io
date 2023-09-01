@@ -12,13 +12,13 @@ Wright](http://www.columbia.edu/~jw2966/){:target="_blank"}, {::comment}__{:/com
 and my B.S. in Electrical Engineering at the [University of
 Kansas](https://eecs.ku.edu){:target="_blank"} in 2014. {::comment}__{:/comment}
 
-My research interests include the analysis
-of algorithms for high-dimensional data with low-dimensional structure.
-I am especially interested in understanding the role of low-dimensional
-structure in the successes of modern data-driven signal processing frameworks
-involving deep learning, as a path towards the development of more
-resource-efficient and reliable models for science and engineering
-applications.
+
+My research studies the mathematics of representation learning from the
+perspective of signals and data. I'm interested in questions that span theory
+and practice -- What structural properties of modern data play a role in the
+success or failure of deep learning? How can we design better deep
+architectures by exploiting these structures? I'm especially interested in
+applications to visual data. 
 
 ## Recent Updates
 

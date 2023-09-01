@@ -6,7 +6,7 @@ layout: home
 {% include contact.html %}
 
 I am a Research Assistant Professor at [TTIC](https://ttic.edu){:target="_blank"}. {::comment}__{:/comment}
-Previously, I completed my Ph.D. in Electrical Engineering at [Columbia University](https://ee.columbia.edu){:target="_blank"} in 2022, {::comment}__{:/comment}
+I completed my Ph.D. in Electrical Engineering at [Columbia University](https://ee.columbia.edu){:target="_blank"} in 2022, {::comment}__{:/comment}
 working with [John
 Wright](http://www.columbia.edu/~jw2966/){:target="_blank"}, {::comment}__{:/comment}
 and my B.S. in Electrical Engineering at the [University of

@@ -92,6 +92,21 @@ $on-laptop:        800px;
 }
 
 
+// custom code for icons container
+#icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+}
+
+#icon-container-item {
+  width: 32px;
+  height: 32px;
+}
+
+
 
 // Import partials from the `whiteglass` theme.
 @import "whiteglass";

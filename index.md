@@ -14,7 +14,7 @@ Engineering at the [University of Kansas](https://eecs.ku.edu).
 
 My research studies the mathematics of representation learning from the
 perspective of signals and data. I'm interested in questions that span theory
-and practice -- What structural properties of modern data play a role in the
+and practice &mdash; What structural properties of modern data play a role in the
 success or failure of deep learning? How can we design better deep
 architectures by exploiting these structures? I'm especially interested in
 applications to visual data. 

@@ -21,38 +21,35 @@ applications to visual data.
 
 ## Recent Updates
 
-- (August 2023) To appear at ICCV 2023: A new hybrid neural field architecture
-  for implicit 3D representation, [TILTED](https://brentyi.github.io/tilted/).
-  Featuring a [throwback mixture of theory and
-  practice](http://arxiv.org/abs/2308.15461), wherein we prove that our method
-  succeeds under idealized conditions and dig into the mathematics of
-  pose-appearance disentanglement in visual data.
+- (November 2023) Presenting [CRATE](https://ma-lab-berkeley.github.io/CRATE/),
+  a "white-box" transformer neural network architecture with strong performance
+  at scale. "White-box" means we derive each layer of CRATE from first
+  principles, from the perspective of compressing the data distribution with
+  respect to a simple, local model.
+  We'll present this work at [NeurIPS
+  2023](https://neurips.cc/virtual/2023/poster/71567), also in the
+  [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop.
 
-- (August 2023) [New preprint posted](https://arxiv.org/abs/2306.01129)
-  on understanding the transformer architecture from first-principles signal
-  models, and a consequent white-box redesign of the architecture that
-  maintains strong performance at the ImageNet-21K scale and shows promising
-  representation learning ability: for example, [whole-parts input segmentation
-  emerges in its self-attention maps](http://arxiv.org/abs/2308.16271) without
-  any specialized self-supervised training.
+- (November 2023) [New preprint posted](https://arxiv.org/abs/2310.14344) on
+  methodology for data-driven inverse problem solvers with convergence
+  guarantees. 
+  We propose learned proximal operators, an *exact* parameterization of proximal
+  operators with deep networks, and proximal matching training, an unsupervised
+  training scheme to learn expressive proximal mappings. 
+  We'll present this work at the [NeurIPS 2023 Learning-Based Solutions for Inverse Problems](https://neurips.cc/virtual/2023/79286) workshop.
 
-- (July 2023) I am a co-organizer of the inaugural [Conference on Parsimony and Learning
-  (CPAL)](https://cpal.cc), a new
-  conference aiming to unite researchers working at the interface of AI/ML and
-  low-dimensional structures in data. Please consider submitting your best work
-  to the ["Recent
-  Spotlight"](https://cpal.cc/tracks/#recent-spotlight-track-non-archival)
-  (workshop) track, deadline [October
-  10th](https://cpal.cc/deadlines/#conference-submission-recent-spotlight-track)!
+- (October 2023) We presented [TILTED](https://brentyi.github.io/tilted/) at
+  ICCV 2023. TILTED improves visual quality, compactness, and interpretability
+  for hybrid neural field 3D representations by incorporating geometry into the
+  latent features. We prove that the nonconvex optimization procedure at the
+  heart of our method converges in a simple model problem.
+
+- (July 2023) I am co-organizing the inaugural [Conference on Parsimony and
+  Learning (CPAL)](https://cpal.cc), to be held at Hong Kong University on
+  January 3rd, 2024.
 
 - (June 2023) We taught a short course at ICASSP 2023 in Rhodes, Greece, titled
   ["Learning Nonlinear and Deep Low-Dimensional Representations from High-Dimensional Data: From Theory to Practice"](https://highdimdata-lowdimmodels-tutorial.github.io/).
-  Slides are available at the course website.
-
-- (January 2023) I co-organized the third [Workshop on Seeking Low-Dimensionality in Deep Neural Networks (SLowDNN)](https://slowdnn-workshop.github.io/). Thanks to all speakers and
-  students for a very successful workshop, and to our hosts at MBZUAI.  [Here
-  is a link to my
-  tutorial](https://www.youtube.com/watch?v=EO39D_Jfq_E&t=3s&pp=ygUMc2FtIGJ1Y2hhbmFu).
 
 
 ## [Past Updates]({{ site.baseurl }}/past_updates)

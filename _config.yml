@@ -58,7 +58,6 @@ scholar:
   source: /_bibliography/
   bibliography: refs.bib
   bibliography_template: bib
-  bibtex_filters: 
 
   replace_strings: true
   join_strings: true

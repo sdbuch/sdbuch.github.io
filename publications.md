@@ -3,7 +3,7 @@ layout: page
 title: Publications
 description: Academic publication list for Sam D. Buchanan
 permalink: /publications/
-years: [2023, 2022, 2021, 2019, 2018]
+years: [2024, 2023, 2022, 2021, 2019, 2018]
 ---
 
 <div class="publications">

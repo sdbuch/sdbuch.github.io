@@ -6,8 +6,10 @@ permalink: /past_updates/
 ---
 
 
-
-
+- (January 2023) I co-organized the third [Workshop on Seeking
+  Low-Dimensionality in Deep Neural Networks
+  (SLowDNN)](https://slowdnn-workshop.github.io/). [Here is a link to my
+  tutorial](https://www.youtube.com/watch?v=EO39D_Jfq_E&t=3s&pp=ygUMc2FtIGJ1Y2hhbmFu).
 
 - (September 2022) I defended my Ph.D. thesis (back in June!), and started as a
   Research Assistant Professor at TTIC. 

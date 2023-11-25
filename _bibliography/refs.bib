@@ -102,17 +102,14 @@ For LaTeX, right delimiters to use are \( and \)
   doi    = "10.7916/p2n1-kp52"
 }
 
-@ARTICLE{Yu2023-ig,
+@inproceedings{Yu2023-ig,
   title         = "White-Box Transformers via Sparse Rate Reduction",
   author        = "Yu, Yaodong and Buchanan, Sam and Pai, Druv and Chu, Tianzhe
                    and Wu, Ziyang and Tong, Shengbang and Haeffele, Benjamin D
                    and Ma, Yi",
-  month         =  jun,
+  booktitle     = "Advances in Neural Information Processing Systems (NeurIPS)",
+  month         =  dec,
   year          =  2023,
-  url           = "http://arxiv.org/abs/2306.01129",
-  archivePrefix = "arXiv",
-  eprint        = "2306.01129",
-  primaryClass  = "cs.LG",
   arxivid       = "2306.01129",
   website       = "https://ma-lab-berkeley.github.io/CRATE/",
   abstract      = {In this paper, we contend that the objective of
@@ -169,19 +166,18 @@ For LaTeX, right delimiters to use are \( and \)
                 },
   arxivid       = "2308.15461",
   website       = "https://brentyi.github.io/tilted/",
+  html          = "https://openaccess.thecvf.com/content/ICCV2023/html/Yi_Canonical_Factors_for_Hybrid_Neural_Fields_ICCV_2023_paper.html"
 }
 
-@ARTICLE{Yu2023-fc,
+@inproceedings{Yu2023-fc,
   title         = "Emergence of Segmentation with Minimalistic White-Box
                    Transformers",
   author        = "Yu*, Yaodong and Chu*, Tianzhe and Tong, Shengbang and Wu,
                    Ziyang and Pai, Druv and Buchanan, Sam and Ma, Yi",
-  month         =  aug,
-  year          =  2023,
+  month         =  jan,
+  year          =  2024,
+  booktitle     = "Conference on Parsimony and Learning (CPAL)",
   url           = "http://arxiv.org/abs/2308.16271",
-  archivePrefix = "arXiv",
-  eprint        = "2308.16271",
-  primaryClass  = "cs.CV",
   arxivid       = "2308.16271",
   abstract      = {Transformer-like models for vision tasks have recently proven
                    effective for a wide range of downstream applications such as
@@ -204,5 +200,37 @@ For LaTeX, right delimiters to use are \( and \)
                    functions of the white-box network. Our results suggest a path to
                    design white-box foundation models that are simultaneously highly
                    performant and mathematically fully interpretable.},
+  website        = "https://ma-lab-berkeley.github.io/CRATE/"
+}
+
+@ARTICLE{Fang2023-ey,
+  title         = "What's in a Prior? {L}earned Proximal Networks for Inverse
+                   Problems",
+  author        = "Fang*, Zhenghan and Buchanan*, Sam and Sulam, Jeremias",
+  month         =  oct,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2310.14344",
+  archivePrefix = "arXiv",
+  eprint        = "2310.14344",
+  primaryClass  = "cs.CV",
+  arxivid       = "2310.14344",
+  abstract      = { Proximal operators are ubiquitous in inverse problems, commonly appearing as part of algorithmic strategies to regularize problems that are otherwise ill-posed. Modern deep learning models have been brought to bear for these tasks too, as in the framework of plug-and-play or deep unrolling, where they loosely resemble proximal operators. Yet, something essential is lost in employing these purely data-driven approaches: there is no guarantee that a general deep network represents the proximal operator of any function, nor is there any characterization of the function for which the network might provide some approximate proximal. This not only makes guaranteeing convergence of iterative schemes challenging but, more fundamentally, complicates the analysis of what has been learned by these networks about their training data. Herein we provide a framework to develop learned proximal networks (LPN), prove that they provide exact proximal operators for a data-driven nonconvex regularizer, and show how a new training strategy, dubbed proximal matching, provably promotes the recovery of the log-prior of the true data distribution. Such LPN provide general, unsupervised, expressive proximal operators that can be used for general inverse problems with convergence guarantees. We illustrate our results in a series of cases of increasing complexity, demonstrating that these models not only result in state-of-the-art performance, but provide a window into the resulting priors learned from data.}
+}
+
+
+@ARTICLE{Yu2023-vz,
+  title         = "White-Box Transformers via Sparse Rate Reduction:
+                   Compression Is All There Is?",
+  author        = "Yu, Yaodong and Buchanan, Sam and Pai, Druv and Chu, Tianzhe
+                   and Wu, Ziyang and Tong, Shengbang and Bai, Hao and Zhai,
+                   Yuexiang and Haeffele, Benjamin D and Ma, Yi",
+  month         =  nov,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2311.13110",
+  archivePrefix = "arXiv",
+  eprint        = "2311.13110",
+  primaryClass  = "cs.LG",
+  arxivid       = "2311.13110",
+  abstract      = { In this paper, we contend that a natural objective of representation learning is to compress and transform the distribution of the data, say sets of tokens, towards a low-dimensional Gaussian mixture supported on incoherent subspaces. The goodness of such a representation can be evaluated by a principled measure, called sparse rate reduction, that simultaneously maximizes the intrinsic information gain and extrinsic sparsity of the learned representation. From this perspective, popular deep network architectures, including transformers, can be viewed as realizing iterative schemes to optimize this measure. Particularly, we derive a transformer block from alternating optimization on parts of this objective: the multi-head self-attention operator compresses the representation by implementing an approximate gradient descent step on the coding rate of the features, and the subsequent multi-layer perceptron sparsifies the features. This leads to a family of white-box transformer-like deep network architectures, named CRATE, which are mathematically fully interpretable. We show, by way of a novel connection between denoising and compression, that the inverse to the aforementioned compressive encoding can be realized by the same class of CRATE architectures. Thus, the so-derived white-box architectures are universal to both encoders and decoders. Experiments show that these networks, despite their simplicity, indeed learn to compress and sparsify representations of large-scale real-world image and text datasets, and achieve performance very close to highly engineered transformer-based models: ViT, MAE, DINO, BERT, and GPT2. We believe the proposed computational framework demonstrates great potential in bridging the gap between theory and practice of deep learning, from a unified perspective of data compression. },
   website        = "https://ma-lab-berkeley.github.io/CRATE/"
 }

@@ -27,7 +27,7 @@ applications to visual data.
   principles, from the perspective of compressing the data distribution with
   respect to a simple, local model.
   We'll present this work at [NeurIPS
-  2023](https://neurips.cc/virtual/2023/poster/71567), also in the
+  2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the
   [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop.
 
 - (November 2023) [New preprint posted](https://arxiv.org/abs/2310.14344) on

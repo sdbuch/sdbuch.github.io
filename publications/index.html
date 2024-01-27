@@ -136,6 +136,238 @@
   
   </div>
 
+  <div id="Fang2024-ey" class="col-sm-8">
+    
+      <div class="title">What’s in a Prior? Learned Proximal Networks for Inverse
+               Problems</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Zhenghan Fang*,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan*</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Jeremias Sulam
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In International Conference on Learning Representations</em>,
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2310.14344" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+      <a href="https://openreview.net/forum?id=kNPcOaqC5r" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> Proximal operators are ubiquitous in inverse problems, commonly appearing as part of algorithmic strategies to regularize problems that are otherwise ill-posed. Modern deep learning models have been brought to bear for these tasks too, as in the framework of plug-and-play or deep unrolling, where they loosely resemble proximal operators. Yet, something essential is lost in employing these purely data-driven approaches: there is no guarantee that a general deep network represents the proximal operator of any function, nor is there any characterization of the function for which the network might provide some approximate proximal. This not only makes guaranteeing convergence of iterative schemes challenging but, more fundamentally, complicates the analysis of what has been learned by these networks about their training data. Herein we provide a framework to develop learned proximal networks (LPN), prove that they provide exact proximal operators for a data-driven nonconvex regularizer, and show how a new training strategy, dubbed proximal matching, provably promotes the recovery of the log-prior of the true data distribution. Such LPN provide general, unsupervised, expressive proximal operators that can be used for general inverse problems with convergence guarantees. We illustrate our results in a series of cases of increasing complexity, demonstrating that these models not only result in state-of-the-art performance, but provide a window into the resulting priors learned from data.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Pai2024-jm" class="col-sm-8">
+    
+      <div class="title">Masked Completion via Structured Diffusion with White-Box
+               Transformers</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://robinwu218.github.io/">Ziyang Wu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://yaodongyu.github.io/">Yaodong Yu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In International Conference on Learning Representations</em>,
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=PvyOYleymy" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://ma-lab-berkeley.github.io/CRATE/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> Modern learning frameworks often train deep neural networks with massive amounts of unlabeled data to learn representations by solving simple pretext tasks, then use the representations as foundations for downstream tasks. These networks are empirically designed; as such, they are usually not interpretable, their representations are not structured, and their designs are potentially redundant. White-box deep networks, in which each layer explicitly identifies and transforms structures in the data, present a promising alternative. However, existing white-box architectures have only been shown to work at scale in supervised settings with labeled data, such as classification. In this work, we provide the first instantiation of the white-box design paradigm that can be applied to large-scale unsupervised representation learning. We do this by exploiting a fundamental connection between diffusion, compression, and (masked) completion, deriving a deep transformer-like masked autoencoder architecture, called CRATE-MAE, in which the role of each layer is mathematically fully interpretable: they transform the data distribution to and from a structured representation. Extensive empirical evaluations confirm our analytical insights. CRATE-MAE demonstrates highly promising performance on large-scale imagery datasets while using only  30% of the parameters compared to the standard masked autoencoder with the same model configuration. The representations learned by CRATE-MAE have explicit structure and also contain semantic meaning.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
   <div id="Yu2023-fc" class="col-sm-8">
     
       <div class="title">Emergence of Segmentation with Minimalistic White-Box
@@ -907,98 +1139,6 @@
     
   </div>
 </div>
-</li>
-<li><div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="Fang2023-ey" class="col-sm-8">
-    
-      <div class="title">What’s in a Prior? Learned Proximal Networks for Inverse
-                   Problems</div>
-      <div class="author">
-        
-          
-          
-          
-          
-          
-            
-              
-                
-                  Zhenghan Fang*,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-            
-              
-                <em>Sam Buchanan*</em>,
-              
-            
-          
-        
-          
-          
-          
-          
-          
-            
-              
-                
-                  and Jeremias Sulam
-                
-              
-            
-          
-        
-      </div>
-
-      <div class="periodical">
-      
-        
-          <em>Preprint</em>,
-        
-      
-      
-        2023
-      
-      </div>
-    
-
-    <div class="links">
-    
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-    
-    
-      <a href="http://arxiv.org/abs/2310.14344" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
-
-    <!-- Hidden abstract block -->
-    
-    <div class="abstract hidden">
-      <p> Proximal operators are ubiquitous in inverse problems, commonly appearing as part of algorithmic strategies to regularize problems that are otherwise ill-posed. Modern deep learning models have been brought to bear for these tasks too, as in the framework of plug-and-play or deep unrolling, where they loosely resemble proximal operators. Yet, something essential is lost in employing these purely data-driven approaches: there is no guarantee that a general deep network represents the proximal operator of any function, nor is there any characterization of the function for which the network might provide some approximate proximal. This not only makes guaranteeing convergence of iterative schemes challenging but, more fundamentally, complicates the analysis of what has been learned by these networks about their training data. Herein we provide a framework to develop learned proximal networks (LPN), prove that they provide exact proximal operators for a data-driven nonconvex regularizer, and show how a new training strategy, dubbed proximal matching, provably promotes the recovery of the log-prior of the true data distribution. Such LPN provide general, unsupervised, expressive proximal operators that can be used for general inverse problems with convergence guarantees. We illustrate our results in a series of cases of increasing complexity, demonstrating that these models not only result in state-of-the-art performance, but provide a window into the resulting priors learned from data.</p>
-    </div>
-    
-  </div>
-</div>
 </li></ol>
 
   <h2 class="year">2022</h2>
@@ -1270,6 +1410,8 @@
     
       <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
     
+    
+      <a href="http://arxiv.org/abs/2107.14324" class="btn btn-sm z-depth-0" role="button">arXiv</a>
     
     
       <a href="https://papers.nips.cc/paper/2021/hash/f26df67e8110ee2b44923db775e3e47f-Abstract.html" class="btn btn-sm z-depth-0" role="button">Publication Link</a>

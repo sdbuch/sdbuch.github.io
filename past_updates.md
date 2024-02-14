@@ -12,12 +12,6 @@ permalink: /past_updates/
   Solutions for Inverse Problems](https://neurips.cc/virtual/2023/79286)
   workshop.
 
-- (December 2023) We presented CRATE, our work on a ``white-box'' transformer
-  architecture, at [NeurIPS
-  2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the
-  [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop. *(November
-  2023)*
-
 - (June 2023) We taught a short course at ICASSP 2023 in Rhodes, Greece, titled
   ["Learning Nonlinear and Deep Low-Dimensional Representations from High-Dimensional Data: From Theory to Practice"](https://highdimdata-lowdimmodels-tutorial.github.io/).
 

@@ -6,6 +6,22 @@ permalink: /past_updates/
 ---
 
 
+- (December 2023) [New preprint posted](https://arxiv.org/abs/2310.14344) on
+  methodology for data-driven inverse problem solvers with convergence
+  guarantees. We presented this work at the [NeurIPS 2023 Learning-Based
+  Solutions for Inverse Problems](https://neurips.cc/virtual/2023/79286)
+  workshop.
+
+- (December 2023) We presented CRATE, our work on a ``white-box'' transformer
+  architecture, at [NeurIPS
+  2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the
+  [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop. *(November
+  2023)*
+
+- (June 2023) We taught a short course at ICASSP 2023 in Rhodes, Greece, titled
+  ["Learning Nonlinear and Deep Low-Dimensional Representations from High-Dimensional Data: From Theory to Practice"](https://highdimdata-lowdimmodels-tutorial.github.io/).
+
+
 - (January 2023) I co-organized the third [Workshop on Seeking
   Low-Dimensionality in Deep Neural Networks
   (SLowDNN)](https://slowdnn-workshop.github.io/). [Here is a link to my

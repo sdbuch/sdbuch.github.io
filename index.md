@@ -12,44 +12,60 @@ Wright](http://www.columbia.edu/~jw2966/), and my B.S. in Electrical
 Engineering at the [University of Kansas](https://eecs.ku.edu).
 
 
-My research studies the mathematics of representation learning from the
+I study the mathematics of representation learning from the
 perspective of signals and data. I'm interested in questions that span theory
 and practice &mdash; What structural properties of modern data play a role in the
 success or failure of deep learning? How can we design better deep
 architectures by exploiting these structures? I'm especially interested in
-applications to visual data. 
+applications to visual data.
+
+## Upcoming Events
+
+- **Tutorials:** I will give tutorial lectures on designing deep
+  network architectures to pursue low-dimensional structures in data and our
+  recent white-box transformers work at [ICASSP
+  2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in Seoul (Apr
+  2024) and at [CVPR 2024]() in Seattle (Jun 2024, website TBA).
+
+- **Talk:** I will give the [Redwood
+  Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/) on
+  February 21, 2024.
 
 ## Recent Updates
 
-- (November 2023) Presenting [CRATE](https://ma-lab-berkeley.github.io/CRATE/),
-  a "white-box" transformer neural network architecture with strong performance
-  at scale. "White-box" means we derive each layer of CRATE from first
-  principles, from the perspective of compressing the data distribution with
-  respect to a simple, local model.
-  We'll present this work at [NeurIPS
-  2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the
-  [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop.
 
-- (November 2023) [New preprint posted](https://arxiv.org/abs/2310.14344) on
-  methodology for data-driven inverse problem solvers with convergence
-  guarantees. 
-  We propose learned proximal operators, an *exact* parameterization of proximal
-  operators with deep networks, and proximal matching training, an unsupervised
-  training scheme to learn expressive proximal mappings. 
-  We'll present this work at the [NeurIPS 2023 Learning-Based Solutions for Inverse Problems](https://neurips.cc/virtual/2023/79286) workshop.
+- **Publication:** Learned proximal networks, a methodology for
+  parameterizing, learning, and evaluating expressive priors for data-driven inverse
+  problem solvers with convergence guarantees, will appear in ICLR 2024.
+  Find our extended preprint [on arXiv](https://arxiv.org/abs/2310.14344), with
+  camera-ready additions to appear soon. *(Jan 2024)*
 
-- (October 2023) We presented [TILTED](https://brentyi.github.io/tilted/) at
+- **Publication:** CRATE-MAE, which trains the "white-box" transformer
+  architecture CRATE for unsupervised learning via masked autoencoding, will
+  appear in ICLR 2024. At the heart of this work is a connection between
+  denoising and compression, which we use to derive a corresponding decoder
+  architecture for the CRATE encoder. This work is described in Section 3 of
+  the [complete CRATE paper](https://arxiv.org/abs/2311.13110). *(Jan 2024)*
+
+- **Conference:** I co-organized the inaugural [Conference on
+  Parsimony and Learning (CPAL)](https://cpal.cc), held at Hong Kong University
+  from January 3--6, 2024. Thanks to all who submitted work and gave talks to
+  make the conference a success! *(Jan 2024)*
+
+- **Preprint Release:** The full version of [the CRATE
+  story](http://arxiv.org/abs/2311.13110) is now on arXiv.
+  [CRATE](https://ma-lab-berkeley.github.io/CRATE/) is a "white-box" (yet
+  scalable) transformer architecture where each layer is derived from the
+  principles of compression and sparsification of the input data distribution.
+  This white-box derivation leads CRATE's representations to have surprising
+  [emergent segmentation properties](https://arxiv.org/abs/2308.16271) in
+  vision applications without any complex self-supervised pretraining. *(Nov
+  2023)*
+
+- **Publication:** We presented [TILTED](https://brentyi.github.io/tilted/) at
   ICCV 2023. TILTED improves visual quality, compactness, and interpretability
   for hybrid neural field 3D representations by incorporating geometry into the
-  latent features. We prove that the nonconvex optimization procedure at the
-  heart of our method converges in a simple model problem.
-
-- (July 2023) I am co-organizing the inaugural [Conference on Parsimony and
-  Learning (CPAL)](https://cpal.cc), to be held at Hong Kong University on
-  January 3rd, 2024.
-
-- (June 2023) We taught a short course at ICASSP 2023 in Rhodes, Greece, titled
-  ["Learning Nonlinear and Deep Low-Dimensional Representations from High-Dimensional Data: From Theory to Practice"](https://highdimdata-lowdimmodels-tutorial.github.io/).
+  latent features. Find the full version [on arXiv](https://arxiv.org/abs/2308.15461). *(Oct 2023)*
 
 
 ## [Past Updates]({{ site.baseurl }}/past_updates)

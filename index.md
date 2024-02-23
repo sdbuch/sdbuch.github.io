@@ -24,9 +24,6 @@ applications to visual data.
   recent white-box transformers work at [ICASSP
   2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in Seoul (Apr 2024) and at [CVPR 2024]() in Seattle (Jun 2024, website TBA).
 
-- **Talk:** I will give the [Redwood
-  Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/) on
-  February 21, 2024.
 
 ## Recent Highlights
 
@@ -37,6 +34,10 @@ applications to visual data.
   work made the conference a success! Stay tuned for CPAL 2025. _(Jan 2024)_
 
 ## Recent Updates
+
+- **Talk:** Gave the [Redwood
+  Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/) on
+  February 21, 2024.
 
 - **Publication:** Learned proximal networks, a methodology for
   parameterizing, learning, and evaluating expressive priors for data-driven inverse

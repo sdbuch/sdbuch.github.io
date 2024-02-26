@@ -24,7 +24,6 @@ applications to visual data.
   recent white-box transformers work at [ICASSP
   2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in Seoul (Apr 2024) and at [CVPR 2024]() in Seattle (Jun 2024, website TBA).
 
-
 ## Recent Highlights
 
 - **1st Conference on Parsimony and Learning:** I co-organized the inaugural [Conference on
@@ -36,8 +35,7 @@ applications to visual data.
 ## Recent Updates
 
 - **Talk:** Gave the [Redwood
-  Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/) on
-  February 21, 2024.
+  Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/). _(Feb 2024)_
 
 - **Publication:** Learned proximal networks, a methodology for
   parameterizing, learning, and evaluating expressive priors for data-driven inverse

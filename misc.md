@@ -24,7 +24,8 @@ Columbia University in recognition of his PhD research.
 
 When I was starting the Ph.D. at Columbia in 2017, I led a student seminar on recent
 neural network theory papers. [Here]( {{ site.baseurl }}/nn_seminar/) is the
-link to the papers we discussed.
+link to the papers we discussed. It is now an interesting 'time capsule' of a
+time of great excitement in the field!
 
 ### Links
 

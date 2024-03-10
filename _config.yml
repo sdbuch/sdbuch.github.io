@@ -39,7 +39,7 @@ social-links:
 theme: jekyll-whiteglass
 plugins:
   - jekyll-seo-tag
-  - jekyll-liquify
+    # - jekyll-liquify
     #  - jekyll-remote-theme
 
 permalink: /:year/:month/:day/:title/

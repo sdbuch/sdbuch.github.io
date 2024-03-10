@@ -22,7 +22,7 @@ applications to visual data.
 - **Tutorials:** I will give tutorial lectures on designing deep
   network architectures to pursue low-dimensional structures in data and our
   recent white-box transformers work at [ICASSP
-  2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in Seoul (Apr 2024) and at [CVPR 2024]() in Seattle (Jun 2024, website TBA).
+  2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in Seoul (Apr 2024) and at [CVPR 2024](https://cvpr2024-tutorial-low-dim-models.github.io) in Seattle (Jun 2024).
 
 ## Recent Highlights
 

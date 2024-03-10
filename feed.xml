@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="http://jekyllrb.com" version="3.9.3">Jekyll</generator>
+  <generator uri="http://jekyllrb.com" version="4.3.3">Jekyll</generator>
   
   
   <link href="http://sdbuchanan.com/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://sdbuchanan.com/" rel="alternate" type="text/html" />
-  <updated>2024-03-08T20:28:03-08:00</updated>
+  <updated>2024-03-10T00:05:28-08:00</updated>
   <id>http://sdbuchanan.com//</id>
 
   

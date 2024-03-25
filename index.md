@@ -34,21 +34,27 @@ applications to visual data.
 
 ## Recent Updates
 
+- **Talk:** Gave my annual Research at TTIC talk about [TILTED](https://brentyi.github.io/tilted)! [Here is the
+  video
+  recording](https://uchicago.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=db5b4c2a-96aa-4722-bb5f-b067015c0314).
+
 - **Talk:** Gave the [Redwood
   Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/). _(Feb 2024)_
 
 - **Publication:** Learned proximal networks, a methodology for
   parameterizing, learning, and evaluating expressive priors for data-driven inverse
   problem solvers with convergence guarantees, will appear in ICLR 2024.
-  Find our extended preprint [on arXiv](https://arxiv.org/abs/2310.14344), with
-  camera-ready additions to appear soon. _(Jan 2024)_
+  The camera-ready version of the manuscript can be found
+  [here](https://openreview.net/forum?id=kNPcOaqC5r). _(Jan 2024)_
 
 - **Publication:** [CRATE-MAE](https://ma-lab-berkeley.github.io/CRATE/) will
   appear in ICLR 2024. At the heart of this work is a connection between
   denoising and compression, which we use to derive a corresponding decoder
-  architecture for the "white-box" transformer CRATE encoder. This work is
-  described in Section 3 of the [complete CRATE
-  paper](https://arxiv.org/abs/2311.13110). _(Jan 2024)_
+  architecture for the "white-box" transformer CRATE encoder.
+  The camera-ready version of the manuscript can be found
+  [here](https://openreview.net/forum?id=PvyOYleymy). _(Jan 2024)_
+  <!-- This work is described in Section 3 of the [complete CRATE -->
+  <!-- paper](https://arxiv.org/abs/2311.13110). _(Jan 2024)_ -->
 
 - **Publication:** We presented [CRATE](https://ma-lab-berkeley.github.io/CRATE/) at [NeurIPS
   2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the

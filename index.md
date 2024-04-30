@@ -26,7 +26,7 @@ applications to visual data.
   2024).
 
 - **Travel:** Attending ICLR 2024 in Vienna (May 2024) and BIRS Oaxaca for the
-  "Mathematics of Deep Learning" workshop (Jun 2024).
+  ["Mathematics of Deep Learning" workshop](https://www.birs.ca/events/2024/5-day-workshops/24w5297) (Jun 2024).
 
 ## Recent Highlights
 

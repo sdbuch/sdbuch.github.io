@@ -19,13 +19,21 @@ applications to visual data.
 
 ## Upcoming Events
 
-- **Tutorials:** Giving a tutorial lecture on designing deep network
+- **ICLR 2024**: Presenting two posters in Vienna: _Learned Proximal Networks_
+  (Friday, May 10, a.m. session; [project
+  page](https://zhenghanfang.github.io/learned-proximal-networks/), [ICLR
+  page](https://iclr.cc/virtual/2024/poster/17978)) and _CRATE-MAE_ (Thursday,
+  May 9, a.m. session; [project
+  page](https://ma-lab-berkeley.github.io/CRATE/), [ICLR
+  page](https://iclr.cc/virtual/2024/poster/18688)). Come say hi!
+
+- **Tutorial:** Giving a tutorial lecture on designing deep network
   architectures to pursue low-dimensional structures in data and our recent
   white-box transformers work at [CVPR
   2024](https://cvpr2024-tutorial-low-dim-models.github.io) in Seattle (Jun
   2024).
 
-- **Travel:** Attending ICLR 2024 in Vienna (May 2024) and BIRS Oaxaca for the
+- **Travel:** Will be at BIRS Oaxaca for the
   ["Mathematics of Deep Learning" workshop](https://www.birs.ca/events/2024/5-day-workshops/24w5297) (Jun 2024).
 
 ## Recent Highlights
@@ -59,14 +67,12 @@ applications to visual data.
   <!-- This work is described in Section 3 of the [complete CRATE -->
   <!-- paper](https://arxiv.org/abs/2311.13110). _(Jan 2024)_ -->
 
-
 - **Talk:** Gave my annual Research at TTIC talk about [TILTED](https://brentyi.github.io/tilted)! [Here is the
   video
   recording](https://uchicago.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=db5b4c2a-96aa-4722-bb5f-b067015c0314). _(Mar 2024)_
 
 - **Talk:** Gave the [Redwood
   Seminar](https://redwood.berkeley.edu/seminars/sam-buchanan-feb-2024/). _(Feb 2024)_
-
 
 - **Publication:** We presented [CRATE](https://ma-lab-berkeley.github.io/CRATE/) at [NeurIPS
   2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the

@@ -6,6 +6,15 @@ permalink: /past_updates/
 ---
 
 
+- **ICLR 2024**: Presented two posters in Vienna: _Learned Proximal Networks_
+  (Friday, May 10, a.m. session; [project
+  page](https://zhenghanfang.github.io/learned-proximal-networks/), [ICLR
+  page](https://iclr.cc/virtual/2024/poster/17978)) and _CRATE-MAE_ (Thursday,
+  May 9, a.m. session; [project
+  page](https://ma-lab-berkeley.github.io/CRATE/), [ICLR
+  page](https://iclr.cc/virtual/2024/poster/18688)).
+
+
 - (December 2023) [New preprint posted](https://arxiv.org/abs/2310.14344) on
   methodology for data-driven inverse problem solvers with convergence
   guarantees. We presented this work at the [NeurIPS 2023 Learning-Based

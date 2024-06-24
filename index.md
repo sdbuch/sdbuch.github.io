@@ -17,24 +17,7 @@ success or failure of deep learning? How can we design better deep
 architectures by exploiting these structures? I'm especially interested in
 applications to visual data.
 
-## Upcoming Events
-
-- **ICLR 2024**: Presenting two posters in Vienna: _Learned Proximal Networks_
-  (Friday, May 10, a.m. session; [project
-  page](https://zhenghanfang.github.io/learned-proximal-networks/), [ICLR
-  page](https://iclr.cc/virtual/2024/poster/17978)) and _CRATE-MAE_ (Thursday,
-  May 9, a.m. session; [project
-  page](https://ma-lab-berkeley.github.io/CRATE/), [ICLR
-  page](https://iclr.cc/virtual/2024/poster/18688)). Come say hi!
-
-- **Tutorial:** Giving a tutorial lecture on designing deep network
-  architectures to pursue low-dimensional structures in data and our recent
-  white-box transformers work at [CVPR
-  2024](https://cvpr2024-tutorial-low-dim-models.github.io) in Seattle (Jun
-  2024).
-
-- **Travel:** Will be at BIRS Oaxaca for the
-  ["Mathematics of Deep Learning" workshop](https://www.birs.ca/events/2024/5-day-workshops/24w5297) (Jun 2024).
+<!-- ## Upcoming Events -->
 
 ## Recent Highlights
 
@@ -46,20 +29,24 @@ applications to visual data.
 
 - **White-Box Deep Networks Tutorial:** We delivered a tutorial on building white-box deep neural networks
   at [ICASSP 2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in
-  Seoul. [Slides are
-  available](https://drive.google.com/drive/folders/1j7wtXteUA0dNT8Bl5Q1hVGpBU9_QAzKu),
-  and video recordings will be published soon! _(Apr 2024)_
+  Seoul (Apr 2024), and at [CVPR
+  2024](https://cvpr2024-tutorial-low-dim-models.github.io) in Seattle (Jun
+  2024). The most recent tutorial slides can be found
+  [here](https://www.dropbox.com/home/CVPR-tutorial) (Lectures 2-1 -- 2-3).
 
 ## Recent Updates
 
+- **Talk:** Spoke at the BIRS Oaxaca ["Mathematics of Deep Learning"
+  workshop](https://www.birs.ca/events/2024/5-day-workshops/24w5297) about
+  white-box networks (Jun 2024).
+
 - **Publication:** [Learned proximal networks](https://zhenghanfang.github.io/learned-proximal-networks/), a methodology for
   parameterizing, learning, and evaluating expressive priors for data-driven inverse
-  problem solvers with convergence guarantees, will appear in ICLR 2024.
+  problem solvers with convergence guarantees, appeared in ICLR 2024.
   The camera-ready version of the manuscript can be found
   [here](https://openreview.net/forum?id=kNPcOaqC5r). _(May 2024)_
 
-- **Publication:** [CRATE-MAE](https://ma-lab-berkeley.github.io/CRATE/) will
-  appear in ICLR 2024. At the heart of this work is a connection between
+- **Publication:** [CRATE-MAE](https://ma-lab-berkeley.github.io/CRATE/) appeared in ICLR 2024. At the heart of this work is a connection between
   denoising and compression, which we use to derive a corresponding decoder
   architecture for the "white-box" transformer CRATE encoder.
   The camera-ready version of the manuscript can be found

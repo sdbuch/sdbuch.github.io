@@ -12,8 +12,13 @@ permalink: /past_updates/
   page](https://iclr.cc/virtual/2024/poster/17978)) and _CRATE-MAE_ (Thursday,
   May 9, a.m. session; [project
   page](https://ma-lab-berkeley.github.io/CRATE/), [ICLR
-  page](https://iclr.cc/virtual/2024/poster/18688)).
+  page](https://iclr.cc/virtual/2024/poster/18688)). _(May 2024)_
 
+- **1st Conference on Parsimony and Learning:** I co-organized the inaugural [Conference on
+  Parsimony and Learning (CPAL)](https://2024.cpal.cc), which took place at the
+  University of Hong Kong from January 3--6, 2024. Thanks to all authors,
+  speakers, organizers, and especially to the local team at HKU, whose hard
+  work made the conference a success! Stay tuned for CPAL 2025. _(Jan 2024)_
 
 - (December 2023) [New preprint posted](https://arxiv.org/abs/2310.14344) on
   methodology for data-driven inverse problem solvers with convergence

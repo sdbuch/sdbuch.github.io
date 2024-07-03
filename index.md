@@ -21,11 +21,10 @@ applications to visual data.
 
 ## Recent Highlights
 
-- **1st Conference on Parsimony and Learning:** I co-organized the inaugural [Conference on
-  Parsimony and Learning (CPAL)](https://cpal.cc), which took place at the
-  University of Hong Kong from January 3--6, 2024. Thanks to all authors,
-  speakers, organizers, and especially to the local team at HKU, whose hard
-  work made the conference a success! Stay tuned for CPAL 2025. _(Jan 2024)_
+- **2nd Conference on Parsimony and Learning:** I am co-organizing the second [Conference on
+  Parsimony and Learning (CPAL)](https://cpal.cc), to take place at Stanford
+  University in March 2025! Stay tuned for further updates about paper
+  submission. _(Summer 2024)_
 
 - **White-Box Deep Networks Tutorial:** We delivered a tutorial on building white-box deep neural networks
   at [ICASSP 2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in

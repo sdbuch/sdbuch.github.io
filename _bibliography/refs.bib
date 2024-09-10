@@ -31,7 +31,7 @@ For LaTeX, right delimiters to use are \( and \)
   html      = {https://openreview.net/forum?id=O-6Pm_d_Q-},
   talk      = "https://iclr.cc/virtual/2021/poster/2530",
   talk      = "https://www.youtube.com/watch?v=qloPDlYqnIk",
-  abstract  = {We study the multiple manifold problem, a binary classification task modeled on applications in machine vision, in which a deep fully-connected neural network is trained to separate two low-dimensional submanifolds of the unit sphere. We provide an analysis of the one-dimensional case, proving for a simple manifold configuration that when the network depth \( L \) is large relative to certain geometric and statistical properties of the data, the network width \(n\) grows as a sufficiently large polynomial in \(L\), and the number of i.i.d. samples from the manifolds is polynomial in \(L\), randomly-initialized gradient descent rapidly learns to classify the two manifolds perfectly with high probability. Our analysis demonstrates concrete benefits of depth and width in the context of a practically-motivated model problem: the depth acts as a fitting resource, with larger depths corresponding to smoother networks that can more readily separate the class manifolds, and the width acts as a statistical resource, enabling concentration of the randomly-initialized network and its gradients. The argument centers around the "neural tangent kernel" of Jacot et al. and its role in the nonasymptotic analysis of training overparameterized neural networks; to this literature, we contribute essentially optimal rates of concentration for the neural tangent kernel of deep fully-connected ReLU networks, requiring width \(n \geq L\,\mathrm\{poly\}(d_0)\) to achieve uniform concentration of the initial kernel over a \(d_0\)-dimensional submanifold of the unit sphere \(\mathbb\{S\}^\{n_0-1\}\), and a nonasymptotic framework for establishing generalization of networks trained in the "NTK regime" with structured data. The proof makes heavy use of martingale concentration to optimally treat statistical dependencies across layers of the initial random network. This approach should be of use in establishing similar results for other network architectures.}, 
+  abstract  = {We study the multiple manifold problem, a binary classification task modeled on applications in machine vision, in which a deep fully-connected neural network is trained to separate two low-dimensional submanifolds of the unit sphere. We provide an analysis of the one-dimensional case, proving for a simple manifold configuration that when the network depth \( L \) is large relative to certain geometric and statistical properties of the data, the network width \(n\) grows as a sufficiently large polynomial in \(L\), and the number of i.i.d. samples from the manifolds is polynomial in \(L\), randomly-initialized gradient descent rapidly learns to classify the two manifolds perfectly with high probability. Our analysis demonstrates concrete benefits of depth and width in the context of a practically-motivated model problem: the depth acts as a fitting resource, with larger depths corresponding to smoother networks that can more readily separate the class manifolds, and the width acts as a statistical resource, enabling concentration of the randomly-initialized network and its gradients. The argument centers around the "neural tangent kernel" of Jacot et al. and its role in the nonasymptotic analysis of training overparameterized neural networks; to this literature, we contribute essentially optimal rates of concentration for the neural tangent kernel of deep fully-connected ReLU networks, requiring width \(n \geq L\,\mathrm\{poly\}(d_0)\) to achieve uniform concentration of the initial kernel over a \(d_0\)-dimensional submanifold of the unit sphere \(\mathbb\{S\}^\{n_0-1\}\), and a nonasymptotic framework for establishing generalization of networks trained in the "NTK regime" with structured data. The proof makes heavy use of martingale concentration to optimally treat statistical dependencies across layers of the initial random network. This approach should be of use in establishing similar results for other network architectures.},
 }
 
 @INPROCEEDINGS{Gilboa2019-px,
@@ -205,12 +205,54 @@ For LaTeX, right delimiters to use are \( and \)
   html           = "https://proceedings.mlr.press/v234/yu24a.html"
 }
 
+@article{JMLR:v25:23-1547,
+  author  = "Yu*, Yaodong and Buchanan*, Sam and Pai*, Druv and Chu, Tianzhe
+             and Wu, Ziyang and Tong, Shengbang and Bai, Hao and Zhai,
+             Yuexiang and Haeffele, Benjamin D and Ma, Yi",
+  title   = "White-Box Transformers via Sparse Rate Reduction:
+             Compression Is All There Is?",
+  journal = {Journal of Machine Learning Research},
+  year    = {2024},
+  volume  = {25},
+  month   = sep,
+  pages   = {1--129},
+  html     = {http://jmlr.org/papers/v25/23-1547.html},
+  abstract      = { In this paper, we contend that a natural objective of
+    representation learning is to compress and transform the distribution of the
+      data, say sets of tokens, towards a low-dimensional Gaussian mixture
+      supported on incoherent subspaces. The goodness of such a representation
+      can be evaluated by a principled measure, called sparse rate reduction,
+    that simultaneously maximizes the intrinsic information gain and extrinsic
+      sparsity of the learned representation. From this perspective, popular
+      deep network architectures, including transformers, can be viewed as
+      realizing iterative schemes to optimize this measure. Particularly, we
+      derive a transformer block from alternating optimization on parts of this
+      objective: the multi-head self-attention operator compresses the
+      representation by implementing an approximate gradient descent step on the
+      coding rate of the features, and the subsequent multi-layer perceptron
+      sparsifies the features. This leads to a family of white-box
+      transformer-like deep network architectures, named CRATE, which are
+      mathematically fully interpretable. We show, by way of a novel connection
+      between denoising and compression, that the inverse to the aforementioned
+      compressive encoding can be realized by the same class of CRATE
+      architectures. Thus, the so-derived white-box architectures are universal
+      to both encoders and decoders. Experiments show that these networks,
+    despite their simplicity, indeed learn to compress and sparsify
+      representations of large-scale real-world image and text datasets, and
+      achieve performance very close to highly engineered transformer-based
+      models: ViT, MAE, DINO, BERT, and GPT2. We believe the proposed
+      computational framework demonstrates great potential in bridging the gap
+      between theory and practice of deep learning, from a unified perspective
+      of data compression. },
+  website        = "https://ma-lab-berkeley.github.io/CRATE/",
+  arxivid       = "2311.13110",
+}
 
 
 @ARTICLE{Yu2023-vz,
   title         = "White-Box Transformers via Sparse Rate Reduction:
                    Compression Is All There Is?",
-  author        = "Yu, Yaodong and Buchanan, Sam and Pai, Druv and Chu, Tianzhe
+  author        = "Yu*, Yaodong and Buchanan*, Sam and Pai*, Druv and Chu, Tianzhe
                    and Wu, Ziyang and Tong, Shengbang and Bai, Hao and Zhai,
                    Yuexiang and Haeffele, Benjamin D and Ma, Yi",
   month         =  nov,
@@ -220,8 +262,6 @@ For LaTeX, right delimiters to use are \( and \)
   eprint        = "2311.13110",
   primaryClass  = "cs.LG",
   arxivid       = "2311.13110",
-  abstract      = { In this paper, we contend that a natural objective of representation learning is to compress and transform the distribution of the data, say sets of tokens, towards a low-dimensional Gaussian mixture supported on incoherent subspaces. The goodness of such a representation can be evaluated by a principled measure, called sparse rate reduction, that simultaneously maximizes the intrinsic information gain and extrinsic sparsity of the learned representation. From this perspective, popular deep network architectures, including transformers, can be viewed as realizing iterative schemes to optimize this measure. Particularly, we derive a transformer block from alternating optimization on parts of this objective: the multi-head self-attention operator compresses the representation by implementing an approximate gradient descent step on the coding rate of the features, and the subsequent multi-layer perceptron sparsifies the features. This leads to a family of white-box transformer-like deep network architectures, named CRATE, which are mathematically fully interpretable. We show, by way of a novel connection between denoising and compression, that the inverse to the aforementioned compressive encoding can be realized by the same class of CRATE architectures. Thus, the so-derived white-box architectures are universal to both encoders and decoders. Experiments show that these networks, despite their simplicity, indeed learn to compress and sparsify representations of large-scale real-world image and text datasets, and achieve performance very close to highly engineered transformer-based models: ViT, MAE, DINO, BERT, and GPT2. We believe the proposed computational framework demonstrates great potential in bridging the gap between theory and practice of deep learning, from a unified perspective of data compression. },
-  website        = "https://ma-lab-berkeley.github.io/CRATE/"
 }
 
 @INPROCEEDINGS{Fang2024-ey,

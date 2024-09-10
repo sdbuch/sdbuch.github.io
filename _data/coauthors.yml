@@ -10,6 +10,10 @@
   - firstname: ["Druv"]
     url: https://druvpai.github.io/
 
+"Pai*":
+  - firstname: ["Druv"]
+    url: https://druvpai.github.io/
+
 "Tong":
   - firstname: ["Peter", "Shengbang"]
     url: https://tsb0601.github.io/petertongsb/
@@ -44,6 +48,11 @@
 
 "Fang":
   - firstname: ["Zhenghan"]
+    url: https://zhenghanfang.github.io/
+
+"Fang*":
+  - firstname: ["Zhenghan"]
+    url: https://zhenghanfang.github.io/
 
 "Sulam":
   - firstname: ["Jeremias"]

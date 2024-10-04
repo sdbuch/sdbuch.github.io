@@ -17,14 +17,29 @@ success or failure of deep learning? How can we design better deep
 architectures by exploiting these structures? I'm especially interested in
 applications to visual data.
 
-<!-- ## Upcoming Events -->
+## Upcoming Events
 
-## Recent Highlights
+- **Talks:** This Fall, I will give talks at [Asilomar
+  2024](https://cmsworkshops.com/Asilomar2024/view_session.php?SessionID=1086)
+  and at the [IDEAL Privacy and Interpretability in Generative
+  AI](https://www.ideal-institute.org/2024/09/04/workshop-on-harmonious-human-ai-ecosystems-2/)
+  workshop on white-box transformers. Thanks to the organizers for the
+  invitations to speak!
+
+- **MDS '24 Special Session:** I am co-organizing a SIAM MDS '24 special session
+  on [Mathematical Principles in Foundation
+  Models](https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80543).
+  Stop by on Friday to listen to the outstanding speakers, and check out our
+  interesting [associated poster
+  presentations](https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80908)
+  (titles listed on the minisymposium webpage) at the end of the day!
 
 - **2nd Conference on Parsimony and Learning:** I am co-organizing the second [Conference on
   Parsimony and Learning (CPAL)](https://cpal.cc), to take place at Stanford
   University in March 2025! Stay tuned for further updates about paper
   submission. _(Summer 2024)_
+
+## Recent Highlights
 
 - **White-Box Deep Networks Tutorial:** We delivered a tutorial on building white-box deep neural networks
   at [ICASSP 2024](https://cmsworkshops.com/ICASSP2024/tutorials.php#tut25) in
@@ -34,6 +49,16 @@ applications to visual data.
   [here](https://www.dropbox.com/home/CVPR-tutorial) (Lectures 2-1 -- 2-3).
 
 ## Recent Updates
+
+- **Publication:** The full version of [the CRATE
+  story](http://arxiv.org/abs/2311.13110) has been accepted for publication in
+  JMLR.
+  [CRATE](https://ma-lab-berkeley.github.io/CRATE/) is a "white-box" (yet
+  scalable) *transformer architecture* where each layer is derived from the
+  principles of compression and sparsification of the input data distribution.
+  This white-box derivation leads CRATE's representations to have surprising
+  [emergent segmentation properties](https://arxiv.org/abs/2308.16271) in
+  vision applications without any complex self-supervised pretraining. _(Aug 2024)_
 
 - **Talk:** Spoke at the BIRS Oaxaca ["Mathematics of Deep Learning"
   workshop](https://www.birs.ca/events/2024/5-day-workshops/24w5297) about
@@ -64,14 +89,6 @@ applications to visual data.
   2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the
   [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop. _(Dec 2023)_
 
-- **Preprint Release:** The full version of [the CRATE
-  story](http://arxiv.org/abs/2311.13110) is now on arXiv.
-  [CRATE](https://ma-lab-berkeley.github.io/CRATE/) is a "white-box" (yet
-  scalable) transformer architecture where each layer is derived from the
-  principles of compression and sparsification of the input data distribution.
-  This white-box derivation leads CRATE's representations to have surprising
-  [emergent segmentation properties](https://arxiv.org/abs/2308.16271) in
-  vision applications without any complex self-supervised pretraining. _(Nov 2023)_
 
 - **Publication:** We presented [TILTED](https://brentyi.github.io/tilted/) at
   ICCV 2023. TILTED improves visual quality, compactness, and interpretability

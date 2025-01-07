@@ -19,25 +19,9 @@ applications to visual data.
 
 ## Upcoming Events
 
-- **Talks:** This Fall, I will give talks at [Asilomar
-  2024](https://cmsworkshops.com/Asilomar2024/view_session.php?SessionID=1086)
-  and at the [IDEAL Privacy and Interpretability in Generative
-  AI](https://www.ideal-institute.org/2024/09/04/workshop-on-harmonious-human-ai-ecosystems-2/)
-  workshop on white-box transformers. Thanks to the organizers for the
-  invitations to speak!
-
-- **MDS '24 Special Session:** I am co-organizing a SIAM MDS '24 special session
-  on [Mathematical Principles in Foundation
-  Models](https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80543).
-  Stop by on Friday to listen to the outstanding speakers, and check out our
-  interesting [associated poster
-  presentations](https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80908)
-  (titles listed on the minisymposium webpage) at the end of the day!
-
 - **2nd Conference on Parsimony and Learning:** I am co-organizing the second [Conference on
   Parsimony and Learning (CPAL)](https://cpal.cc), to take place at Stanford
-  University in March 2025! Stay tuned for further updates about paper
-  submission. _(Summer 2024)_
+  University in March 2025!
 
 ## Recent Highlights
 
@@ -49,6 +33,19 @@ applications to visual data.
   [here](https://www.dropbox.com/home/CVPR-tutorial) (Lectures 2-1 -- 2-3).
 
 ## Recent Updates
+
+- **Talk:** Spoke at the [IDEAL Privacy and Interpretability in Generative
+  AI](https://www.ideal-institute.org/2024/09/04/workshop-on-harmonious-human-ai-ecosystems-2/)
+  workshop. _(Nov 2024)_
+
+- **Talk:** Spoke at [Asilomar
+  2024](https://cmsworkshops.com/Asilomar2024/view_session.php?SessionID=1086).
+  _(Oct 2024)_
+
+- **MDS '24 Special Session:** Co-organizing a SIAM MDS '24 special session
+  on [Mathematical Principles in Foundation
+  Models](https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=80543).
+  _(Oct 2024)_
 
 - **Publication:** The full version of [the CRATE
   story](http://arxiv.org/abs/2311.13110) has been accepted for publication in
@@ -88,7 +85,6 @@ applications to visual data.
 - **Publication:** We presented [CRATE](https://ma-lab-berkeley.github.io/CRATE/) at [NeurIPS
   2023](https://neurips.cc/virtual/2023/poster/71567), and as an oral in the
   [XAI in Action](https://neurips.cc/virtual/2023/75163) workshop. _(Dec 2023)_
-
 
 - **Publication:** We presented [TILTED](https://brentyi.github.io/tilted/) at
   ICCV 2023. TILTED improves visual quality, compactness, and interpretability

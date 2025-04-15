@@ -113,11 +113,14 @@ DEPENDENCIES
   jekyll
   jekyll-feed
   jekyll-liquify
+  jekyll-paginate
   jekyll-scholar
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-whiteglass
   kramdown-parser-gfm
   rake
+  rouge
   webrick
 
 BUNDLED WITH

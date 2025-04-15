@@ -1,0 +1,28 @@
+---
+---
+<div class="bibcompact" id="{{entry.key}}">
+  <span class="title">{{entry.title}}.</span>
+  <span class="author">
+        {% for author in entry.author_array %}
+            {% unless forloop.last %}
+              {{author.first}} {{author.last}},
+            {% else %}
+              {{author.first}} {{author.last}}.
+              {% endunless %}
+    {% endfor %}
+  </span>
+  <span class="publication">
+      {% if entry.type == "article" %}
+        {% if entry.journal %}
+          {{entry.journal}},
+        {% elsif entry.arxivid %}
+        Preprint (<a href='https://arxiv.org/abs/{{entry.arxivid}}'>arXiv</a>),
+        {% endif %}
+      {% elsif entry.type == "inproceedings" %}
+        In {{entry.booktitle}},
+      {% elsif entry.type == "phdthesis" %}
+        PhD Thesis,
+      {% endif %}
+      {{entry.year}}.
+  </span>
+</div>

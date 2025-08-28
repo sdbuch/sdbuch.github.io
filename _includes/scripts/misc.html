@@ -1,2 +1,138 @@
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
+
+<!-- Littlefoot for footnotes and citations -->
+<script src="https://cdn.jsdelivr.net/npm/littlefoot@4/dist/littlefoot.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/littlefoot@4/dist/littlefoot.css">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Littlefoot for standard footnotes
+  littlefoot.littlefoot({
+    buttonTemplate: '<button aria-expanded="false" class="littlefoot__button" id="<% id %>" title="See Footnote"><% number %></button>',
+    activateDelay: 100,
+    activateCallback: function(popover, button) {
+      // Render MathJax in the footnote popup
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([popover]).catch(function (err) {
+          console.log('MathJax typeset failed: ' + err.message);
+        });
+      }
+    },
+    allowMultiple: true,
+    dismissDelay: 500,
+    hoverDelay: 250,
+    numberResetSelector: 'article',
+    scope: 'body'
+  });
+
+  // Custom handler for jekyll-scholar citations
+  const citeLinks = document.querySelectorAll('a[href*="#"]');
+  citeLinks.forEach(function(link) {
+    // Check if this is a citation link (points to bibliography)
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#') && href.match(/^#[A-Za-z]/)) {
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      // If target exists and looks like a bibliography entry
+      if (targetElement && (targetElement.closest('.bibliography') || targetElement.tagName === 'LI')) {
+        link.addEventListener('mouseenter', function(e) {
+          showCitationPopup(e, targetElement);
+        });
+        
+        link.addEventListener('mouseleave', function() {
+          hideCitationPopup();
+        });
+        
+        // Prevent default click behavior for hover-only interaction
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+      }
+    }
+  });
+});
+
+let citationPopup = null;
+let hideTimeout = null;
+let showTimeout = null;
+
+function showCitationPopup(event, targetElement) {
+  // Clear any pending show/hide operations
+  if (hideTimeout) {
+    clearTimeout(hideTimeout);
+    hideTimeout = null;
+  }
+  if (showTimeout) {
+    clearTimeout(showTimeout);
+    showTimeout = null;
+  }
+  
+  // Immediately hide any existing popup
+  if (citationPopup && citationPopup.parentNode) {
+    citationPopup.parentNode.removeChild(citationPopup);
+    citationPopup = null;
+  }
+  
+  // Show new popup after a short delay to prevent flicker
+  showTimeout = setTimeout(function() {
+    // Create popup
+    citationPopup = document.createElement('div');
+    citationPopup.className = 'littlefoot__popover citation-popup';
+    citationPopup.innerHTML = '<div class="littlefoot__content citation-content">' + targetElement.innerHTML + '</div>';
+    
+    // Position popup
+    const rect = event.target.getBoundingClientRect();
+    citationPopup.style.position = 'absolute';
+    citationPopup.style.top = (rect.bottom + window.scrollY + 5) + 'px';
+    citationPopup.style.left = rect.left + 'px';
+    citationPopup.style.zIndex = '1000';
+    citationPopup.style.maxWidth = '400px';
+    
+    document.body.appendChild(citationPopup);
+    
+    // Render MathJax in the popup
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([citationPopup]).catch(function (err) {
+        console.log('MathJax typeset failed: ' + err.message);
+      });
+    }
+    
+    // Add hover handlers to keep popup open
+    citationPopup.addEventListener('mouseenter', function() {
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+        hideTimeout = null;
+      }
+    });
+    
+    citationPopup.addEventListener('mouseleave', function() {
+      hideCitationPopup();
+    });
+    
+    showTimeout = null;
+  }, 50);
+}
+
+function hideCitationPopup() {
+  // Clear any pending show operation
+  if (showTimeout) {
+    clearTimeout(showTimeout);
+    showTimeout = null;
+  }
+  
+  // Clear any existing hide timeout
+  if (hideTimeout) {
+    clearTimeout(hideTimeout);
+  }
+  
+  hideTimeout = setTimeout(function() {
+    if (citationPopup && citationPopup.parentNode) {
+      citationPopup.parentNode.removeChild(citationPopup);
+      citationPopup = null;
+    }
+    hideTimeout = null;
+  }, 100);
+}
+</script>

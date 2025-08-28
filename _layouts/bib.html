@@ -79,6 +79,10 @@
         <em>In {{entry.booktitle}}</em>,
       {% elsif entry.type == "phdthesis" %}
         <em>PhD Thesis</em>,
+      {% elsif entry.type == "book" %}
+        {% if entry.publisher %}
+          <em>{{entry.publisher}}</em>,
+        {% endif %}
       {% endif %}
       {% if entry.year %}
         {{entry.year}}

@@ -5,6 +5,8 @@ main:
     url: /
   - title: "Publications"
     url: /publications/
+  - title: "Blog"
+    url: /blog/
   - title: "Misc."
     url: /misc/
   - title: "CV"

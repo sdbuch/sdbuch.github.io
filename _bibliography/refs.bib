@@ -273,3 +273,82 @@ For LaTeX, right delimiters to use are \( and \)
   html       = "https://openreview.net/forum?id=PvyOYleymy",
   abstract  = { Modern learning frameworks often train deep neural networks with massive amounts of unlabeled data to learn representations by solving simple pretext tasks, then use the representations as foundations for downstream tasks. These networks are empirically designed; as such, they are usually not interpretable, their representations are not structured, and their designs are potentially redundant. White-box deep networks, in which each layer explicitly identifies and transforms structures in the data, present a promising alternative. However, existing white-box architectures have only been shown to work at scale in supervised settings with labeled data, such as classification. In this work, we provide the first instantiation of the white-box design paradigm that can be applied to large-scale unsupervised representation learning. We do this by exploiting a fundamental connection between diffusion, compression, and (masked) completion, deriving a deep transformer-like masked autoencoder architecture, called CRATE-MAE, in which the role of each layer is mathematically fully interpretable: they transform the data distribution to and from a structured representation. Extensive empirical evaluations confirm our analytical insights. CRATE-MAE demonstrates highly promising performance on large-scale imagery datasets while using only ~30\% of the parameters compared to the standard masked autoencoder with the same model configuration. The representations learned by CRATE-MAE have explicit structure and also contain semantic meaning.}
 }
+
+@ARTICLE{Buchanan2025-dw,
+  title         = "On the edge of memorization in diffusion models",
+  author        = "Buchanan*, Sam and Pai*, Druv and Ma, Yi and Bortoli, Valentin
+                   De",
+  month         =  aug,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2508.17689",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2508.17689",
+  arxivid        = "2508.17689",
+  code           = "https://github.com/DruvPai/diffusion_mem_gen"
+}
+
+@ARTICLE{Fang2025-kg,
+  title         = "Beyond Scores: Proximal Diffusion Models",
+  author        = "Fang, Zhenghan and Díaz, Mateo and Buchanan, Sam and Sulam,
+                   Jeremias",
+  month         =  jul,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2507.08956",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2507.08956",
+  arxivid        = "2507.08956"
+}
+
+
+@book{ldrdd2025,
+  title={Learning Deep Representations of Data Distributions},
+  author={Buchanan*, Sam and Pai*, Druv and Wang, Peng and Ma, Yi},
+  month=aug,
+  year={2025},
+  publisher={Online},
+  note={\url{https://ma-lab-berkeley.github.io/deep-representation-learning-book/}.},
+  html = "https://ma-lab-berkeley.github.io/deep-representation-learning-book/",
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      Jax blog references
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{scaling-book,
+    title = {How to Scale Your Model},
+    author = {Austin, Jacob and Douglas, Sholto and Frostig, Roy and Levskaya, Anselm and Chen, Charlie and Vikram, Sharad
+        and Lebron, Federico and Choy, Peter and Ramasesh, Vinay and Webson, Albert and Pope, Reiner},
+    publisher = {Google DeepMind},
+    howpublished = {Online},
+    url = {https://jax-ml.github.io/scaling-book/},
+    year = {2025},
+    exclude = {true},
+}
+
+@online{jax_sharded_computation,
+  title = {Introduction to parallel programming},
+  author = {{JAX Team}},
+  organization = {Google},
+  url = {https://docs.jax.dev/en/latest/sharded-computation.html},
+  urldate = {2025-08-20},
+  year = {2025},
+  note = {JAX Documentation},
+  exclude = {true},
+}
+
+@online{jax-explicit-sharding,
+  title = {Explicit sharding (a.k.a. ``sharding in types'')},
+  author = {{JAX Team}},
+  organization = {Google},
+  url = {https://docs.jax.dev/en/latest/notebooks/explicit-sharding.html},
+  urldate = {2025-08-26},
+  year = {2025},
+  note = {JAX Documentation},
+  exclude = {true},
+}
+

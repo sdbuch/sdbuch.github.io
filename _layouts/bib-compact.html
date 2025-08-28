@@ -1,28 +1,42 @@
 ---
 ---
 <div class="bibcompact" id="{{entry.key}}">
-  <span class="title">{{entry.title}}.</span>
   <span class="author">
-        {% for author in entry.author_array %}
-            {% unless forloop.last %}
-              {{author.first}} {{author.last}},
-            {% else %}
-              {{author.first}} {{author.last}}.
-              {% endunless %}
-    {% endfor %}
+    {%- for author in entry.author_array -%}
+      {%- unless forloop.first -%}
+        {%- if forloop.last -%}
+          {%- if entry.author_array.size > 2 -%}, & {% else %} & {% endif -%}
+        {%- else -%}
+          , {% endif -%}
+      {%- endunless -%}
+      {%- if author.first == "" -%}
+        {{author.last}}
+      {%- else -%}
+        {{author.last}}, {{author.first | slice: 0}}.
+      {%- endif -%}
+    {%- endfor -%}
   </span>
+  <span class="year">({{entry.year}}).</span>
+  <span class="title"><em>{{entry.title}}</em>.</span>
   <span class="publication">
-      {% if entry.type == "article" %}
-        {% if entry.journal %}
-          {{entry.journal}},
-        {% elsif entry.arxivid %}
-        Preprint (<a href='https://arxiv.org/abs/{{entry.arxivid}}'>arXiv</a>),
-        {% endif %}
-      {% elsif entry.type == "inproceedings" %}
-        In {{entry.booktitle}},
-      {% elsif entry.type == "phdthesis" %}
-        PhD Thesis,
+    {% if entry.type == "article" %}
+      {% if entry.journal %}
+        <em>{% if entry.url %}<a href="{{ entry.url }}">{{entry.journal}}</a>{% else %}{{entry.journal}}{% endif %}</em>{% if entry.volume %}, <em>{{entry.volume}}</em>{% endif %}{% if entry.number %}({{entry.number}}){% endif %}{% if entry.pages %}, {{entry.pages}}{% endif %}.
+      {% elsif entry.arxivid %}
+        <em>arXiv preprint</em>. <a href='https://arxiv.org/abs/{{entry.arxivid}}'>https://arxiv.org/abs/{{entry.arxivid}}</a>
+      {% elsif entry.publisher and entry.publisher contains 'online' or entry.publisher contains 'Online' %}
+        Retrieved from <a href="{{ entry.url }}">{{ entry.url }}</a>
+      {% elsif entry.howpublished and entry.howpublished contains 'online' or entry.howpublished contains 'Online' %}
+        Retrieved from <a href="{{ entry.url }}">{{ entry.url }}</a>
       {% endif %}
-      {{entry.year}}.
+    {% elsif entry.type == "online" %}
+      Retrieved from <a href="{{ entry.url }}">{{ entry.url }}</a>{% if entry.urldate %}. (Accessed {{entry.urldate}}){% endif %}
+    {% elsif entry.type == "inproceedings" %}
+      In <em>{{entry.booktitle}}</em>{% if entry.pages %} (pp. {{entry.pages}}){% endif %}. {% if entry.publisher %}{{entry.publisher}}{% endif %}.
+    {% elsif entry.type == "phdthesis" %}
+      <em>Doctoral dissertation</em>. {% if entry.school %}{{entry.school}}{% endif %}.
+    {% elsif entry.type == "book" %}
+      {% if entry.publisher %}<em>{{entry.publisher}}</em>, {{entry.year}}.{% endif %}
+    {% endif %}
   </span>
 </div>

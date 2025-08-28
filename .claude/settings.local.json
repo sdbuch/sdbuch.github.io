@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(git log:*)",
+      "WebFetch(domain:simpleicons.org)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

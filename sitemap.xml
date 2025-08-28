@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://sdbuchanan.com/blog/jax-1/</loc>
+<lastmod>2025-08-20T00:00:00-07:00</lastmod>
+</url>
+<url>
 <loc>http://sdbuchanan.com/archives/</loc>
+</url>
+<url>
+<loc>http://sdbuchanan.com/blog/</loc>
 </url>
 <url>
 <loc>http://sdbuchanan.com/</loc>
@@ -19,8 +26,11 @@
 <loc>http://sdbuchanan.com/nn_seminar/</loc>
 </url>
 <url>
+<loc>http://sdbuchanan.com/categories/jax/</loc>
+</url>
+<url>
 <loc>http://sdbuchanan.com/assets/cv.pdf</loc>
-<lastmod>2025-01-14T15:11:01-08:00</lastmod>
+<lastmod>2024-09-10T14:57:11-07:00</lastmod>
 </url>
 <url>
 <loc>http://sdbuchanan.com/assets/pdf/sslista_deck.pdf</loc>

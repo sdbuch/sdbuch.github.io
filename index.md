@@ -12,10 +12,10 @@ Electrical Engineering at [Columbia University](https://ee.columbia.edu).
 <!-- TODO: Rewrite/Rebrand! -->
 I study the mathematics of representation learning from the
 perspective of signals and data. I'm interested in questions that span theory
-and practice &mdash; What structural properties of modern data play a role in the
-success or failure of deep learning? How can we design better deep
-architectures by exploiting these structures? I'm especially interested in
-applications to visual data.
+and practice &mdash; What structural properties of modern data underlie the
+successes of deep learning? How can we scale our models more effectively by
+exploiting this structure? I’m especially interested in transformers, and
+applications to text and visual data.
 
 
 ## Recent Highlights

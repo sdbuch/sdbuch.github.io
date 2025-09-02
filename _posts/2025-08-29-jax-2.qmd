@@ -1,0 +1,39 @@
+---
+layout: post
+title: "SPMD in JAX #2: Model Parallelism Strategies"
+date: 2025-08-29
+categories: jax
+bibliography: refs.bib
+published: false
+---
+
+In this second post in a series on programming with JAX for training
+models like transformers, we begin 
+discussing 
+The notes are based on two tutorials on sharding: {% cite scaling-book %}
+and {% cite jax_sharded_computation %}, as well as some 'original research'.
+
+* TOC
+{:toc}
+
+### Setup
+
+Here's the environment we will be working in---using Python 3.13 and JAX 0.7.1,
+on a single TPU v4 host.
+
+```python
+from functools import partial
+
+import jax
+import jax.numpy as jnp
+
+jax.devices()
+```
+```
+Output:
+[TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0),
+ TpuDevice(id=1, process_index=0, coords=(1,0,0), core_on_chip=0),
+ TpuDevice(id=2, process_index=0, coords=(0,1,0), core_on_chip=0),
+ TpuDevice(id=3, process_index=0, coords=(1,1,0), core_on_chip=0)]
+```
+

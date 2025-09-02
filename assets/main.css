@@ -8,6 +8,25 @@
 }
 #contact-container .pic {
   float: left;
+  width: 250px;
+  height: 250px;
+}
+#contact-container .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  #contact-container .pic {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  #contact-container .pic img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 #contact-container .info {
   float: left;
@@ -807,9 +826,9 @@ code.highlighter-rouge {
 }
 
 .littlefoot__popover,
-.littlefoot__popover *:not(.MathJax):not([class*=mjx]):not(mjx-container):not(mjx-math),
+.littlefoot__popover *:not(.MathJax):not([class*=mjx]):not(mjx-container):not(mjx-math):not(code):not(.highlight):not(pre),
 .citation-popup,
-.citation-popup *:not(.MathJax):not([class*=mjx]):not(mjx-container):not(mjx-math) {
+.citation-popup *:not(.MathJax):not([class*=mjx]):not(mjx-container):not(mjx-math):not(code):not(.highlight):not(pre) {
   font-family: "Open Sans", sans-serif !important;
 }
 
@@ -885,6 +904,21 @@ a[href^="#"]:not(.footnote):not(.reversefootnote):hover {
 }
 .littlefoot__popover mjx-container mjx-math, .citation-popup mjx-container mjx-math {
   font-family: inherit !important;
+}
+.littlefoot__popover code, .littlefoot__popover tt, .citation-popup code, .citation-popup tt {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  background-color: #f6f8fa !important;
+  border-radius: 3px !important;
+  padding: 0.2em 0.4em !important;
+  font-size: 85% !important;
+  color: #24292e !important;
+  font-weight: 500 !important;
+}
+.littlefoot__popover pre, .citation-popup pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
+.littlefoot__popover .highlight, .citation-popup .highlight {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
 
 .publications {

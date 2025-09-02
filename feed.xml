@@ -5,7 +5,7 @@
   
   <link href="http://sdbuchanan.com/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://sdbuchanan.com/" rel="alternate" type="text/html" />
-  <updated>2025-08-28T16:10:50-07:00</updated>
+  <updated>2025-09-01T20:21:27-07:00</updated>
   <id>http://sdbuchanan.com//</id>
 
   
@@ -844,8 +844,8 @@ Here’s how to parse it above:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Types are relatively self-explanatory, aside from the text in braces—the
 first sequence of integers here is most important, and it specifies the memory
-layout of the array. Axis indices are listed in minor-to-major order (i.e.,
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 0&lt;/code&gt; denotes row-major layout).&lt;/li&gt;
+layout of the array (see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;layout.h&lt;/code&gt; in the XLA source). Axis indices are
+listed in minor-to-major order (i.e., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 0&lt;/code&gt; denotes row-major layout).&lt;/li&gt;
   &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;all-gather&lt;/code&gt; semantics are clear at a high level: we gather along
 dimension $1$ of our array. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;replica_groups&lt;/code&gt; argument specifies which
 devices communicate in the gather (see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tile_assignment.h&lt;/code&gt; in the XLA
@@ -1180,7 +1180,7 @@ their algebra.&lt;/li&gt;
 therein when we manipulate sharded arrays.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;We also recapitulated information from the TPU Scaling book about how to
+&lt;p&gt;We also recapped information from the TPU Scaling book about how to
 interpret performance tradeoffs between these different forms of communication.&lt;/p&gt;
 
 &lt;h1 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;/h1&gt;

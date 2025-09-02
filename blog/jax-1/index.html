@@ -1199,8 +1199,8 @@ Here’s how to parse it above:</p>
 <ul>
   <li>Types are relatively self-explanatory, aside from the text in braces—the
 first sequence of integers here is most important, and it specifies the memory
-layout of the array. Axis indices are listed in minor-to-major order (i.e.,
-<code class="language-plaintext highlighter-rouge">1, 0</code> denotes row-major layout).</li>
+layout of the array (see <code class="language-plaintext highlighter-rouge">layout.h</code> in the XLA source). Axis indices are
+listed in minor-to-major order (i.e., <code class="language-plaintext highlighter-rouge">1, 0</code> denotes row-major layout).</li>
   <li>The <code class="language-plaintext highlighter-rouge">all-gather</code> semantics are clear at a high level: we gather along
 dimension $1$ of our array. The <code class="language-plaintext highlighter-rouge">replica_groups</code> argument specifies which
 devices communicate in the gather (see <code class="language-plaintext highlighter-rouge">tile_assignment.h</code> in the XLA
@@ -1535,7 +1535,7 @@ their algebra.</li>
 therein when we manipulate sharded arrays.</li>
 </ol>
 
-<p>We also recapitulated information from the TPU Scaling book about how to
+<p>We also recapped information from the TPU Scaling book about how to
 interpret performance tradeoffs between these different forms of communication.</p>
 
 <h1 id="acknowledgments">Acknowledgments</h1>

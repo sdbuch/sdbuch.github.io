@@ -132,11 +132,11 @@ code.highlighter-rouge {
   }
 }
 
-// Override all Littlefoot styles with high specificity, but exclude MathJax elements
+// Override all Littlefoot styles with high specificity, but exclude MathJax and code elements
 .littlefoot__popover,
-.littlefoot__popover *:not(.MathJax):not([class*="mjx"]):not(mjx-container):not(mjx-math),
+.littlefoot__popover *:not(.MathJax):not([class*="mjx"]):not(mjx-container):not(mjx-math):not(code):not(.highlight):not(pre),
 .citation-popup,
-.citation-popup *:not(.MathJax):not([class*="mjx"]):not(mjx-container):not(mjx-math) {
+.citation-popup *:not(.MathJax):not([class*="mjx"]):not(mjx-container):not(mjx-math):not(code):not(.highlight):not(pre) {
   font-family: "Open Sans", sans-serif !important;
 }
 
@@ -235,5 +235,24 @@ a[href^="#"]:not(.footnote):not(.reversefootnote) {
     mjx-math {
       font-family: inherit !important;
     }
+  }
+  
+  // Fix monospace code rendering in footnote popups
+  code, tt {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    background-color: #f6f8fa !important;
+    border-radius: 3px !important;
+    padding: 0.2em 0.4em !important;
+    font-size: 85% !important;
+    color: #24292e !important;
+    font-weight: 500 !important;
+  }
+  
+  pre {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  }
+  
+  .highlight {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
   }
 }

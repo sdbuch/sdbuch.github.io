@@ -838,8 +838,8 @@ of a public spec.[^8]
 Here's how to parse it above:
 - Types are relatively self-explanatory, aside from the text in braces---the
   first sequence of integers here is most important, and it specifies the memory
-  layout of the array. Axis indices are listed in minor-to-major order (i.e.,
-  `1, 0` denotes row-major layout).
+  layout of the array (see `layout.h` in the XLA source). Axis indices are
+  listed in minor-to-major order (i.e., `1, 0` denotes row-major layout).
 - The `all-gather` semantics are clear at a high level: we gather along
   dimension $1$ of our array. The `replica_groups` argument specifies which
   devices communicate in the gather (see `tile_assignment.h` in the XLA
@@ -1193,7 +1193,7 @@ This turned out to be on the longer side! But we have two valuable takeaways:
 2. The ability to read HLO and parse the communications primitives that arise
    therein when we manipulate sharded arrays.
 
-We also recapitulated information from the TPU Scaling book about how to
+We also recapped information from the TPU Scaling book about how to
 interpret performance tradeoffs between these different forms of communication.
 
 

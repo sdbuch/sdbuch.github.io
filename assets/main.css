@@ -46,12 +46,6 @@
   #contact-container .info p {
     font-size: 13px;
   }
-  #contact-container .info #email-small {
-    display: block;
-  }
-  #contact-container .info #address {
-    display: none;
-  }
 }
 
 #icon-container {

@@ -12,9 +12,30 @@ dependencies = [
     "jupyter-client>=8.6.3",
     "matplotlib>=3.10.5",
     "matplotlib-backend-sixel>=0.1.0",
+    "optax>=0.2.5",
     "pynvim>=0.5.2",
     "pytest>=8.4.1",
     "requests>=2.32.5",
     "treescope>=0.1.10",
     "websocket-client>=1.8.0",
 ]
+
+[tool.ruff]
+# Basic configuration
+line-length = 88
+
+# Rule selection
+select = ["E", "W", "F"]  # Error, Warning, and Pyflakes rules
+
+# Rules to ignore
+ignore = [
+    "F401",  # Unused import
+    "F821",  # Undefined name
+    "E402",  # Module level import not at top of file
+    "F841",  # Local variable assigned but not used
+]
+
+[tool.ruff.lint]
+# Enable fix mode (equivalent to --fix flag)
+fixable = ["ALL"]
+unfixable = []

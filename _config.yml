@@ -103,6 +103,8 @@ kramdown:
 rouge:
   css_class: 'highlight'
   default_lang: python
+  block:
+    highlight_lines: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

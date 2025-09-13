@@ -24,6 +24,11 @@ dependencies = [
 # Basic configuration
 line-length = 88
 
+[tool.ruff.lint]
+# Enable fix mode (equivalent to --fix flag)
+fixable = ["ALL"]
+unfixable = []
+
 # Rule selection
 select = ["E", "W", "F"]  # Error, Warning, and Pyflakes rules
 
@@ -34,8 +39,3 @@ ignore = [
     "E402",  # Module level import not at top of file
     "F841",  # Local variable assigned but not used
 ]
-
-[tool.ruff.lint]
-# Enable fix mode (equivalent to --fix flag)
-fixable = ["ALL"]
-unfixable = []

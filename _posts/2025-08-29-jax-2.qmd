@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SPMD in JAX #2: Transformers in Bare-Metal JAX"
-date: 2025-08-29
+date: 2025-09-12
 categories: jax transformers
 bibliography: refs.bib
 ---

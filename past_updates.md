@@ -5,6 +5,9 @@ description: Archived updates from the homepage.
 permalink: /past_updates/
 ---
 
+- **2nd Conference on Parsimony and Learning:** I co-organized the second
+  [Conference on Parsimony and Learning (CPAL)](https://2025.cpal.cc). Thanks to all
+  attendees for making it a success! _(Mar 2025)_
 
 - **Talk:** Spoke at the [IDEAL Privacy and Interpretability in Generative
   AI](https://www.ideal-institute.org/2024/09/04/workshop-on-harmonious-human-ai-ecosystems-2/)

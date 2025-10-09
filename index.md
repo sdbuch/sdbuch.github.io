@@ -9,7 +9,6 @@ Berkeley](https://berkeley.edu).
 Previously, I was at [TTIC](https://ttic.edu), after finishing my PhD in
 Electrical Engineering at [Columbia University](https://ee.columbia.edu).
 
-<!-- TODO: Rewrite/Rebrand! -->
 I study the mathematics of representation learning from the
 perspective of signals and data. I'm interested in questions that span theory
 and practice &mdash; What structural properties of modern data underlie the
@@ -29,25 +28,23 @@ applications to text and visual data.
   Chapters 3 and 6 for our take on diffusion, endorsed by the great [Kevin
   Murphy](https://x.com/sirbayes/status/1960358766270107807)!
 
-## Upcoming Events
-
-- **Tutorials:** I will be lecturing on topics from our new book at IAISS 2025
-  in sunny Tuscany, Italy [(link)](https://2025.iaiss.cc/), and at ICCV 2025 in
-  sunny Honolulu, Hawaii
-  [(link)](https://iccv.thecvf.com/virtual/2025/tutorial/2852).
-
-
-## Recent Updates
+- **Accepted Papers:** Two papers accepted to NeurIPS 2025! One on a theoretical analysis of
+  memorization and generalization in diffusion models [(link)](https://arxiv.org/abs/2508.17689), and one on
+  building diffusion models with proximal operators, leading to fewer NFEs at
+  sampling time [(link)](https://arxiv.org/abs/2507.08956).  _(Sep 2025)_
 
 - **New Job:** I'm starting as a postdoc at UC Berkeley! _(Sep 2025)_
 
-- **Preprint:** Two new preprints posted! One on a theoretical analysis of
-  memorization and generalization in diffusion models [(link)](https://arxiv.org/abs/2508.17689), and one on
-  building diffusion models with proximal operators, leading to fewer NFEs at
-  sampling time [(link)](https://arxiv.org/abs/2507.08956).  _(Aug 2025)_
+## Upcoming Events
 
-- **2nd Conference on Parsimony and Learning:** I co-organized the second
-  [Conference on Parsimony and Learning (CPAL)](https://cpal.cc). Thanks to all
-  attendees for making it a success! _(Mar 2025)_
+- **Tutorials:** I will be lecturing on topics from our new book at ICCV 2025 in
+  sunny Honolulu, Hawaii
+  [(link)](https://iccv.thecvf.com/virtual/2025/tutorial/2852) on October 19th.
+
+- **3rd Conference on Parsimony and Learning:** I am co-organizing the third
+  [Conference on Parsimony and Learning (CPAL)](https://cpal.cc). This year, the
+  conference will be held in Tübingen, Germany. Submit your work (early December
+  deadline) and attend!
+
 
 ## [Past Updates]({{ site.baseurl }}/past_updates)

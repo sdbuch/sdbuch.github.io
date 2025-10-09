@@ -1,0 +1,60 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to main branch
+  workflow_dispatch:  # Allow manual trigger from Actions tab
+
+# Sets permissions of the GITHUB_TOKEN
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all branches
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'  # Match your .ruby-version
+          bundler-cache: true  # Installs gems from Gemfile.lock and caches them
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy to gh-pages
+        run: |
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create a temporary directory for the built site
+          cp -r _site /tmp/site-build
+
+          # Switch to gh-pages branch (create if it doesn't exist)
+          git fetch origin gh-pages:gh-pages 2>/dev/null || git checkout --orphan gh-pages
+          git checkout gh-pages
+
+          # Remove all files except .git
+          git rm -rf . 2>/dev/null || true
+
+          # Copy built site to root
+          cp -r /tmp/site-build/* .
+          cp /tmp/site-build/.* . 2>/dev/null || true
+
+          # Create .nojekyll file to bypass GitHub Pages Jekyll processing
+          touch .nojekyll
+
+          # Commit and push
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "Deploy site built from ${GITHUB_SHA}"
+          git push origin gh-pages

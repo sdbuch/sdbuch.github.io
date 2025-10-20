@@ -5,7 +5,7 @@
   
   <link href="http://sdbuchanan.com/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://sdbuchanan.com/" rel="alternate" type="text/html" />
-  <updated>2025-10-20T11:35:24+00:00</updated>
+  <updated>2025-10-20T12:27:27+00:00</updated>
   <id>http://sdbuchanan.com//</id>
 
   
@@ -44,6 +44,14 @@ parameters—say, weights in a transformer—that ensures that both the update
 directions and the parameters themselves are well-conditioned &lt;a class=&quot;citation&quot; href=&quot;#bernstein2025manifolds&quot;&gt;(Bernstein, 2025)&lt;/a&gt;.
 This algorithm, called &lt;em&gt;manifold Muon&lt;/em&gt;, has an inner loop that is relatively slow to
 converge, and requires some hyperparameter tuning to get right.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/blog/admm-dual-ascent.png&quot; alt=&quot;Comparing
+    dual ascent to ADMM rate of convergence&quot; /&gt;
+    &lt;figcaption&gt;Comparison of the default manifold Muon inner loop solver (dual ascent)
+    to a solver based on ADMM, for one weight matrix in a neural network being trained.
+    ADMM converges much more rapidly!&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;In this post, we’ll describe a modification of the manifold Muon algorithm that greatly
 speeds up convergence—by more than a factor of two in wall-clock time in our experiments

@@ -6,15 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-  
-  
-  <title>SPMD in JAX #1: Sharding</title>
-  <meta name="description" content="This post will be the first in a series on programming with JAX, for training models like transformers. I’m experimenting with these as an alternative to my usual scratch paper or LaTeX notes while learning, in the hope that it will help me with recall and perhaps be useful to others learning this material.">
-  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SPMD in JAX #1: Sharding | Sam D. Buchanan</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="SPMD in JAX #1: Sharding" />
+<meta name="author" content="Sam Buchanan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This post will be the first in a series on programming with JAX, for training models like transformers. I’m experimenting with these as an alternative to my usual scratch paper or LaTeX notes while learning, in the hope that it will help me with recall and perhaps be useful to others learning this material." />
+<meta property="og:description" content="This post will be the first in a series on programming with JAX, for training models like transformers. I’m experimenting with these as an alternative to my usual scratch paper or LaTeX notes while learning, in the hope that it will help me with recall and perhaps be useful to others learning this material." />
+<link rel="canonical" href="http://sdbuchanan.com/blog/jax-1/" />
+<meta property="og:url" content="http://sdbuchanan.com/blog/jax-1/" />
+<meta property="og:site_name" content="Sam D. Buchanan" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SPMD in JAX #1: Sharding" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Sam Buchanan"},"dateModified":"2025-08-20T00:00:00+00:00","datePublished":"2025-08-20T00:00:00+00:00","description":"This post will be the first in a series on programming with JAX, for training models like transformers. I’m experimenting with these as an alternative to my usual scratch paper or LaTeX notes while learning, in the hope that it will help me with recall and perhaps be useful to others learning this material.","headline":"SPMD in JAX #1: Sharding","mainEntityOfPage":{"@type":"WebPage","@id":"http://sdbuchanan.com/blog/jax-1/"},"url":"http://sdbuchanan.com/blog/jax-1/"}</script>
+<!-- End Jekyll SEO tag -->
+
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://sdbuchanan.com/blog/jax-1/">
   
   
   <link rel="alternate" type="application/rss+xml" title="Sam D. Buchanan" href="http://sdbuchanan.com/feed.xml">
@@ -311,22 +323,6 @@
   });
 </script>
 
-
-  
-  <meta property="og:title" content="SPMD in JAX #1: Sharding">
-  <meta property="og:site_name" content="Sam D. Buchanan">
-  <meta property="og:url" content="http://sdbuchanan.com/blog/jax-1/">
-  <meta property="og:description" content="This post will be the first in a series on programming with JAX, for training models like transformers. I’m experimenting with these as an alternative to my usual scratch paper or LaTeX notes while learning, in the hope that it will help me with recall and perhaps be useful to others learning this material.">
-  
-  
-    <meta property="og:image" content="/assets/sam-2023.jpeg">
-  
-  <meta name="twitter:card" content="summary">
-  
-  <meta name="twitter:title" content="SPMD in JAX #1: Sharding">
-  <meta name="twitter:description" content="This post will be the first in a series on programming with JAX, for training models like transformers. I’m experimenting with these as an alternative to my usual scratch paper or LaTeX notes while...">
-  
-  
 
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

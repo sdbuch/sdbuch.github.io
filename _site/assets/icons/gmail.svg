@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg837"
+   sodipodi:docname="gmail.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1395"
+     id="namedview839"
+     showgrid="false"
+     inkscape:zoom="27.833333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg837" />
+  <title
+     id="title833">Gmail icon</title>
+  <path
+     d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+     id="path835" />
+  <path
+     style="fill:#ea4335;stroke-width:0.0359281;fill-opacity:1"
+     d="M 1.3906738,20.96079 C 0.68585479,20.857681 0.12327826,20.260213 0.03351995,19.519465 0.0101011,19.326196 0.00148186,16.741796 0.00898098,12.161677 0.01978625,5.5623057 0.02465634,5.0865633 0.0836423,4.8682635 0.27334367,4.1662021 0.73245259,3.6072209 1.3832335,3.2859658 1.7604623,3.0997484 2.0643436,3.0266338 2.4610778,3.0266338 c 0.3962211,0 0.7060144,0.073889 1.0598803,0.2527932 0.1782869,0.090137 1.6583015,1.1782429 4.3741203,3.2158523 l 4.1046586,3.0796206 4.122886,-3.0920972 c 2.721326,-2.0409497 4.208382,-3.133955 4.374383,-3.2152274 1.181001,-0.5782042 2.645268,-0.073956 3.230628,1.1125289 0.272549,0.5524368 0.250481,-0.099528 0.263385,7.7815728 0.0075,4.580119 -0.0011,7.164519 -0.02454,7.357788 -0.09181,0.757704 -0.648819,1.33625 -1.389591,1.443329 -0.138789,0.02006 -1.072306,0.03609 -2.124793,0.03649 L 18.57485,21 v -4.634731 c 0,-2.932337 -0.01265,-4.63473 -0.03444,-4.63473 -0.01894,0 -1.496515,1.098726 -3.283494,2.441613 L 12.007863,16.613766 8.7525657,14.172152 C 6.9621528,12.829265 5.4810424,11.730539 5.4612093,11.730539 c -0.023941,0 -0.03606,1.557587 -0.03606,4.63473 V 21 L 3.5119756,20.9956 C 2.4597301,20.9932 1.5051442,20.97752 1.3906734,20.96077 Z"
+     id="path845" />
+</svg>

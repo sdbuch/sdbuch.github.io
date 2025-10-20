@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg837"
+   sodipodi:docname="scholar.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="1395"
+     id="namedview839"
+     showgrid="false"
+     inkscape:zoom="27.833333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="2560"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg837" />
+  <title
+     id="title833">Google Scholar icon</title>
+  <path
+     d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
+     id="path835" />
+  <path
+     style="fill:#4285f4;stroke-width:0.0359281;fill-opacity:1"
+     d="M 2.6596148,11.636672 C 1.2472533,10.485986 0.08651376,9.5290024 0.08019365,9.510042 0.06906168,9.4766461 11.874057,0.10832009 11.977094,0.06878109 c 0.06032,-0.02314572 11.96148,9.38495871 11.942795,9.44101481 -0.0067,0.02001 -1.167476,0.9774851 -2.579569,2.1277231 l -2.567442,2.091343 -0.193269,-0.343473 C 17.297622,11.10708 15.036582,9.663092 12.508689,9.5082625 9.5439234,9.3266756 6.8547887,10.801902 5.4085046,13.403337 l -0.1809597,0.325492 z"
+     id="path845" />
+  <path
+     style="fill:#4285f4;fill-opacity:1;stroke-width:0.0359281"
+     d="M 11.267597,23.942599 C 8.6687206,23.6685 6.4096192,21.923869 5.4796903,19.472784 5.1496506,18.602873 5.0479042,18.018773 5.0479042,16.994012 c 0,-0.943042 0.065333,-1.376816 0.3300897,-2.191617 0.5672383,-1.745699 1.8941027,-3.255212 3.586078,-4.079715 2.4240111,-1.1812261 5.3076591,-0.8492415 7.4197101,0.854206 0.148505,0.119775 0.440911,0.394667 0.649792,0.610871 0.978728,1.013045 1.581488,2.202376 1.852843,3.655918 0.07448,0.398976 0.103053,1.466563 0.05105,1.907514 -0.191104,1.620398 -0.87756,3.045417 -2.015123,4.183205 -1.485573,1.485868 -3.574246,2.227631 -5.654746,2.008205 z"
+     id="path847" />
+</svg>

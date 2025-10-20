@@ -42,6 +42,10 @@ plugins:
     # - jekyll-liquify
     #  - jekyll-remote-theme
 
+twitter:
+  username: _sdbuchanan
+  card: summary_large_image
+
 permalink: /blog/:title/
 paginate_path: /posts/:num/
 paginate: 5

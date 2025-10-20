@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "baremetal-gpt[cpu]",
     "debugpy>=1.8.16",
     "einops>=0.8.1",
+    "imageio>=2.37.0",
     "ipykernel>=6.30.1",
     "jax>=0.7.1",
     "jupyter-client>=8.6.3",
@@ -39,3 +41,6 @@ ignore = [
     "E402",  # Module level import not at top of file
     "F841",  # Local variable assigned but not used
 ]
+
+[tool.uv.sources]
+baremetal-gpt = { path = "baremetal-gpt", editable = true }

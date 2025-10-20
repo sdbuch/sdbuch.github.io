@@ -129,6 +129,11 @@ $on-laptop:        800px;
   border-radius: 4px; // Subtle rounded corners
 }
 
+// Reduce bottom margin for images inside figures (with captions)
+.post-content figure img {
+  margin-bottom: 0.5em; // Reduced from 1.5em for closer captions
+}
+
 // Remove horizontal rules around images by targeting hr elements
 hr {
   height: 0 !important;
@@ -142,9 +147,14 @@ figcaption {
   text-align: center;
   font-style: italic;
   color: $grey-color;
-  margin-top: 0.75em;
+  margin-top: 0.375em; // Reduced from 0.75em for closer spacing to image
   font-size: $small-font-size;
   line-height: 1.4;
+
+  // Ensure MathJax content also inherits the smaller font size
+  mjx-container {
+    font-size: 1em !important;
+  }
 }
 
 // Table of Contents styling

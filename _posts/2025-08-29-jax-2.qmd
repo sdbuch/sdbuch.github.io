@@ -706,7 +706,7 @@ batch loader, we vmap `_transformer` over it, then calculate the next-token pred
 loss with the standard bare-metal approach (with possible up-casting for numerical
 stability of the softmax). The `donate_argnums` argument to `jit` lets us mark that the
 `train_state` buffer can be discarded after the step finishes (since we create and
-return a new `TrainState` with the results of the SGD step), letting the `XLA` compiler
+return a new `TrainState` with the results of the SGD step), letting the XLA compiler
 reuse that memory for the output state.
 
 The loop is then simple to write:
@@ -812,7 +812,7 @@ Array([1, 2, 3, 2, 3, 4, 3, 2, 3, 2, 3, 5, 6, 5, 4, 3, 4, 5, 2, 1, 2, 3,
 ```
 
 
-We set a relatively high temperature in order to better highlight what the model has
+We set a relatively low temperature in order to better highlight what the model has
 learned. The generated sequence is in line with our hypothesis -- the model has lowered
 the loss by learning that it needs to predict the number that's one above or one below
 the current input, but it can't do much better than guessing randomly between these two
@@ -1180,8 +1180,16 @@ output with no wasted operations: we'd just need to compute $\vk_i$ and $\vv_i$ 
 current position, then load the previous positions' keys and values from the cache to
 compute the full attention output.
 
-This data structure is called a *KV cache*, and it's essential for fast inference, since
-autoregressive operation implies we can only compute one token at a time (in contrast to
+This storage is actually essential, as well. We can't just rely on intelligent recomputation of
+keys and values in general, because *the keys and values at position $i$ and layer
+$\ell+1$ of the model depend on the queries at all positions $j < i$ at layer $\ell$*!
+So because of the multilayer structure of the transformer, as soon as we try to use
+*some* recomputation, we need to recompute *all* previous queries, which is maximally
+wasteful.
+
+The data structure that stores these past keys and values is called a *KV cache*, and
+it's essential for fast inference, since autoregressive operation implies we can only
+compute one token at a time (in contrast to
 training, where we forward an entire batch of sequences at once).
 A back-of-the-envelope analysis suggests that the naive sampling strategy (re-forward
 the entire sequence on every new token generation) takes $O(S^2D^2 + DS^3)$ FLOPs to

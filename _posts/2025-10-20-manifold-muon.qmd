@@ -4,6 +4,7 @@ title: "Speeding Up Manifold Muon with ADMM"
 date: 2025-10-20
 categories: optimization
 bibliography: refs.bib
+image: /assets/blog/manifold-muon-admm-og.png
 ---
 
 In a recent blog post, Jeremy
@@ -14,11 +15,20 @@ bernstein2025manifolds %}.
 This algorithm, called *manifold Muon*, has an inner loop that is relatively slow to
 converge, and requires some hyperparameter tuning to get right.
 
+<figure>
+    <img src="{{ site.baseurl }}/assets/blog/admm-dual-ascent.png" alt="Comparing
+    dual ascent to ADMM rate of convergence">
+    <figcaption>Comparison of the default manifold Muon inner loop solver (dual ascent)
+    to a solver based on ADMM, for one weight matrix in a neural network being trained.
+    ADMM converges much more rapidly!</figcaption>
+</figure>
+
 In this post, we'll describe a modification of the manifold Muon algorithm that greatly
 speeds up convergence---by more than a factor of two in wall-clock time in our experiments
 on 1x H100! To realize this, we apply a venerable algorithm from convex optimization
 called ADMM (the "alternating direction method of multipliers") to the optimization
 problem at the heart of the manifold Muon update.
+
 
 The rest of the post will re-introduce the manifold Muon subproblem, give some intuition
 for why the [existing

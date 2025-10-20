@@ -1,0 +1,2601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Publications | Sam D. Buchanan</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Publications" />
+<meta name="author" content="Sam Buchanan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Academic publication list for Sam D. Buchanan" />
+<meta property="og:description" content="Academic publication list for Sam D. Buchanan" />
+<link rel="canonical" href="http://sdbuchanan.com/publications/" />
+<meta property="og:url" content="http://sdbuchanan.com/publications/" />
+<meta property="og:site_name" content="Sam D. Buchanan" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Publications" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Sam Buchanan"},"description":"Academic publication list for Sam D. Buchanan","headline":"Publications","url":"http://sdbuchanan.com/publications/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Sam D. Buchanan" href="http://sdbuchanan.com/feed.xml">
+
+  
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- MathJax -->
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
+
+<!-- MathJax -->
+<script type="text/javascript">
+  const macros = {};
+
+  // Generate BB letters
+  for (let i = 65; i <= 90; i++) {
+    const letter = String.fromCharCode(i);
+    macros[`bb${letter}`] = `{\\mathbb{${letter}}}`;
+  }
+
+  // Generate script letters
+  for (let i = 65; i <= 90; i++) {
+    const letter = String.fromCharCode(i);
+    macros[`c${letter}`] = `{\\mathscr{${letter}}}`;
+  }
+
+  // Generate calligraphic letters
+  for (let i = 65; i <= 90; i++) {
+    const letter = String.fromCharCode(i);
+    macros[`s${letter}`] = `{\\mathcal{${letter}}}`;
+  }
+
+  // Generate vector uppercase letters
+  for (let i = 65; i <= 90; i++) {
+    const letter = String.fromCharCode(i);
+    macros[`v${letter}`] = `{\\boldsymbol{${letter}}}`;
+  }
+
+  // Generate vector lowercase letters
+  for (let i = 97; i <= 122; i++) {
+    const letter = String.fromCharCode(i);
+    macros[`v${letter}`] = `{\\boldsymbol{${letter}}}`;
+  }
+
+  // Add Greek letters
+  const greekLetters = [
+    'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'varepsilon', 'zeta', 'eta',
+    'theta', 'vartheta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi',
+    'pi', 'varpi', 'rho', 'varrho', 'sigma', 'varsigma', 'tau', 'upsilon',
+    'phi', 'varphi', 'chi', 'psi', 'omega', 'Gamma', 'Delta', 'Theta',
+    'Lambda', 'Xi', 'Pi', 'Sigma', 'varSigma', 'Upsilon', 'Phi', 'Psi',
+    'Omega', 'ell'
+  ];
+  greekLetters.forEach(letter => {
+    macros[`v${letter}`] = `{\\boldsymbol{\\${letter}}}`;
+  });
+
+  // Add these to your macros object
+  const additionalMacros = {
+    // Basic macros
+    "Beta": "{\\mathrm{B}}",
+    "eps": "{\\epsilon}",
+    "Diff": "{\\mathop{}\\!\\mathrm{D}}",
+    "diff": "{\\mathop{}\\!\\mathrm{d}}",
+    "Partial": ["{\\frac{\\partial #1}{\\partial #2}}", 2],
+    "PartialN": ["{\\frac{\\partial^{#3} #1}{\\partial {#2}^{#3}}}", 3],
+    "dPartial": ["{\\dfrac{\\partial #1}{\\partial #2}}", 2],
+    "PPartial": ["{\\tfrac{\\partial}{\\partial #1}}", 1],
+    "dac": "{\\left.\\frac{\\partial}{\\partial t}\\right|_{t=0}}",
+    "half": "{\\tfrac{1}{2}}",
+    "third": "{\\tfrac{1}{3}}",
+    "fourth": "{\\tfrac{1}{4}}",
+    "sixth": "{\\tfrac{1}{6}}", // Fixed typo (was 1/4)
+    "eighth": "{\\tfrac{1}{8}}",
+
+    // Accents and decorations
+    "overbar": ["{\\mkern 1.5mu\\overline{\\mkern-1.5mu#1\\mkern-1.5mu}\\mkern 1.5mu}", 1],
+    "underbar": ["{\\mkern 1.5mu\\underline{\\mkern-1.5mu#1\\mkern-1.5mu}\\mkern 1.5mu}", 1],
+    "conj": ["{\\overbar{#1}}", 1],
+    "wh": "{\\widehat}",
+    "wt": "{\\widetilde}",
+    "ol": ["{\\overbar{#1}}", 1],
+    "kron": "{\\otimes}",
+    "elwise": "{\\odot}", // Using \odot as circleddot is not standard
+    "dsum": "{\\oplus}",
+    "spcdot": "{\\,\\cdot\\,}",
+
+    // Special symbols
+    "iu": "{\\mathfrak{i}}",
+    "given": [' \\, \\vert \\, ', 0],
+    "llangle": ['\\langle\\!\\langle', 0],
+    "rrangle": ['\\rangle\\!\\rangle', 0],
+
+      // Analysis operators
+    "Lip": "{\\mathrm{Lip}}",
+    "mem": "{\\mathrm{mem}}",
+    "softmax": "{\\operatorname{\\mathrm{softmax}}}",
+    "equid": "{\\overset{d}{=}}",
+    "xor": "{\\oplus}",
+    "bigxor": "{\\bigoplus}",
+    "minimize": ["{\\underset{#1}{\\operatorname{minimize}}}", 1],
+    "maximize": ["{\\underset{#1}{\\operatorname{maximize}}}", 1],
+    "argmin": "{\\mathop{\\mathrm{arg\\,min}}}",
+    "argmax": "{\\mathop{\\mathrm{arg\\,max}}}",
+    "orth": "{\\operatorname{orth}}",
+    "ow": "{\\mathrm{otherwise}}",
+    "iid": "{\\mathrm{i.i.d.}}",
+    "wass": "{\\mathrm{W}}",
+    "TV": "{\\mathrm{TV}}",
+    "as": "{\\mathrm{a.s.}}",
+    "whp": "{\\mathrm{w.h.p.}}",
+    "simiid": "{\\sim_{\\iid}}",
+    "ltsim": "{\\lesssim}",
+    "gtsim": "{\\gtrsim}",
+    "ltsimwhp": "{\\underset{\\whp}{\\lesssim}}",
+    "gtsimwhp": "{\\underset{\\whp}{\\gtrsim}}",
+    "psdgeq": "{\\succcurlyeq}",
+    "psdleq": "{\\preccurlyeq}",
+    "defn": "{\\overset{\\text{def}}{=}}",
+    "normsubdiff": ["{\\partial\\norm{}_{#1}}", 1],
+    "normalize": ["{\\frac{#1}{\\norm*{#1}_2}}", 1],
+    "normalizeabs": ["{\\frac{#1}{\\abs*{#1}}}", 1],
+    "iter": ["{#1^{(#2)}}", 2],
+    "prox": ["{\\operatorname{prox}}_{#1}", 1],
+
+    // Vector operators
+    "tr": "{\\operatorname{tr}}",
+    "diag": "{\\operatorname{diag}}",
+    "Diag": "{\\operatorname{Diag}}",
+    "vect": "{\\operatorname{vec}}",
+    "vec": "{\\operatorname{vec}}",
+    "Sym": "{\\operatorname{sym}}",
+    "Symm": "{\\operatorname{sym}}",
+    "Skew": "{\\operatorname{skew}}",
+    "rank": "{\\operatorname{rank}}",
+    "krank": "{\\operatorname{krank}}",
+    "sign": "{\\operatorname{sign}}",
+    "sgn": "{\\operatorname{sgn}}",
+    "supp": "{\\operatorname{supp}}",
+    "esssup": "{\\mathop{\\operatorname{ess\\,sup}}}",
+    "vol": "{\\operatorname{vol}}",
+    "Vol": "{\\operatorname{Vol}}",
+    "tp": "{^{\\mathrm{T}}}",
+    "adj": "{^{\\ast}}",
+    "inv": "{^{-1}}",
+    "One": "{\\mathbf{1}}",
+    "Zero": "{\\mathbf{0}}",
+    "Id": "{\\operatorname{\\mathrm{Id}}}",
+    "conv": "{\\mathbin{\\ast}}",
+    "iconv": "{\\mathbin{\\square}}",
+    "xcorr": "{\\mathbin{\\star}}",
+    "cconv": "{\\mathbin{\\circledast}}",
+    "frob": "{\\mathrm{F}}",
+    "HS": "{\\mathrm{HS}}",
+
+    // Trig stuff
+    "acos": "{\\operatorname{\\cos\\inv}}",
+    "asin": "{\\operatorname{\\sin\\inv}}",
+    "atan": "{\\operatorname{\\tan\\inv}}",
+    "sech": "{\\operatorname{sech}}",
+    "csch": "{\\operatorname{csch}}",
+
+    // Calculus/geometry operators
+    "Hess": "{\\operatorname{Hess}}",
+    "grad": "{\\operatorname{grad}}",
+    "Div": "{\\operatorname{div}}",
+    "curl": "{\\operatorname{curl}}",
+    "downto": "{\\searrow}",
+    "upto": "{\\nearrow}",
+
+    // CS operators
+    "polylog": "{\\operatorname{polylog}}",
+    "poly": "{\\operatorname{poly}}",
+
+    // Stats operators
+    "Ind": ["{\\mathds{1}}_{#1}", 1],
+    "stddev": "{\\operatorname{stddev}}",
+    "Unif": ["{\\operatorname{Unif}(#1)}", 1],
+    "Bern": ["{\\operatorname{Bern}(#1)}", 1],
+    "Pois": ["{\\operatorname{Pois}(#1)}", 1],
+    "Binom": ["{\\operatorname{Binom}(#1, #2)}", 2],
+    "Exp": "{\\operatorname{Exp}}",
+    "BG": "{\\operatorname{BG}}",
+    "Law": "{\\mathrm{Law}}",
+    "indep": "{\\protect\\mathpalette{\\protect\\independenT}{\\perp}}",
+    "independenT": ["{\\mathrel{\\rlap{$#1#2$}\\mkern2mu{#1#2}}}", 2],
+
+    // Topology / set operators
+    "compl": "{\\mathsf{c}}",
+    "bd": "{\\operatorname{bd}}",
+    "relbd": "{\\operatorname{relbd}}",
+    "cl": "{\\operatorname{cl}}",
+    "Conv": "{\\operatorname{conv}}",
+    "dom": "{\\operatorname{dom}}",
+    "epi": "{\\operatorname{epi}}",
+    "aff": "{\\operatorname{aff}}",
+    "cone": "{\\operatorname{cone}}",
+    "ri": "{\\operatorname{ri}}",
+    "im": "{\\operatorname{im}}",
+    "Hom": "{\\operatorname{Hom}}",
+    "End": "{\\operatorname{End}}",
+    "Aut": "{\\operatorname{Aut}}",
+    "Null": "{\\operatorname{null}}",
+    "Span": "{\\operatorname{span}}",
+    "row": "{\\operatorname{row}}",
+    "col": "{\\operatorname{col}}",
+    "range": "{\\operatorname{range}}",
+    "Ran": "{\\operatorname{ran}}",
+    "diam": "{\\operatorname{diam}}",
+    "len": "{\\operatorname{len}}",
+    "dist": "{\\operatorname{dist}}",
+    "nnz": "{\\operatorname{nnz}}",
+    "RE": "{\\operatorname{RE}}",
+    "err": "{\\operatorname{err}}",
+    "circulant": "{\\operatorname{circ}}",
+    "tre": "{\\operatorname{tre}}",
+    "etr": "{\\operatorname{etr}}",
+    "proj": ["{\\operatorname{proj}_{#1}}", 1]
+  };
+
+  const delimitersToDefine = [
+    // Simple paired delimiters
+    "\\DeclarePairedDelimitersX{\\abs[1]}{\\lvert}{\\rvert}{ \ifblank{#1}{\:\cdot\:}{#1} }",
+  ];
+
+  const all_macros = { ...macros, ...additionalMacros };
+
+  window.MathJax = {
+    loader: {
+      load: ['[tex]/boldsymbol', '[tex]/mathtools', '[tex]/ams', '[tex]/color']
+    },
+    tex: {
+      packages: {'[+]': ['boldsymbol', 'mathtools', 'ams', 'color']},
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams',
+      macros: all_macros,
+      mathtools: {
+        pairedDelimiters: {
+          // General pairing commands
+          abs: ['\\lvert', '\\rvert', '{#1}', 1, '', ''],
+          norm: ['\\lVert', '\\rVert', '{#1}', 1, '', ''],
+          nnorm: ['\\vert\\kern-0.25ex\\vert\\kern-0.25ex\\vert', '\\vert\\kern-0.25ex\\vert\\kern-0.25ex\\vert', '{#1}', 1, '', ''],
+          ip: ['\\langle', '\\rangle', '{#1}, {#2}', 2, '', ''],
+          iip: ['\\llangle', '\\rrangle', '{#1}, {#2}', 2, '', ''],
+          ceil: ['\\lceil', '\\rceil', '{#1}', 1, '', ''],
+          floor: ['\\lfloor', '\\rfloor', '{#1}', 1, '', ''],
+          KL: ['(', ')', '{#1} \\:\\|\\: {#2}', 2, '\\mathop{\\mathrm{KL}}', ''],
+
+          // Set type commands
+          set: ['\\{', '\\}', '{#1}', 1, '', ''],
+          Pr: ['[', ']', '{#1}', 1, '\\mathbb{P}', ''],
+          Prsub: ['[', ']', '{#2}', 2, '\\mathop{\\mathbb{P}}_{#1}', ''],
+          E: ['[', ']', '{#1}', 1, '\\mathbb{E}', ''],
+          Esub: ['[', ']', '{#2}', 2, '\\mathop{\\mathbb{E}}_{#1}', ''],
+          Var: ['[', ']', '{#1}', 1, '\\mathrm{Var}', ''],
+          cov: ['[', ']', '{#1}', 1, '\\mathrm{cov}', ''],
+          Ent: ['[', ']', '{#2}', 2, '\\mathop{\\mathrm{Ent}}_{#1}', '']
+        }
+      }
+    }
+  };
+</script>
+<!-- <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script> -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<link
+  href="https://fonts.googleapis.com"
+  rel="preconnect"
+  />
+<link
+  href="https://fonts.gstatic.com"
+  rel="preconnect"
+  crossorigin="anonymous"
+  />
+<script
+  src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+  type="text/javascript"
+  ></script>
+<script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: [
+        "Lato:300,300italic,400,400italic,700,700italic",
+        "Open Sans:300,300italic,400,400italic,700,700italic",
+      ],
+    },
+  });
+</script>
+
+
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Sam D. Buchanan</a>
+
+    <nav class="site-nav">
+      
+        
+        <a class="page-link" href="/">Home</a>
+      
+        
+        <a class="page-link" href="/publications/">Publications</a>
+      
+        
+        <a class="page-link" href="/blog/">Blog</a>
+      
+        
+        <a class="page-link" href="/misc/">Misc.</a>
+      
+        
+        <a class="page-link" href="/assets/cv.pdf">CV</a>
+      
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Publications</h1>
+  </header>
+
+  <div class="post-content">
+    <div class="publications">
+
+
+  <h2 class="year">2025</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Buchanan2025-dw" class="col-sm-8">
+    
+      <div class="title">On the Edge of Memorization in Diffusion Models</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan*</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://vdeborto.github.io/">Valentin De Bortoli</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>,
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+      <a href="http://arxiv.org/abs/2508.17689" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/DruvPai/diffusion_mem_gen" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Fang2025-kg" class="col-sm-8">
+    
+      <div class="title">Beyond Scores: Proximal Diffusion Models</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://zhenghanfang.github.io/">Zhenghan Fang</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://mateodd25.github.io/">Mateo Díaz</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://sites.google.com/view/jsulam">Jeremias Sulam</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>,
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+      <a href="http://arxiv.org/abs/2507.08956" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="ldrdd2025" class="col-sm-8">
+    
+      <div class="title">Learning Deep Representations of Data Distributions</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan*</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://peng8wang.github.io/">Peng Wang</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        
+          <em>Online</em>,
+        
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://ma-lab-berkeley.github.io/deep-representation-learning-book/" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2024</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="JMLR:v25:23-1547" class="col-sm-8">
+    
+      <div class="title">White-Box Transformers via Sparse Rate Reduction:
+             Compression Is All There Is?</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://yaodongyu.github.io/">Yaodong Yu*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan*</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tianzhechu.com/">Tianzhe Chu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://robinwu218.github.io/">Ziyang Wu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tsb0601.github.io/petertongsb/">Shengbang Tong</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Hao Bai,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Yuexiang Zhai,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://www.cis.jhu.edu/~haeffele/">Benjamin D Haeffele</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        
+          <em>Journal of Machine Learning Research</em>,
+        
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2311.13110" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+      <a href="http://jmlr.org/papers/v25/23-1547.html" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://ma-lab-berkeley.github.io/CRATE/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> In this paper, we contend that a natural objective of
+    representation learning is to compress and transform the distribution of the
+      data, say sets of tokens, towards a low-dimensional Gaussian mixture
+      supported on incoherent subspaces. The goodness of such a representation
+      can be evaluated by a principled measure, called sparse rate reduction,
+    that simultaneously maximizes the intrinsic information gain and extrinsic
+      sparsity of the learned representation. From this perspective, popular
+      deep network architectures, including transformers, can be viewed as
+      realizing iterative schemes to optimize this measure. Particularly, we
+      derive a transformer block from alternating optimization on parts of this
+      objective: the multi-head self-attention operator compresses the
+      representation by implementing an approximate gradient descent step on the
+      coding rate of the features, and the subsequent multi-layer perceptron
+      sparsifies the features. This leads to a family of white-box
+      transformer-like deep network architectures, named CRATE, which are
+      mathematically fully interpretable. We show, by way of a novel connection
+      between denoising and compression, that the inverse to the aforementioned
+      compressive encoding can be realized by the same class of CRATE
+      architectures. Thus, the so-derived white-box architectures are universal
+      to both encoders and decoders. Experiments show that these networks,
+    despite their simplicity, indeed learn to compress and sparsify
+      representations of large-scale real-world image and text datasets, and
+      achieve performance very close to highly engineered transformer-based
+      models: ViT, MAE, DINO, BERT, and GPT2. We believe the proposed
+      computational framework demonstrates great potential in bridging the gap
+      between theory and practice of deep learning, from a unified perspective
+      of data compression. </p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Fang2024-ey" class="col-sm-8">
+    
+      <div class="title">What’s in a Prior? Learned Proximal Networks for Inverse
+               Problems</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://zhenghanfang.github.io/">Zhenghan Fang*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan*</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://sites.google.com/view/jsulam">Jeremias Sulam</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In International Conference on Learning Representations</em>,
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=kNPcOaqC5r" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+      <a href="https://github.com/Sulam-Group/learned-proximal-networks" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+    
+    
+      <a href="https://zhenghanfang.github.io/learned-proximal-networks/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> Proximal operators are ubiquitous in inverse problems, commonly appearing as part of algorithmic strategies to regularize problems that are otherwise ill-posed. Modern deep learning models have been brought to bear for these tasks too, as in the framework of plug-and-play or deep unrolling, where they loosely resemble proximal operators. Yet, something essential is lost in employing these purely data-driven approaches: there is no guarantee that a general deep network represents the proximal operator of any function, nor is there any characterization of the function for which the network might provide some approximate proximal. This not only makes guaranteeing convergence of iterative schemes challenging but, more fundamentally, complicates the analysis of what has been learned by these networks about their training data. Herein we provide a framework to develop learned proximal networks (LPN), prove that they provide exact proximal operators for a data-driven nonconvex regularizer, and show how a new training strategy, dubbed proximal matching, provably promotes the recovery of the log-prior of the true data distribution. Such LPN provide general, unsupervised, expressive proximal operators that can be used for general inverse problems with convergence guarantees. We illustrate our results in a series of cases of increasing complexity, demonstrating that these models not only result in state-of-the-art performance, but provide a window into the resulting priors learned from data. </p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Pai2024-jm" class="col-sm-8">
+    
+      <div class="title">Masked Completion via Structured Diffusion with White-Box
+               Transformers</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://robinwu218.github.io/">Ziyang Wu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://yaodongyu.github.io/">Yaodong Yu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In International Conference on Learning Representations</em>,
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=PvyOYleymy" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://ma-lab-berkeley.github.io/CRATE/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> Modern learning frameworks often train deep neural networks with massive amounts of unlabeled data to learn representations by solving simple pretext tasks, then use the representations as foundations for downstream tasks. These networks are empirically designed; as such, they are usually not interpretable, their representations are not structured, and their designs are potentially redundant. White-box deep networks, in which each layer explicitly identifies and transforms structures in the data, present a promising alternative. However, existing white-box architectures have only been shown to work at scale in supervised settings with labeled data, such as classification. In this work, we provide the first instantiation of the white-box design paradigm that can be applied to large-scale unsupervised representation learning. We do this by exploiting a fundamental connection between diffusion, compression, and (masked) completion, deriving a deep transformer-like masked autoencoder architecture, called CRATE-MAE, in which the role of each layer is mathematically fully interpretable: they transform the data distribution to and from a structured representation. Extensive empirical evaluations confirm our analytical insights. CRATE-MAE demonstrates highly promising performance on large-scale imagery datasets while using only  30% of the parameters compared to the standard masked autoencoder with the same model configuration. The representations learned by CRATE-MAE have explicit structure and also contain semantic meaning.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Yu2023-fc" class="col-sm-8">
+    
+      <div class="title">Emergence of Segmentation with Minimalistic White-Box
+                   Transformers</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://yaodongyu.github.io/">Yaodong Yu*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tianzhechu.com/">Tianzhe Chu*</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tsb0601.github.io/petertongsb/">Shengbang Tong</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://robinwu218.github.io/">Ziyang Wu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Conference on Parsimony and Learning (CPAL)</em>,
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2308.16271" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+      <a href="https://proceedings.mlr.press/v234/yu24a.html" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://ma-lab-berkeley.github.io/CRATE/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Transformer-like models for vision tasks have recently proven
+                   effective for a wide range of downstream applications such as
+                   segmentation and detection. Previous works have shown that
+                   segmentation properties emerge in vision transformers (ViTs)
+                   trained using self-supervised methods such as DINO, but not in
+                   those trained on supervised classification tasks. In this study,
+                   we probe whether segmentation emerges in transformer-based models
+                   solely as a result of intricate self-supervised learning
+                   mechanisms, or if the same emergence can be achieved under much
+                   broader conditions through proper design of the model
+                   architecture. Through extensive experimental results, we
+                   demonstrate that when employing a white-box transformer-like
+                   architecture known as CRATE, whose design explicitly models and
+                   pursues low-dimensional structures in the data distribution,
+                   segmentation properties, at both the whole and parts levels,
+                   already emerge with a minimalistic supervised training recipe.
+                   Layer-wise finer-grained analysis reveals that the emergent
+                   properties strongly corroborate the designed mathematical
+                   functions of the white-box network. Our results suggest a path to
+                   design white-box foundation models that are simultaneously highly
+                   performant and mathematically fully interpretable.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2023</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Yu2023-ig" class="col-sm-8">
+    
+      <div class="title">White-Box Transformers via Sparse Rate Reduction</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://yaodongyu.github.io/">Yaodong Yu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://druvpai.github.io/">Druv Pai</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tianzhechu.com/">Tianzhe Chu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://robinwu218.github.io/">Ziyang Wu</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://tsb0601.github.io/petertongsb/">Shengbang Tong</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://www.cis.jhu.edu/~haeffele/">Benjamin D Haeffele</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems (NeurIPS)</em>,
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2306.01129" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://ma-lab-berkeley.github.io/CRATE/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In this paper, we contend that the objective of
+                   representation learning is to compress and transform the
+                   distribution of the data, say sets of tokens, towards a
+                   mixture of low-dimensional Gaussian distributions supported
+                   on incoherent subspaces. The quality of the final
+                   representation can be measured by a unified objective
+                   function called sparse rate reduction. From this
+                   perspective, popular deep networks such as transformers can
+                   be naturally viewed as realizing iterative schemes to
+                   optimize this objective incrementally. Particularly, we show
+                   that the standard transformer block can be derived from
+                   alternating optimization on complementary parts of this
+                   objective: the multi-head self-attention operator can be
+                   viewed as a gradient descent step to compress the token sets
+                   by minimizing their lossy coding rate, and the subsequent
+                   multi-layer perceptron can be viewed as attempting to
+                   sparsify the representation of the tokens. This leads to a
+                   family of white-box transformer-like deep network
+                   architectures which are mathematically fully interpretable.
+                   Despite their simplicity, experiments show that these
+                   networks indeed learn to optimize the designed objective:
+                   they compress and sparsify representations of large-scale
+                   real-world vision datasets such as ImageNet, and achieve
+                   performance very close to thoroughly engineered transformers
+                   such as ViT.  </p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="tilted2023" class="col-sm-8">
+    
+      <div class="title">Canonical Factors for Hybrid Neural Fields</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://brentyi.github.io/">Brent Yi</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Weijia Zeng,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~yima/">Yi Ma</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In International Conference on Computer Vision (ICCV)</em>,
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2308.15461" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+      <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Yi_Canonical_Factors_for_Hybrid_Neural_Fields_ICCV_2023_paper.html" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+      <a href="https://brentyi.github.io/tilted/" class="btn btn-sm z-depth-0" role="button">Project Page</a>
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> Factored feature volumes offer a simple way to build more
+                compact, efficient, and interpretable neural fields, but also
+                introduce biases that are not necessarily beneficial for
+                real-world data. In this work, we (1) characterize the
+                undesirable biases that these architectures have for
+                axis-aligned signals – they can lead to radiance field
+                reconstruction differences of as high as 2 PSNR – and (2)
+                explore how learning a set of canonicalizing transformations
+                can improve representations by removing these biases. We prove
+                in a two-dimensional model problem that simultaneously learning
+                these transformations together with scene appearance succeeds
+                with drastically improved efficiency. We validate the resulting
+                architectures, which we call TILTED, using image, signed
+                distance, and radiance field reconstruction tasks, where we
+                observe improvements across quality, robustness, compactness,
+                and runtime. Results demonstrate that TILTED can enable
+                capabilities comparable to baselines that are 2x larger, while
+                highlighting weaknesses of neural field evaluation procedures.
+                </p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2022</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Buchanan2022-ye" class="col-sm-8">
+    
+      <div class="title">Deep Networks Through the Lens of Low-Dimensional Structure:
+            Towards Mathematical and Computational Principles for Nonlinear
+            Data</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              <em>Sam Buchanan</em>
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>PhD Thesis</em>,
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://academiccommons.columbia.edu/doi/10.7916/p2n1-kp52" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Buchanan2022-qp" class="col-sm-8">
+    
+      <div class="title">Resource-Efficient Invariant Networks: Exponential Gains
+                   by Unrolled Optimization</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Jingkai Yan,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Ellie Haber,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://www.columbia.edu/~jw2966/">John Wright</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        
+          <em>Preprint</em>,
+        
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2203.05006" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/sdbuch/refine" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p> Achieving invariance to nuisance transformations is a fundamental challenge in the
+              construction of robust and reliable vision systems.  Existing approaches to
+              invariance scale exponentially with the dimension of the family of transformations,
+              making them unable to cope with natural variabilities in visual data such as changes
+              in pose and perspective.  We identify a common limitation of these approaches—they
+              rely on sampling to traverse the high-dimensional space of transformations—and
+              propose a new computational primitive for building invariant networks based instead
+              on optimization, which in many scenarios provides a provably more efficient method
+              for high-dimensional exploration than sampling.  We provide empirical and
+              theoretical corroboration of the efficiency gains and soundness of our proposed
+              method, and demonstrate its utility in constructing an efficient invariant network
+              for a simple hierarchical object detection task when combined with unrolled
+              optimization.  Code for our networks and experiments is available at
+              https://github.com/sdbuch/refine.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Wang2021-rc" class="col-sm-8">
+    
+      <div class="title">Deep Networks Provably Classify Data on Curves</div>
+      <div class="author">
+        
+          
+          
+          
+            
+              
+            
+          
+          
+          
+            
+              
+                
+                  Tingran Wang,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Dar Gilboa,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://www.columbia.edu/~jw2966/">John Wright</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems</em>,
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+      <a href="http://arxiv.org/abs/2107.14324" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+    
+    
+      <a href="https://papers.nips.cc/paper/2021/hash/f26df67e8110ee2b44923db775e3e47f-Abstract.html" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      <a href="https://www.youtube.com/watch?v=PEaYY2TLvYY" class="btn btn-sm z-depth-0" role="button">Talk</a>
+      
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Data with low-dimensional nonlinear structure are ubiquitous in engineering and scientific problems. We study a model problem with such structure: a binary classification task that uses a deep fully-connected neural network to classify data drawn from two disjoint smooth curves on the unit sphere. Aside from mild regularity conditions, we place no restrictions on the configuration of the curves. We prove that when (i) the network depth is large relative to certain geometric properties that set the difficulty of the problem and (ii) the network width and number of samples are polynomial in the depth, randomly-initialized gradient descent quickly learns to correctly classify all points on the two curves with high probability. To our knowledge, this is the first generalization guarantee for deep networks with nonlinear data that depends only on intrinsic data properties. Our analysis proceeds by a reduction to dynamics in the neural tangent kernel (NTK) regime, where the network depth plays the role of a fitting resource in solving the classification problem. In particular, via fine-grained control of the decay properties of the NTK, we demonstrate that when the network is sufficiently deep, the NTK can be locally approximated by a translationally invariant operator on the manifolds and stably inverted over smooth functions, which guarantees convergence and generalization.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Buchanan2021-sj" class="col-sm-8">
+    
+      <div class="title">Deep Networks and the Multiple Manifold Problem</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Dar Gilboa,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://www.columbia.edu/~jw2966/">John Wright</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In International Conference on Learning Representations</em>,
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=O-6Pm_d_Q-" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      <a href="https://www.youtube.com/watch?v=qloPDlYqnIk" class="btn btn-sm z-depth-0" role="button">Talk</a>
+      
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We study the multiple manifold problem, a binary classification task modeled on applications in machine vision, in which a deep fully-connected neural network is trained to separate two low-dimensional submanifolds of the unit sphere. We provide an analysis of the one-dimensional case, proving for a simple manifold configuration that when the network depth \(L \)is large relative to certain geometric and statistical properties of the data, the network width \(n\)grows as a sufficiently large polynomial in \(L\), and the number of i.i.d. samples from the manifolds is polynomial in \(L\), randomly-initialized gradient descent rapidly learns to classify the two manifolds perfectly with high probability. Our analysis demonstrates concrete benefits of depth and width in the context of a practically-motivated model problem: the depth acts as a fitting resource, with larger depths corresponding to smoother networks that can more readily separate the class manifolds, and the width acts as a statistical resource, enabling concentration of the randomly-initialized network and its gradients. The argument centers around the "neural tangent kernel" of Jacot et al. and its role in the nonasymptotic analysis of training overparameterized neural networks; to this literature, we contribute essentially optimal rates of concentration for the neural tangent kernel of deep fully-connected ReLU networks, requiring width \(n ≥L\,\mathrm{poly}(d_0)\)to achieve uniform concentration of the initial kernel over a \(d_0\)-dimensional submanifold of the unit sphere \(\mathbb{S}^{n_0-1}\), and a nonasymptotic framework for establishing generalization of networks trained in the "NTK regime" with structured data. The proof makes heavy use of martingale concentration to optimally treat statistical dependencies across layers of the initial random network. This approach should be of use in establishing similar results for other network architectures.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2019</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Gilboa2019-px" class="col-sm-8">
+    
+      <div class="title">Efficient Dictionary Learning with Gradient Descent</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  Dar Gilboa,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>Sam Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://www.columbia.edu/~jw2966/">John Wright</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Proceedings of the 36th International Conference on Machine
+               Learning</em>,
+      
+      
+        2019
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+    
+      <a href="http://proceedings.mlr.press/v97/gilboa19a.html" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Randomly initialized first-order optimization algorithms are the method of choice for solving many high-dimensional nonconvex problems in machine learning, yet general theoretical guarantees cannot rule out convergence to critical points of poor objective value. For some highly structured nonconvex problems however, the success of gradient descent can be understood by studying the geometry of the objective. We study one such problem – complete orthogonal dictionary learning, and provide converge guarantees for randomly initialized gradient descent to the neighborhood of a global optimum. The resulting rates scale as low order polynomials in the dimension even though the objective possesses an exponential number of saddle points. This efficient convergence can be viewed as a consequence of negative curvature normal to the stable manifolds associated with saddle points, and we provide evidence that this feature is shared by other nonconvex problems of importance as well.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2018</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="Buchanan2018-ip" class="col-sm-8">
+    
+      <div class="title">Efficient Model-Free Learning to Overcome Hardware
+               Nonidealities in Analog-to-Information Converters</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+            
+              
+                <em>S Buchanan</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              
+                
+                  T Haque,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  <a href="https://www.ee.columbia.edu/~kinget/">P Kinget</a>,
+                
+              
+            
+          
+        
+          
+          
+          
+            
+              
+                
+                
+          
+          
+          
+            
+              
+                
+                  and <a href="https://www.columbia.edu/~jw2966/">J Wright</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In 2018 IEEE International Conference on Acoustics, Speech and
+               Signal Processing (ICASSP)</em>,
+      
+      
+        2018
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+    
+    
+    
+      <a href="http://dx.doi.org/10.1109/ICASSP.2018.8461811" class="btn btn-sm z-depth-0" role="button">Publication Link</a>
+    
+    
+    
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/sslista_deck.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+      
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>This paper considers compressed sensing (CS) in the context of RF spectrum sensing and presents an efficient approach for learning hardware nonidealities in an analog-to-information converter (A2IC). The proposed methodology is based on the learned iterative shrinkage-thresholding algorithm (LISTA), which enables co-optimization of the hardware and the reconstruction algorithm and leads to a model-free recovery approach that is optimally tuned for the unique computational constraints and hardware nonidealities present in the RF frontend. To achieve this, we devise a training protocol that employs a dataset and neural network of minimal sizes. We demonstrate the effectiveness of our methodology on simulated data from a model of a well-established CS A2IC in the presence of linear impairments and noise. The recovery process extrapolates from training on 1-sparse signals to recovering the support of signals whose sparsity runs up to the theoretical optimum for \(\ell^1\) -based algorithms across a range of typical operating SNRs.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+
+</div>
+
+  </div>
+
+  
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      
+
+
+<div id="icon-container">
+  <div>
+    <a href=mailto:sam@ttic.edu style="text-decoration: none">
+      <img id="icon-container-item" src="/assets/icons/gmail.svg" alt="Mail icon" />
+    </a>
+  </div>
+  <div>
+    <a href=https://scholar.google.com/citations?user=5WT38A0AAAAJ style="text-decoration: none">
+      <img id="icon-container-item" src="/assets/icons/scholar.svg" alt="Google Scholar icon" />
+    </a>
+  </div>
+
+  <div>
+    <a href=https://twitter.com/_sdbuchanan
+       style="text-decoration: none">
+      <img id="icon-container-item" src="/assets/icons/twitter.svg" alt="Twitter icon" />
+    </a>
+  </div>
+
+  <div>
+    <a href=https://www.linkedin.com/in/sam-buchanan-4507a6b3
+       style="text-decoration: none">
+      <img id="icon-container-item" src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+    </a>
+  </div>
+
+  <div>
+    <a href=https://github.com/sdbuch
+       style="text-decoration: none">
+      <img id="icon-container-item" src="/assets/icons/github.svg" alt="GitHub icon" />
+    </a>
+  </div>
+</div>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+  <!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Littlefoot for footnotes and citations -->
+<script src="https://cdn.jsdelivr.net/npm/littlefoot@4/dist/littlefoot.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/littlefoot@4/dist/littlefoot.css">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Littlefoot for standard footnotes
+  littlefoot.littlefoot({
+    buttonTemplate: '<button aria-expanded="false" class="littlefoot__button" id="<% id %>" title="See Footnote"><% number %></button>',
+    activateDelay: 100,
+    activateCallback: function(popover, button) {
+      // Render MathJax in the footnote popup
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([popover]).catch(function (err) {
+          console.log('MathJax typeset failed: ' + err.message);
+        });
+      }
+    },
+    allowMultiple: true,
+    dismissDelay: 500,
+    hoverDelay: 250,
+    numberResetSelector: 'article',
+    scope: 'body'
+  });
+
+  // Custom handler for jekyll-scholar citations
+  const citeLinks = document.querySelectorAll('a[href*="#"]');
+  citeLinks.forEach(function(link) {
+    // Check if this is a citation link (points to bibliography)
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#') && href.match(/^#[A-Za-z]/)) {
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      // If target exists and looks like a bibliography entry
+      if (targetElement && (targetElement.closest('.bibliography') || targetElement.tagName === 'LI')) {
+        link.addEventListener('mouseenter', function(e) {
+          showCitationPopup(e, targetElement);
+        });
+        
+        link.addEventListener('mouseleave', function() {
+          hideCitationPopup();
+        });
+        
+        // Prevent default click behavior for hover-only interaction
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+      }
+    }
+  });
+});
+
+let citationPopup = null;
+let hideTimeout = null;
+let showTimeout = null;
+
+function showCitationPopup(event, targetElement) {
+  // Clear any pending show/hide operations
+  if (hideTimeout) {
+    clearTimeout(hideTimeout);
+    hideTimeout = null;
+  }
+  if (showTimeout) {
+    clearTimeout(showTimeout);
+    showTimeout = null;
+  }
+  
+  // Immediately hide any existing popup
+  if (citationPopup && citationPopup.parentNode) {
+    citationPopup.parentNode.removeChild(citationPopup);
+    citationPopup = null;
+  }
+  
+  // Show new popup after a short delay to prevent flicker
+  showTimeout = setTimeout(function() {
+    // Create popup
+    citationPopup = document.createElement('div');
+    citationPopup.className = 'littlefoot__popover citation-popup';
+    citationPopup.innerHTML = '<div class="littlefoot__content citation-content">' + targetElement.innerHTML + '</div>';
+    
+    // Position popup
+    const rect = event.target.getBoundingClientRect();
+    citationPopup.style.position = 'absolute';
+    citationPopup.style.top = (rect.bottom + window.scrollY + 5) + 'px';
+    citationPopup.style.left = rect.left + 'px';
+    citationPopup.style.zIndex = '1000';
+    citationPopup.style.maxWidth = '400px';
+    
+    document.body.appendChild(citationPopup);
+    
+    // Render MathJax in the popup
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([citationPopup]).catch(function (err) {
+        console.log('MathJax typeset failed: ' + err.message);
+      });
+    }
+    
+    // Add hover handlers to keep popup open
+    citationPopup.addEventListener('mouseenter', function() {
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+        hideTimeout = null;
+      }
+    });
+    
+    citationPopup.addEventListener('mouseleave', function() {
+      hideCitationPopup();
+    });
+    
+    showTimeout = null;
+  }, 50);
+}
+
+function hideCitationPopup() {
+  // Clear any pending show operation
+  if (showTimeout) {
+    clearTimeout(showTimeout);
+    showTimeout = null;
+  }
+  
+  // Clear any existing hide timeout
+  if (hideTimeout) {
+    clearTimeout(hideTimeout);
+  }
+  
+  hideTimeout = setTimeout(function() {
+    if (citationPopup && citationPopup.parentNode) {
+      citationPopup.parentNode.removeChild(citationPopup);
+      citationPopup = null;
+    }
+    hideTimeout = null;
+  }, 100);
+}
+</script>
+
+
+</html>

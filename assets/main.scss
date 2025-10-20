@@ -157,6 +157,64 @@ figcaption {
   }
 }
 
+// MathJax display equation scrolling
+// Ensure display equations scroll horizontally instead of overflowing
+// Only target display equations ($$...$$), not inline equations ($...$)
+mjx-container[display="true"] {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  // Reset any min-width that MathJax sets
+  min-width: 0 !important;
+  // Add padding to bottom to prevent scrollbar from obscuring equation
+  // Applied at all viewport sizes since we can't detect when scrolling occurs
+  padding-bottom: 12px !important;
+  // Reduce bottom margin by the same amount so scrollbar appears in margin space
+  margin-bottom: calc(1em - 12px) !important;
+
+  // Ensure the inner content doesn't force expansion
+  mjx-math {
+    display: inline-block !important;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+
+  // Override min-width on all inner elements
+  mjx-mtable,
+  mjx-table {
+    min-width: 0 !important;
+  }
+
+  // Add subtle scrollbar styling (webkit browsers)
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $grey-color-light;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $grey-color;
+    border-radius: 4px;
+
+    &:hover {
+      background: $grey-color-dark;
+    }
+  }
+}
+
+// Mobile-specific MathJax adjustments
+@include media-query($on-palm) {
+  mjx-container {
+    font-size: 0.9em !important;
+  }
+}
+
 // Table of Contents styling
 #markdown-toc {
   background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);

@@ -20,7 +20,7 @@ converge, and requires some hyperparameter tuning to get right.
     dual ascent to ADMM rate of convergence">
     <figcaption>Comparison of the default manifold Muon inner loop solver (dual ascent)
     to a solver based on ADMM, for one weight matrix in a neural network being trained.
-    ADMM converges much more rapidly!</figcaption>
+    ADMM converges much more rapidly, without needing hyperparameter tuning!</figcaption>
 </figure>
 
 In this post, we'll describe a modification of the manifold Muon algorithm that greatly
@@ -724,6 +724,19 @@ I think the switch from dual ascent to ADMM dovetails with all of these consider
 In particular, the results on this experiment (highly clustered performance) suggest
 that incremental / online manifold Muon might be a natural choice for efficiency's sake,
 and our ADMM algorithm should work out-of-the-box in this regime.
+
+# Cite
+
+If you found this post or the code useful, please consider citing it:
+
+```bibtex
+@misc{buchanan2025mmuonadmm,
+  author = {Buchanan, Sam},
+  title = {Speeding Up Manifold Muon with {ADMM}},
+  year = 2025,
+  howpublished = {\url{https://sdbuchanan.com/blog/manifold-muon/}}
+}
+```
 
 
 # Postscript: Other Quadratic Constraints

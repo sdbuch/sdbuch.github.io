@@ -170,7 +170,7 @@ $$
 $$
 
 where $f$ and $g$ are convex.
-It was originally developed in the 1970s, and was re-popularized with a generation or two
+It was originally developed in the 1970s, and was re-popularized among a generation or two
 of researchers by the excellent monograph of Boyd, Parikh et al. {% cite Boyd2011-yb %},
 which we recommend as a general reference beyond the rapid overview we give here.
 The key empirical property that makes ADMM very well suited for use in solving the
@@ -414,9 +414,6 @@ $$
 This can be computed using only matrix multiplications and matrix sign operations, which
 themselves are efficiently approximated using matrix multiplications. Almost as
 hardware-efficient as we could hope for!
-
-We can instantiate a special case of the manifold Muon ADMM solver using our
-work above in order to compare to the
 
 
 ## ADMM for Manifold Muon: Final Algorithm
@@ -790,7 +787,7 @@ for compute.
 [^6]:
     This is a relatively straightforward argument, but at the same time, I haven't
     seen it anywhere in the compressed sensing literature previously (and this
-    literature applied singular value thresholding for *almost everything* one could).
+    literature applied singular value thresholding to *almost everything* one could).
     If you know of a reference that has applied this previously, please let me know!
 
 [^7]:

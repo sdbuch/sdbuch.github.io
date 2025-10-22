@@ -5,7 +5,7 @@
   
   <link href="http://sdbuchanan.com/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://sdbuchanan.com/" rel="alternate" type="text/html" />
-  <updated>2025-10-21T19:42:52+00:00</updated>
+  <updated>2025-10-22T22:36:58+00:00</updated>
   <id>http://sdbuchanan.com//</id>
 
   
@@ -30,10 +30,10 @@
   
     <entry>
       
-      <title type="html">Speeding Up Manifold Muon with ADMM</title>
+      <title type="html">A Faster Manifold Muon with ADMM</title>
       
       
-      <link href="http://sdbuchanan.com/blog/manifold-muon/" rel="alternate" type="text/html" title="Speeding Up Manifold Muon with ADMM" />
+      <link href="http://sdbuchanan.com/blog/manifold-muon/" rel="alternate" type="text/html" title="A Faster Manifold Muon with ADMM" />
       
       <published>2025-10-20T00:00:00+00:00</published>
       <updated>2025-10-20T00:00:00+00:00</updated>
@@ -755,7 +755,7 @@ and our ADMM algorithm should work out-of-the-box in this regime.&lt;/p&gt;
 
 &lt;div class=&quot;language-bibtex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;@misc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;buchanan2025mmuonadmm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;{Buchanan, Sam}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;{Speeding Up Manifold Muon with {ADMM}}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;{A Faster Manifold Muon with {ADMM}}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;howpublished&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;{\url{https://sdbuchanan.com/blog/manifold-muon/}}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;

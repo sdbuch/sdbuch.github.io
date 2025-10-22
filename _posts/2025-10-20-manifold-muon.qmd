@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Speeding Up Manifold Muon with ADMM"
+title: "A Faster Manifold Muon with ADMM"
 date: 2025-10-20
 categories: optimization
 bibliography: refs.bib
@@ -729,7 +729,7 @@ If you found this post or the code useful, please consider citing it:
 ```bibtex
 @misc{buchanan2025mmuonadmm,
   author = {Buchanan, Sam},
-  title = {Speeding Up Manifold Muon with {ADMM}},
+  title = {A Faster Manifold Muon with {ADMM}},
   year = 2025,
   howpublished = {\url{https://sdbuchanan.com/blog/manifold-muon/}}
 }

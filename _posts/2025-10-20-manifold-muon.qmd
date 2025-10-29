@@ -20,7 +20,7 @@ converge, and requires some hyperparameter tuning to get right.
     dual ascent to ADMM rate of convergence">
     <figcaption>Comparison of the default manifold Muon inner loop solver (dual ascent)
     to a solver based on ADMM, for one weight matrix in a neural network being trained.
-    ADMM converges much more rapidly, without needing hyperparameter tuning!</figcaption>
+    ADMM converges much more rapidly, with minimal hyperparameter tuning!</figcaption>
 </figure>
 
 In this post, we'll describe a modification of the manifold Muon algorithm that greatly

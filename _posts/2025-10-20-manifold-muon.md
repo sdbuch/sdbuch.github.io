@@ -42,6 +42,8 @@ If you haven't already, you're encouraged to read [Jeremy's blog
 post](https://thinkingmachines.ai/blog/modular-manifolds/) on manifold Muon before
 proceeding. It gives an excellent technical overview and derivation of the method, and
 accessible, well-written intuition on the deep links between optimization and geometry.
+See also Jianlin Su's work {% cite kexuefm-11221 %}, which gives a more thorough
+technical derivation.
 
 
 
@@ -151,7 +153,7 @@ The nuclear norm objective in \eqref{eq:manifold-muon-dual} is nondifferentiable
 at every point $\vLambda$ for which $\vG + \vW(\vLambda + \vLambda^\top)$ is not full
 rank. Even if the iterates $\vLambda_k$ never witness such a point of
 nondifferentiability, the lack of continuity of the gradient near these points leads to
-the same 'chattering' behavior of the iterates as in the toy example above.[^4]
+the same 'chattering' behavior of the iterates as in the toy example above.
 
 Fortunately, we can do better, with a bit of algorithmic cleverness (and without too
 much more compute)!
@@ -561,42 +563,26 @@ number of inner loop iterations to run, and for ADMM, we sweep over $\rho \in
 initialization as in Jeremy's repo.[^9]
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/blog/accuracy_comparison.png" alt="Plot
-    of test accuracy vs. ADMM penalty parameter (or dual ascent) for different
-    total inner loop step counts.">
+    <img src="{{ site.baseurl }}/assets/blog/accuracy_comparison_rhos.png" alt="Plot
+    of test accuracy vs. total inner loop step count for different ADMM penalty
+    parameters (or dual ascent).">
     <figcaption> Plot
-    of test accuracy vs. ADMM penalty parameter (or "DA" for dual ascent) for
-    different total inner loop step counts. </figcaption>
+    of test accuracy vs. total inner loop step counts for different ADMM penalty
+    parameters (or dual ascent). </figcaption>
 </figure>
 
-From this plot, we see that test performance is fairly tightly clustered around
-the same nominal value, suggesting that we should not read too much into
-differences in absolute performance or even rankings for this setting.
-Nonetheless, we can use these results to infer a good setting of hyperparameters
-for this experiment, then dig further into convergence behavior for these
-settings. We pick (steps, $\rho$) pairs of $(5, 4.0)$, $(10, 4.0)$, $(25, 8.0)$,
-$(50, 16.0)$, and $(100, \text{DA})$ for taking a closer look. The following
-table copies the results from the plot above for these values (and adds training
-accuracy).
+From this plot, we see that test performance is not directly related with the number of
+steps we run the inner optimizer for. To try to have some generalizable signal towards
+larger-scale experiments, we will focus instead on assessing convergence of the inner
+loop with different representative hyperparameter values. Based on this plot, we select
+$(K, \rho) = (10, 4.0)$, $(100, \mathrm{DA})$ (for dual ascent), and as a baseline
+$(100, 8.0)$. This will give us a sample of ADMM's speed of convergence, as well as its
+performance run for a large number of iterations.
 
-| Manifold Steps | ADMM $\rho$ | Test Accuracy | Train Accuracy |
-| :------------: | :---------: | :-----------: | :------------: |
-|       0        |     N/A     |    52.32%     |     65.22%     |
-|       5        |     4.0     |    52.88%     |     66.06%     |
-|       10       |     4.0     |    52.82%     |     65.92%     |
-|       25       |     8.0     |    52.85%     |     65.85%     |
-|       50       |    16.0     |    53.07%     |     65.71%     |
-|      100       |     N/A     |    52.34%     |     65.85%     |
-
-For ADMM, note that we can achieve good performance with a small number
-of inner loop iterations. Next, we'll make sure we are actually converging
-with ADMM at these iteration counts---which should convince us that the
-iteration counts we later evaluate for timing are reasonable.
 
 ## Inner Loop Convergence
 
-We compare the inner loop losses for the best-performing hyperparameter settings
-above. We also compare them to dual ascent.
+We compare the inner loop losses for the hyperparameter settings above.
 
 We can choose to visualize the inner loop loss for one of three possible weight
 matrices (first layer, second layer, third layer), for any one of the outer loop
@@ -604,11 +590,11 @@ iterations (we do a total of five epochs over the data).
 
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/blog/fc1-e00-d00.png" alt="Dual ascent losses
+    <img src="{{ site.baseurl }}/assets/blog/fc1_weight_e0_d00_dual_loss.png" alt="Dual ascent losses
     for layer 1 weight, epoch 0, step 0">
-    <img src="{{ site.baseurl }}/assets/blog/fc2-e00-d00.png" alt="Dual ascent losses
+    <img src="{{ site.baseurl }}/assets/blog/fc2_weight_e0_d00_dual_loss.png" alt="Dual ascent losses
     for layer 2 weight, epoch 0, step 0">
-    <img src="{{ site.baseurl }}/assets/blog/fc3-e00-d00.png" alt="Dual ascent losses
+    <img src="{{ site.baseurl }}/assets/blog/fc3_weight_e0_d00_dual_loss.png" alt="Dual ascent losses
     for layer 3 weight, epoch 0, step 0">
     <figcaption>Dual ascent losses for each weight matrix in the network, for the
     nonzero-steps hyperparameter choices shown in the table above. Traces can be
@@ -635,8 +621,8 @@ trends persist: dual ascent is slower, ten ADMM iterations is aggressive, but no
 unreasonable (see below).
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/blog/fc1-e01-d23.png" alt="Dual ascent losses
-    for layer 1 weight, epoch 1, step 23">
+    <img src="{{ site.baseurl }}/assets/blog/fc1_weight_e1_d42_dual_loss.png" alt="Dual ascent losses
+    for layer 1 weight, epoch 1, step 42">
     <figcaption>Dual ascent losses for weights in the first layer of the network, for
     the nonzero-steps hyperparameter choices shown in the table above. Traces can be
     identified based on where they terminate.</figcaption>
@@ -695,9 +681,9 @@ residual norm is always rather small, but still non-negligible before convergenc
 iterations of ADMM is not quite converged for this layer, but strikes a reasonable tradeoff between convergence and efficiency.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/blog/fc1-e00-d00-feas.png" alt="Feasibility
-    (ell-2 norm) for layer 1, epoch 0, step 0">
-    <figcaption>Feasibility ($\ell^2$ norm) for the ADMM algorithm, for
+    <img src="{{ site.baseurl }}/assets/blog/fc1_weight_e0_d00_feasibility_residual.png" alt="Feasibility
+    (RMSE) for layer 1, epoch 0, step 0">
+    <figcaption>Feasibility (RMSE) for the ADMM algorithm, for
     the nonzero-steps hyperparameter choices shown in the table above. Traces can be
     identified based on where they terminate.</figcaption>
 </figure>
@@ -735,6 +721,32 @@ If you found this post or the code useful, please consider citing it:
 }
 ```
 
+# Acknowledgments
+
+Thanks to [Jeremy Bernstein](https://jeremybernste.in/) for helpful discussions.
+Thanks to the [TRC program](https://sites.research.google/trc/about/),
+[Hyperbolic](https://hyperbolic.ai), and [Mithril](https://mithril.ai)
+for compute.
+
+# Postscript: Other Algorithms than ADMM
+
+After writing this post, it came to my attention that Franz Louis Cesista had also
+written about an algorithmic improvement to the baseline dual ascent method for manifold
+Muon using the primal-dual hybrid gradient method (PDHG) {% cite
+cesista2025steepestdescentfinsler %}. PDHG is sometimes referred to as "linearized ADMM".
+
+PDHG for manifold Muon has some similar benefits to the ADMM approach we derived above:
+it involves proximal steps to "smooth out" the nonsmooth aspects of the subproblem
+\eqref{eq:manifold-muon}.[^12] At the same time, PDHG is classically most commonly used
+in situations where the ADMM subproblems are intractable (e.g., in image processing, for
+total-variation-regularized image denoising), since it involves three hyperparameters
+that require careful tuning in practice {% cite Goldstein2015-uo %}, as opposed to
+than ADMM's one.
+
+It would be interesting to run a thorough comparison between PDHG and ADMM for manifold
+Muon. The JAX code in Cesista's blog post is missing some implementations, but could
+likely be integrated into our (PyTorch) Github repo with a bit of effort.
+
 
 # Postscript: Other Quadratic Constraints
 
@@ -747,12 +759,7 @@ above can be applied to constraints from this family with little extra effort! W
 this as an exercise to
 the reader.
 
-# Acknowledgments
 
-Thanks to [Jeremy Bernstein](https://jeremybernste.in/) for helpful discussions.
-Thanks to the [TRC program](https://sites.research.google/trc/about/),
-[Hyperbolic](https://hyperbolic.ai), and [Mithril](https://mithril.ai)
-for compute.
 
 [^1]:
     As written, the matrix sign function is only defined for inputs that have no zero
@@ -772,8 +779,6 @@ for compute.
 [^3]:
     Here and below, we write $\norm{\spcdot}_*$ to denote the nuclear norm (or Schatten
     1-norm), which is the sum of the singular values of its (matrix) argument.
-
-[^4]: We'll see this is indeed the case empirically in our experiments below!
 
 [^5]:
     Less naive algorithms for nonsmooth optimization can ameliorate this pathological
@@ -804,7 +809,7 @@ for compute.
     Muon solvers at iteration zero leading to significant differences in the
     behavior of subsequent gradients/inner loop solves (even though everything
     is convex!). These differences seem to mostly be restricted to inner loop
-    loss, as final val error does not seem to very much, but it will be
+    loss, as final val error does not seem to vary much, but it will be
     interesting to study this behavior at larger scales.
 
 [^9]:
@@ -818,3 +823,7 @@ for compute.
 [^11]: This is likely because of the fact that we
     compute `msign` with an approximate algorithm, leading to unstable behavior when we
     aggressively threshold singular values in the $\vX$ update of ADMM.
+
+[^12]: In contrast to ADMM, it proceeds directly on the Lagrangian for
+    \eqref{eq:manifold-muon}, and hence involves proximal steps on the (characteristic
+    function of the) operator norm ball, rather than on the nuclear norm, as in ADMM.

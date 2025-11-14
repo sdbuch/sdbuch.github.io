@@ -483,7 +483,7 @@ achieve the desired output sharding.
 
 **On TPUs** with enough chips to form a cube, AllGather can be performed using
 algorithms that exploit the toroidal interconnectivity of TPU devices. For
-example, to AllGather a single axis, the following procedure can be used:[^5]
+example, to AllGather a single axis, the following procedure can be used:
 1. Initialize a local buffer on each device with its local shard.
 2. Send the buffer contents to the next device; overwrite it with the contents of
   the previous device.

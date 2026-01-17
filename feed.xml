@@ -5,7 +5,7 @@
   
   <link href="http://sdbuchanan.com/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://sdbuchanan.com/" rel="alternate" type="text/html" />
-  <updated>2025-12-11T02:51:16+00:00</updated>
+  <updated>2026-01-17T01:13:19+00:00</updated>
   <id>http://sdbuchanan.com//</id>
 
   
@@ -20,7 +20,7 @@
     <author>
         <name>Sam Buchanan</name>
       
-        <email>sam@ttic.edu</email>
+        <email>sdbuchanan@berkeley.edu</email>
       
       
     </author>
@@ -1771,7 +1771,7 @@ per-device gradients before all reduce, etc.). &lt;a href=&quot;#fnref:6&quot; 
         <author>
             <name>Sam Buchanan</name>
           
-            <email>sam@ttic.edu</email>
+            <email>sdbuchanan@berkeley.edu</email>
           
           
         </author>
@@ -2602,7 +2602,7 @@ function of the) operator norm ball, rather than on the nuclear norm, as in ADMM
         <author>
             <name>Sam Buchanan</name>
           
-            <email>sam@ttic.edu</email>
+            <email>sdbuchanan@berkeley.edu</email>
           
           
         </author>
@@ -4091,7 +4091,7 @@ factor of $2$ in FLOPs versus the optimal implementation. &lt;a href=&quot;#fnr
         <author>
             <name>Sam Buchanan</name>
           
-            <email>sam@ttic.edu</email>
+            <email>sdbuchanan@berkeley.edu</email>
           
           
         </author>
@@ -5330,7 +5330,7 @@ the underlying tensor, but does change the memory layout. (Notice that the
         <author>
             <name>Sam Buchanan</name>
           
-            <email>sam@ttic.edu</email>
+            <email>sdbuchanan@berkeley.edu</email>
           
           
         </author>

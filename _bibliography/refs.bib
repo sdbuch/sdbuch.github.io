@@ -278,23 +278,60 @@ For LaTeX, right delimiters to use are \( and \)
   title         = "On the Edge of Memorization in Diffusion Models",
   author        = "Buchanan*, Sam and Pai*, Druv and Ma, Yi and Bortoli, Valentin
                    De",
-  month         =  dec,
+  month         =  aug,
   year          =  2025,
   booktitle     = "Advances in Neural Information Processing Systems (NeurIPS)",
   url           = "http://arxiv.org/abs/2508.17689",
   arxivid        = "2508.17689",
-  code           = "https://github.com/DruvPai/diffusion_mem_gen"
+  code           = "https://github.com/DruvPai/diffusion_mem_gen",
+  abstract = {When do diffusion models reproduce their training data, and when
+    are they able to generate samples beyond it? A practically relevant
+      theoretical understanding of this interplay between memorization and
+      generalization may significantly impact real-world deployments of
+      diffusion models with respect to issues such as copyright infringement and
+      data privacy. In this work, to disentangle the different factors that
+      influence memorization and generalization in practical diffusion models,
+    we introduce a scientific and mathematical "laboratory" for investigating
+      these phenomena in diffusion models trained on fully synthetic or natural
+      image-like structured data. Within this setting, we hypothesize that the
+      memorization or generalization behavior of an underparameterized trained
+      model is determined by the difference in training loss between an
+      associated memorizing model and a generalizing model. To probe this
+      hypothesis, we theoretically characterize a crossover point wherein the
+      weighted training loss of a fully generalizing model becomes greater than
+      that of an underparameterized memorizing model at a critical value of
+      model (under)parameterization. We then demonstrate via carefully-designed
+      experiments that the location of this crossover predicts a phase
+      transition in diffusion models trained via gradient descent, validating
+      our hypothesis. Ultimately, our theory enables us to analytically predict
+      the model size at which memorization becomes predominant. Our work
+      provides an analytically tractable and practically meaningful setting for
+      future theoretical and empirical investigations.},
 }
 
 @INPROCEEDINGS{Fang2025-kg,
   title         = "Beyond Scores: Proximal Diffusion Models",
   author        = "Fang, Zhenghan and Díaz, Mateo and Buchanan, Sam and Sulam,
                    Jeremias",
-  month         =  dec,
+  month         =  jul,
   year          =  2025,
   booktitle     = "Advances in Neural Information Processing Systems (NeurIPS)",
   url           = "http://arxiv.org/abs/2507.08956",
-  arxivid        = "2507.08956"
+  arxivid        = "2507.08956",
+  code           = "https://github.com/ZhenghanFang/ProxDM",
+  abstract       = {Diffusion models have quickly become some of the most
+    popular and powerful generative models for high-dimensional data. The key
+      insight that enabled their development was the realization that access to
+      the score -- the gradient of the log-density at different noise levels --
+      allows for sampling from data distributions by solving a reverse-time
+      stochastic differential equation (SDE) via forward discretization, and
+      that popular denoisers allow for unbiased estimators of this score. In
+      this paper, we demonstrate that an alternative, backward discretization of
+      these SDEs, using proximal maps in place of the score, leads to
+      theoretical and practical benefits. We leverage recent results in proximal
+      matching to learn proximal operators of the log-density and, with them,
+    develop Proximal Diffusion Models (ProxDM). Theoretically, we prove that
+      \(\widetilde\{O\}(d/\sqrt\{\varepsilon\})\)\  steps suffice for the resulting discretization to generate an \(\varepsilon\)-accurate distribution w.r.t. the KL divergence. Empirically, we show that two variants of ProxDM achieve significantly faster convergence within just a few sampling steps compared to conventional score-matching methods.}
 }
 
 
@@ -306,7 +343,168 @@ For LaTeX, right delimiters to use are \( and \)
   publisher={Online},
   note={\url{https://ma-lab-berkeley.github.io/deep-representation-learning-book/}.},
   html = "https://ma-lab-berkeley.github.io/deep-representation-learning-book/",
+  abstract = {A modern fully open-source textbook exploring why and how deep
+    neural networks learn compact and information-dense representations of
+      high-dimensional real-world data.},
 }
+
+
+@ARTICLE{Tandon2025-il,
+  title         = "End-to-End Test-Time Training for Long Context",
+  author        = "Tandon, Arnuv and Dalal, Karan and Li, Xinhao and Koceja,
+                   Daniel and Rød, Marcel and Buchanan, Sam and Wang, Xiaolong
+                   and Leskovec, Jure and Koyejo, Sanmi and Hashimoto, Tatsunori
+                   and Guestrin, Carlos and McCaleb, Jed and Choi, Yejin and
+                   Sun, Yu",
+  month         =  dec,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2512.23675",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  arxivid       = "2512.23675",
+  eprint        = "2512.23675",
+  doi           = "10.48550/arXiv.2512.23675",
+  code          = "https://github.com/test-time-training/e2e",
+  abstract      = {We formulate long-context language modeling as a problem in continual learning rather than architecture design. Under this formulation, we only use a standard architecture -- a Transformer with sliding-window attention. However, our model continues learning at test time via next-token prediction on the given context, compressing the context it reads into its weights. In addition, we improve the model's initialization for learning at test time via meta-learning at training time. Overall, our method, a form of Test-Time Training (TTT), is End-to-End (E2E) both at test time (via next-token prediction) and training time (via meta-learning), in contrast to previous forms. We conduct extensive experiments with a focus on scaling properties. In particular, for 3B models trained with 164B tokens, our method (TTT-E2E) scales with context length in the same way as Transformer with full attention, while others, such as Mamba 2 and Gated DeltaNet, do not. However, similar to RNNs, TTT-E2E has constant inference latency regardless of context length, making it 2.7 times faster than full attention for 128K context. Our code is publicly available.}
+}
+
+@ARTICLE{Chang2025-qr,
+  title         = "Global {PIQA}: Evaluating Physical Commonsense Reasoning
+                   Across {100+} Languages and Cultures",
+  author        = "Chang, Tyler A and Arnett, Catherine and Eldesokey,
+                   Abdelrahman and Sadallah, Abdelrahman and Kashar, Abeer and
+                   Daud, Abolade and Olanihun, Abosede Grace and Mohammed, Adamu
+                   Labaran and Praise, Adeyemi and Sharma, Adhikarinayum
+                   Meerajita and Gupta, Aditi and Iyigun, Afitab and Simplício,
+                   Afonso and Essouaied, Ahmed and Chorana, Aicha and Eppa,
+                   Akhil and Oladipo, Akintunde and Ramesh, Akshay and Dorkin,
+                   Aleksei and Kondoro, Alfred Malengo and Aji, Alham Fikri and
+                   Çetintaş, Ali Eren and Hanbury, Allan and Dembele, Alou and
+                   Niksarli, Alp and Arroyo, Álvaro and Bajand, Amin and Khanna,
+                   Amol and Chkhaidze, Ana and Condez, Ana and Mkhonto, Andiswa
+                   and Hoblitzell, Andrew and Tran, Andrew and Poulis, Angelos
+                   and Majumder, Anirban and Vacalopoulou, Anna and Wong,
+                   Annette Kuuipolani Kanahele and Simonsen, Annika and Kovalev,
+                   Anton and S, Ashvanth and Lana, Ayodeji Joseph and Kinay,
+                   Barkin and Alhafni, Bashar and Busole, Benedict Cibalinda and
+                   Ghanem, Bernard and Nathani, Bharti and Đurić, Biljana
+                   Stojanovska and Agbonile, Bola and Bergsson, Bragi and
+                   Fischer, Bruce Torres and Tutar, Burak and Çınar, Burcu
+                   Alakuş and Kane, Cade J Kanoniakapueo and Udomcharoenchaikit,
+                   Can and Arnett, Catherine and Helwe, Chadi and Nerella,
+                   Chaithra Reddy and Liu, Chen Cecilia and Nwokolo, Chiamaka
+                   Glory and España-Bonet, Cristina and Amol, Cynthia and Lee,
+                   Daeyeop and Arad, Dana and Dzenhaliou, Daniil and Pugacheva,
+                   Daria and Choi, Dasol and Abolade, Daud and Liu, David and
+                   Semedo, David and Popoola, Deborah and Mataciunas, Deividas
+                   and Nyaboke, Delphine and Kumar, Dhyuthy Krishna and
+                   Glória-Silva, Diogo and Tavares, Diogo and Goyal, Divyanshu
+                   and Lee, Donggeon and Anajemba, Ebele Nwamaka and Grace,
+                   Egonu Ngozi and Mickel, Elena and Tutubalina, Elena and
+                   Herranen, Elias and Anand, Emile and Habumuremyi, Emmanuel
+                   and Ajiboye, Emuobonuvie Maria and Yulianrifat, Eryawan
+                   Presma and Adenuga, Esther and Rudnicka, Ewa and Itiola,
+                   Faith Olabisi and Butt, Faran Taimoor and Thekkekara, Fathima
+                   and Haouari, Fatima and Tjiaranata, Filbert Aurelian and
+                   Laakom, Firas and Grasso, Francesca and Orabona, Francesco
+                   and Periti, Francesco and Solomon, Gbenga Kayode and Ngo, Gia
+                   Nghia and Udhehdhe-oze, Gloria and Martins, Gonçalo and
+                   Challagolla, Gopi Naga Sai Ram and Son, Guijin and
+                   Abdykadyrova, Gulnaz and Einarsson, Hafsteinn and Hu, Hai and
+                   Saffari, Hamidreza and Zaidi, Hamza and Zhang, Haopeng and
+                   Shairah, Harethah Abu and Vuong, Harry and Kuulmets,
+                   Hele-Andra and Bouamor, Houda and Yu, Hwanjo and Debess, Iben
+                   Nyholm and Deveci, İbrahim Ethem and Hanif, Ikhlasul Akmal
+                   and Cho, Ikhyun and Calvo, Inês and Vieira, Inês and Manzi,
+                   Isaac and Daud, Ismail and Itzhak, Itay and {Iuliia} and
+                   {Alekseenko} and Belashkin, Ivan and Spada, Ivan and
+                   Zhelyazkov, Ivan and Brinton, Jacob and Isbarov, Jafar and
+                   Čibej, Jaka and Čuhel, Jan and Kocoń, Jan and Krito, Jauza
+                   Akbar and Purbey, Jebish and Mickel, Jennifer and Za,
+                   Jennifer and Kunz, Jenny and Jeong, Jihae and Dávalos, Jimena
+                   Tena and Lee, Jinu and Magalhães, João and Yi, John and Kim,
+                   Jongin and Chataignon, Joseph and Imperial, Joseph Marvin and
+                   Thevakumar, Jubeerathan and Land, Judith and Jiang, Junchen
+                   and Kim, Jungwhan and Sirts, Kairit and R, Kamesh and V,
+                   Kamesh and Tshinu, Kanda Patrick and Kukk, Kätriin and
+                   Ponkshe, Kaustubh and Huseynova, Kavsar and He, Ke and
+                   Buchanan, Kelly and Sarveswaran, Kengatharaiyer and Zaman,
+                   Kerem and Mrini, Khalil and Kyars, Kian and Kruusmaa, Krister
+                   and Chouhan, Kusum and Krishnakumar, Lainitha and Sánchez,
+                   Laura Castro and Moscoso, Laura Porrino and Choshen, Leshem
+                   and Sencan, Levent and Øvrelid, Lilja and Alazraki, Lisa and
+                   Ehimen-Ugbede, Lovina and Thevakumar, Luheerathan and
+                   Thavarasa, Luxshan and Malik, Mahnoor and Keita, Mamadou K
+                   and Jangid, Mansi and De Santis, Marco and García, Marcos and
+                   Suppa, Marek and D'Ciofalo, Mariam and Ojastu, Marii and
+                   Sikander, Maryam and Narayan, Mausami and Skandalis, Maximos
+                   and Mehak, Mehak and Bozkurt, Mehmet İlteriş and Workie,
+                   Melaku Bayu and Velayuthan, Menan and Leventhal, Michael and
+                   Marcińczuk, Michał and Potočnjak, Mirna and Shafiei,
+                   Mohammadamin and Sharma, Mridul and Indoria, Mrityunjaya and
+                   Habibi, Muhammad Ravi Shulthan and Kolić, Murat and Galant,
+                   Nada and Permpredanun, Naphat and Maugin, Narada and Corrêa,
+                   Nicholas Kluge and Ljubešić, Nikola and Thomas, Nirmal and de
+                   Silva, Nisansa and Joshi, Nisheeth and Ponkshe, Nitish and
+                   Habash, Nizar and Udeze, Nneoma C and Thomas, Noel and
+                   Ligeti-Nagy, Noémi and Coulibaly, Nouhoum and Faustin,
+                   Nsengiyumva and Buliaminu, Odunayo Kareemat and Ogundepo,
+                   Odunayo and Fejiro, Oghojafor Godswill and Funmilola,
+                   Ogundipe Blessing and God'spraise, Okechukwu and Samuel,
+                   Olanrewaju and Oluwaseun, Olaoye Deborah and Akindejoye,
+                   Olasoji and Popova, Olga and Snissarenko, Olga and Chiemezie,
+                   Onyinye Anulika and Kinay, Orkun and Tursun, Osman and Moses,
+                   Owoeye Tobiloba and Joshua, Oyelade Oluwafemi and
+                   Fiyinfoluwa, Oyesanmi and Gamallo, Pablo and Fernández, Pablo
+                   Rodríguez and Arora, Palak and Valente, Pedro and Rupnik,
+                   Peter and Ekiugbo, Philip Oghenesuowho and Sahoo, Pramit and
+                   Prokopidis, Prokopis and Niau-Puhipau, Pua and Yahya, Quadri
+                   and Mignone, Rachele and Singhal, Raghav and Kadiyala, Ram
+                   Mohan Rao and Merx, Raphael and Afolayan, Rapheal and
+                   Rajalakshmi, Ratnavel and Ghosh, Rishav and Oji, Romina and
+                   Solis, Ron Kekeha and Guerra, Rui and Zawar, Rushikesh and
+                   Bashir, Sa'ad Nasir and Alzaabi, Saeed and Sandeep, Sahil and
+                   Batchu, Sai Pavan and Kantareddy, Saisandeep and Pranida,
+                   Salsabila Zahirah and Buchanan, Sam and Rutunda, Samuel and
+                   Land, Sander and Sulollari, Sarah and Ali, Sardar and
+                   Sapkota, Saroj and Tautvaisas, Saulius and Sen, Sayambhu and
+                   Banerjee, Sayantani and Diarra, Sebastien and M,
+                   Senthilnathan and Lee, Sewoong and Shah, Shaan and
+                   Venkitachalam, Shankar and Djurabaeva, Sharifa and Ibejih,
+                   Sharon and Dutta, Shivanya Shomir and Gupta, Siddhant and
+                   Suárez, Silvia Paniagua and Ahmadi, Sina and Sukumar,
+                   Sivasuthan and Song, Siyuan and A., Snegha and Sofianopoulos,
+                   Sokratis and Simon, Sona Elza and Benčina, Sonja and
+                   Gvasalia, Sophie and More, Sphurti Kirit and Dragazis, Spyros
+                   and Kaufhold, Stephan P and S, Suba and AlRashed, Sultan and
+                   Ranathunga, Surangika and Someya, Taiga and Pungeršek, Taja
+                   Kuzman and Haklay, Tal and Jibril, Tasi'u and Aoyama, Tatsuya
+                   and Abashidze, Tea and Cruz, Terenz Jomar Dela and Blevins,
+                   Terra and Nikas, Themistoklis and Idoko, Theresa Dora and Do,
+                   Thu Mai and Chubakov, Tilek and Gargiani, Tommaso and
+                   Rathore, Uma and Johannesen, Uni and Ugwu, Uwuma Doris and
+                   Putra, Vallerie Alexandra and Kumar, Vanya Bannihatti and
+                   Jeyarajalingam, Varsha and Arzt, Varvara and Nedumpozhimana,
+                   Vasudevan and Ondrejova, Viktoria and Horbik, Viktoryia and
+                   Kummitha, Vishnu Vardhan Reddy and Dinić, Vuk and Sewunetie,
+                   Walelign Tewabe and Wu, Winston and Zhao, Xiaojing and
+                   Diarra, Yacouba and Nikankin, Yaniv and Mathur, Yash and
+                   Chen, Yixi and Li, Yiyuan and Xavier, Yolanda and Belinkov,
+                   Yonatan and Abayomi, Yusuf Ismail and Alyafeai, Zaid and
+                   Shan, Zhengyang and Tam, Zhi Rui and Tang, Zilu and Nadova,
+                   Zuzana and Abbasi, Baber and Biderman, Stella and Stap, David
+                   and Ataman, Duygu and Schmidt, Fabian and Gonen, Hila and
+                   Wang, Jiayi and Adelani, David Ifeoluwa",
+  month         =  oct,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2510.24081",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  arxivid       = "2510.24081",
+  eprint        = "2510.24081",
+  doi           = "10.48550/arXiv.2510.24081",
+  code          = "https://mrlbenchmarks.github.io/",
+  abstract      = {To date, there exist almost no culturally-specific evaluation benchmarks for large language models (LLMs) that cover a large number of languages and cultures. In this paper, we present Global PIQA, a participatory commonsense reasoning benchmark for over 100 languages, constructed by hand by 335 researchers from 65 countries around the world. The 116 language varieties in Global PIQA cover five continents, 14 language families, and 23 writing systems. In the non-parallel split of Global PIQA, over 50\% of examples reference local foods, customs, traditions, or other culturally-specific elements. We find that state-of-the-art LLMs perform well on Global PIQA in aggregate, but they exhibit weaker performance in lower-resource languages (up to a 37\% accuracy gap, despite random chance at 50\%). Open models generally perform worse than proprietary models. Global PIQA highlights that in many languages and cultures, everyday knowledge remains an area for improvement, alongside more widely-discussed capabilities such as complex reasoning and expert knowledge. Beyond its uses for LLM evaluation, we hope that Global PIQA provides a glimpse into the wide diversity of cultures in which human language is embedded.} }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %      References for my blog posts
@@ -334,6 +532,15 @@ For LaTeX, right delimiters to use are \( and \)
   title = {{SPMD} in {JAX} \#2: Transformers in Bare-Metal {JAX}},
   year = 2025,
   howpublished = {\url{https://sdbuchanan.com/blog/jax-2/}},
+  exclude = {true},
+}
+
+
+@misc{buchanan2025tf2,
+  author = {Buchanan, Sam},
+  title = {{SPMD} in {JAX} \#3: Infrastructure Buildout},
+  year = 2025,
+  howpublished = {\url{https://sdbuchanan.com/blog/jax-3/}},
   exclude = {true},
 }
 

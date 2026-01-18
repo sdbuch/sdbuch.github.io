@@ -73,7 +73,41 @@
 "Wang":
   - firstname: ["Peng"]
     url: https://peng8wang.github.io/
+  - firstname: ["Xiaolong"]
+    url: https://xiaolonw.github.io/
 
 "Bortoli":
   - firstname: ["Valentin De"]
     url: https://vdeborto.github.io/
+
+"Leskovec":
+  - firstname: ["Jure"]
+    url: https://cs.stanford.edu/people/jure/
+
+"Koyejo":
+  - firstname: ["Sanmi"]
+    url: https://cs.stanford.edu/~sanmi/
+
+"Hashimoto":
+  - firstname: ["Tatsunori"]
+    url: https://thashim.github.io/
+
+"Guestrin":
+  - firstname: ["Carlos"]
+    url: https://guestrin.su.domains/
+
+"Choi":
+  - firstname: ["Yejin"]
+    url: https://yejinc.github.io/
+
+"Sun":
+  - firstname: ["Yu"]
+    url: https://yueatsprograms.github.io/
+
+"Dalal":
+  - firstname: ["Karan"]
+    url: https://www.karansdalal.com/
+
+"Li":
+  - firstname: ["Xinhao"]
+    url: https://leoxinhaolee.github.io/

@@ -5,6 +5,12 @@ description: Archived updates from the homepage.
 permalink: /past_updates/
 ---
 
+- **Tutorial:** I lectured on topics from our new book at ICCV 2025 in
+  sunny Honolulu, Hawaii
+  [(link)](https://iccv.thecvf.com/virtual/2025/tutorial/2852). _(Oct 2025)_
+
+- **New Job:** I started as a postdoc at UC Berkeley! _(Sep 2025)_
+
 - **2nd Conference on Parsimony and Learning:** I co-organized the second
   [Conference on Parsimony and Learning (CPAL)](https://2025.cpal.cc). Thanks to all
   attendees for making it a success! _(Mar 2025)_

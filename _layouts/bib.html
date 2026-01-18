@@ -18,32 +18,31 @@
     {% else %}
       <div class="title">{{entry.title}}</div>
       <div class="author">
-        {% for author in entry.author_array %}
-          {% assign author_is_self = false %}
-          {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
-          {%- if site.scholar.last_name contains author_last_name -%}
-            {% if site.scholar.first_name contains author.first%}
-              {% assign author_is_self = true %}
-            {% endif %}
-          {% endif %}
-          {% assign coauthor_url = nil %}
-          {% if site.data.coauthors[author.last] %}
-            {% for coauthor in site.data.coauthors[author.last] %}
-              {% if coauthor.firstname contains author.first %}
-                {% assign coauthor_url = coauthor.url %}
-                {% break %}
+        {% assign author_collapse_threshold = 15 %}
+        {% assign authors_visible_count = 5 %}
+        {% assign total_authors = entry.author_array.size %}
+        {% assign hidden_authors = total_authors | minus: authors_visible_count %}
+
+        {% if total_authors > author_collapse_threshold %}
+          <!-- Collapsed author list -->
+          <span class="authors-short">
+            {% for author in entry.author_array limit:authors_visible_count %}
+              {% assign author_is_self = false %}
+              {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
+              {%- if site.scholar.last_name contains author_last_name -%}
+                {% if site.scholar.first_name contains author.first %}
+                  {% assign author_is_self = true %}
+                {% endif %}
               {% endif %}
-            {% endfor %}
-          {% endif %}
-          
-          {% if forloop.length == 1 %}
-            {% if author_is_self %}
-              <em>{{author.first}} {{author.last}}</em>
-            {% else %}
-              {{author.first}} {{author.last}}
-            {% endif %}
-          {% else %}
-            {% unless forloop.last %}
+              {% assign coauthor_url = nil %}
+              {% if site.data.coauthors[author.last] %}
+                {% for coauthor in site.data.coauthors[author.last] %}
+                  {% if coauthor.firstname contains author.first %}
+                    {% assign coauthor_url = coauthor.url %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
               {% if author_is_self %}
                 <em>{{author.first}} {{author.last}}</em>,
               {% else %}
@@ -53,19 +52,110 @@
                   {{author.first}} {{author.last}},
                 {% endif %}
               {% endif %}
-            {% else %}
-              {% if author_is_self %}
-                and <em>{{author.first}} {{author.last}}</em>
-              {% else %}
-                {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
-                {% else %}
-                  and {{author.first}} {{author.last}}
+            {% endfor %}
+            <a class="authors-toggle btn btn-sm z-depth-0">... ({{hidden_authors}} more)</a>
+          </span>
+          <!-- Full author list (hidden by default) -->
+          <span class="authors-full hidden">
+            <a class="authors-toggle btn btn-sm z-depth-0">(collapse)</a>
+            {% for author in entry.author_array %}
+              {% assign author_is_self = false %}
+              {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
+              {%- if site.scholar.last_name contains author_last_name -%}
+                {% if site.scholar.first_name contains author.first %}
+                  {% assign author_is_self = true %}
                 {% endif %}
               {% endif %}
-            {% endunless %}
-          {% endif %}
-        {% endfor %}
+              {% assign coauthor_url = nil %}
+              {% if site.data.coauthors[author.last] %}
+                {% for coauthor in site.data.coauthors[author.last] %}
+                  {% if coauthor.firstname contains author.first %}
+                    {% assign coauthor_url = coauthor.url %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if forloop.length == 1 %}
+                {% if author_is_self %}
+                  <em>{{author.first}} {{author.last}}</em>
+                {% else %}
+                  {{author.first}} {{author.last}}
+                {% endif %}
+              {% else %}
+                {% unless forloop.last %}
+                  {% if author_is_self %}
+                    <em>{{author.first}} {{author.last}}</em>,
+                  {% else %}
+                    {% if coauthor_url %}
+                      <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>,
+                    {% else %}
+                      {{author.first}} {{author.last}},
+                    {% endif %}
+                  {% endif %}
+                {% else %}
+                  {% if author_is_self %}
+                    and <em>{{author.first}} {{author.last}}</em>
+                  {% else %}
+                    {% if coauthor_url %}
+                      and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+                    {% else %}
+                      and {{author.first}} {{author.last}}
+                    {% endif %}
+                  {% endif %}
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
+          </span>
+        {% else %}
+          <!-- Normal author list for small author counts -->
+          {% for author in entry.author_array %}
+            {% assign author_is_self = false %}
+            {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
+            {%- if site.scholar.last_name contains author_last_name -%}
+              {% if site.scholar.first_name contains author.first%}
+                {% assign author_is_self = true %}
+              {% endif %}
+            {% endif %}
+            {% assign coauthor_url = nil %}
+            {% if site.data.coauthors[author.last] %}
+              {% for coauthor in site.data.coauthors[author.last] %}
+                {% if coauthor.firstname contains author.first %}
+                  {% assign coauthor_url = coauthor.url %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if forloop.length == 1 %}
+              {% if author_is_self %}
+                <em>{{author.first}} {{author.last}}</em>
+              {% else %}
+                {{author.first}} {{author.last}}
+              {% endif %}
+            {% else %}
+              {% unless forloop.last %}
+                {% if author_is_self %}
+                  <em>{{author.first}} {{author.last}}</em>,
+                {% else %}
+                  {% if coauthor_url %}
+                    <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>,
+                  {% else %}
+                    {{author.first}} {{author.last}},
+                  {% endif %}
+                {% endif %}
+              {% else %}
+                {% if author_is_self %}
+                  and <em>{{author.first}} {{author.last}}</em>
+                {% else %}
+                  {% if coauthor_url %}
+                    and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+                  {% else %}
+                    and {{author.first}} {{author.last}}
+                  {% endif %}
+                {% endif %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </div>
 
       <div class="periodical">

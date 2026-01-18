@@ -61,9 +61,22 @@
               text-decoration: none;
           }
         }
-        > em {
+        > em, .authors-short > em, .authors-full > em {
           border-bottom: 1px solid;
           font-style: normal;
+        }
+        .authors-toggle {
+          cursor: pointer;
+          font-size: 0.85em;
+          margin-left: 0.25em;
+          padding: 0.1em 0.4em;
+        }
+        .authors-full {
+          display: none;
+          font-size: inherit;
+          &.open {
+            display: inline;
+          }
         }
       }
       .links {

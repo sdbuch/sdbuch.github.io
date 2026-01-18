@@ -9,13 +9,10 @@ Berkeley](https://berkeley.edu).
 Previously, I was at [TTIC](https://ttic.edu), after finishing my PhD in
 Electrical Engineering at [Columbia University](https://ee.columbia.edu).
 
-I study the mathematics of representation learning from the
-perspective of signals and data. I'm interested in questions that span theory
-and practice &mdash; What structural properties of modern data underlie the
-successes of deep learning? How can we scale our models more effectively by
-exploiting this structure? I’m especially interested in transformers, and
-applications to text and visual data.
-
+My research focuses on efficiency in large model training.
+I work on optimization and model architecture improvements that make
+better use of data and compute as we scale up, spanning implementation,
+algorithm design, and mathematical foundations.
 
 ## Recent Highlights
 
@@ -33,18 +30,11 @@ applications to text and visual data.
   building diffusion models with proximal operators, leading to fewer NFEs at
   sampling time [(link)](https://arxiv.org/abs/2507.08956).  _(Sep 2025)_
 
-- **New Job:** I'm starting as a postdoc at UC Berkeley! _(Sep 2025)_
-
 ## Upcoming Events
-
-- **Tutorials:** I will be lecturing on topics from our new book at ICCV 2025 in
-  sunny Honolulu, Hawaii
-  [(link)](https://iccv.thecvf.com/virtual/2025/tutorial/2852) on October 19th.
 
 - **3rd Conference on Parsimony and Learning:** I am co-organizing the third
   [Conference on Parsimony and Learning (CPAL)](https://cpal.cc). This year, the
-  conference will be held in Tübingen, Germany. Submit your work (early December
-  deadline) and attend!
+  conference will be held in Tübingen, Germany. Please consider attending!
 
 
 ## [Past Updates]({{ site.baseurl }}/past_updates)
